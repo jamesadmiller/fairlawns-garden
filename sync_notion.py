@@ -70,7 +70,7 @@ def query_database(db_id, filter_body=None):
 
 # ── Property extractors ───────────────────────────────────────────────────────
 
-def prop(page, name, fallback=None):
+def prop(page, name):
     """Get a property dict from a Notion page."""
     return page.get("properties", {}).get(name, None) or {}
 
@@ -85,7 +85,7 @@ def text_prop(page, name):
     if t == "select":
         sel = p.get("select")
         return sel.get("name", "") if sel else ""
-    return fallback or ""
+    return ""
 
 
 def select_prop(page, name):
@@ -134,9 +134,9 @@ def fetch_beds():
     beds = []
     for p in pages:
         beds.append({
-            "name":       text_prop(p, "Name") or text_prop(p, "Bed Name"),
+            "name":       text_prop(p, "Bed Name") or text_prop(p, "Name"),
             "garden":     select_prop(p, "Garden"),
-            "sun":        select_prop(p, "Sunlight") or select_prop(p, "Sun"),
+            "sun":        select_prop(p, "Sun") or select_prop(p, "Sunlight"),
             "aspect":     text_prop(p, "Aspect"),
             "zone":       text_prop(p, "Zone"),
             "dimensions": text_prop(p, "Dimensions"),
@@ -145,7 +145,7 @@ def fetch_beds():
             "url":        page_url(p),
         })
     beds.sort(key=lambda b: b.get("name", ""))
-    print(f"  → {len(beds)} beds")
+    print(f"  \u2192 {len(beds)} beds")
     return beds
 
 
@@ -154,31 +154,30 @@ def fetch_plants(bed_url_map):
     pages = query_database(PLANTS_DB)
     plants = []
     for p in pages:
-        # Bed relation — try common property names
         bed_url = (first_relation_url(p, "Bed") or
                    first_relation_url(p, "Garden Bed") or
                    first_relation_url(p, "Beds"))
         bed_name = bed_url_map.get(bed_url, "")
         notes = text_prop(p, "Notes")[:200]
         plants.append({
-            "name":     text_prop(p, "Plant Name") or text_prop(p, "Name"),
-            "latin":    text_prop(p, "Latin Name"),
-            "type":     select_prop(p, "Type"),
-            "sun":      select_prop(p, "Sunlight"),
-            "watering": select_prop(p, "Watering"),
-            "flowering":text_prop(p, "Flowering Period"),
-            "colour":   text_prop(p, "Flower Colour"),
-            "size":     text_prop(p, "Mature Size"),
+            "name":       text_prop(p, "Plant Name") or text_prop(p, "Name"),
+            "latin":      text_prop(p, "Latin Name"),
+            "type":       select_prop(p, "Type"),
+            "sun":        select_prop(p, "Sunlight"),
+            "watering":   select_prop(p, "Watering"),
+            "flowering":  text_prop(p, "Flowering Period"),
+            "colour":     text_prop(p, "Flower Colour"),
+            "size":       text_prop(p, "Mature Size"),
             "difficulty": select_prop(p, "Difficulty"),
-            "pruning":  text_prop(p, "Pruning Month"),
-            "frost":    checkbox_prop(p, "Frost Protection"),
-            "bed":      bed_name,
-            "bed_url":  bed_url,
-            "notes":    notes,
-            "url":      page_url(p),
+            "pruning":    text_prop(p, "Pruning Month"),
+            "frost":      checkbox_prop(p, "Frost Protection"),
+            "bed":        bed_name,
+            "bed_url":    bed_url,
+            "notes":      notes,
+            "url":        page_url(p),
         })
     plants.sort(key=lambda pl: pl.get("name", ""))
-    print(f"  → {len(plants)} plants")
+    print(f"  \u2192 {len(plants)} plants")
     return plants
 
 
@@ -200,7 +199,7 @@ def fetch_tasks(plant_url_map):
             "url":          page_url(p),
         })
     tasks.sort(key=lambda t: (t.get("month", ""), t.get("priority", "")))
-    print(f"  → {len(tasks)} tasks")
+    print(f"  \u2192 {len(tasks)} tasks")
     return tasks
 
 
@@ -241,7 +240,6 @@ def main():
     print(f"Date: {date.today()}")
     print("=" * 60)
 
-    # Fetch all data
     beds = fetch_beds()
     bed_url_map = {b["url"]: b["name"] for b in beds}
 
@@ -257,13 +255,11 @@ def main():
         "tasks":   tasks,
     }
 
-    # Write garden-data.json
     data_path = os.path.join(SCRIPT_DIR, "garden-data.json")
     with open(data_path, "w", encoding="utf-8") as f:
         json.dump(garden_data, f, indent=2, ensure_ascii=False)
     print(f"\nWrote {data_path}")
 
-    # Update HTML pages
     print("\nUpdating HTML pages…")
     for page in HTML_PAGES:
         path = os.path.join(SCRIPT_DIR, page)
