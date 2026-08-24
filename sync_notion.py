@@ -141,7 +141,7 @@ def fetch_beds():
             "zone":       text_prop(p, "Zone"),
             "dimensions": text_prop(p, "Dimensions"),
             "area":       number_prop(p, "Area (m²)") or number_prop(p, "Area"),
-            "notes":      text_prop(p, "Notes"),
+            "notes":      text_prop(p, "Notes").replace('\r', ' ').replace('\n', ' '),
             "url":        page_url(p),
         })
     beds.sort(key=lambda b: b.get("name", ""))
@@ -158,7 +158,7 @@ def fetch_plants(bed_url_map):
                    first_relation_url(p, "Garden Bed") or
                    first_relation_url(p, "Beds"))
         bed_name = bed_url_map.get(bed_url, "")
-        notes = text_prop(p, "Notes")[:200]
+        notes = text_prop(p, "Notes")[:200].replace('\r', ' ').replace('\n', ' ')
         plants.append({
             "name":       text_prop(p, "Plant Name") or text_prop(p, "Name"),
             "latin":      text_prop(p, "Latin Name"),
@@ -187,7 +187,7 @@ def fetch_tasks(plant_url_map):
     tasks = []
     for p in pages:
         plant_url = first_relation_url(p, "Plant") or first_relation_url(p, "Plants")
-        instructions = text_prop(p, "Instructions")[:300]
+        instructions = text_prop(p, "Instructions")[:300].replace('\r', ' ').replace('\n', ' ')
         tasks.append({
             "name":         text_prop(p, "Task Name") or text_prop(p, "Name"),
             "type":         select_prop(p, "Task Type"),
