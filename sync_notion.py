@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-sync_notion.py - Fetch garden data from Notion and regenerate HTML pages.
+sync_notion.py — Fetch garden data from Notion and regenerate HTML pages.
 
 Requires: NOTION_TOKEN environment variable set to a Notion integration token
 with read access to the Fairlawns databases.
 
 Databases:
-  Beds:   660ba75d-a1d9-4b98-9006-c832a320df94
-  Plants: 35f8fbd3-1096-4b50-a47b-f73e2e34e7c4
-  Tasks:  9b857676-d399-4710-9350-bb661826d709
+  Beds:   4091d4c9-6ab4-4b03-a851-0445e0d1b618
+  Plants: d94180e9-c262-4e40-8814-8fed0bf25f11
+  Tasks:  4c8fd919-4605-48cc-aa56-3c15502ed925
 """
 
 import json
@@ -23,14 +23,19 @@ except ImportError:
     print("ERROR: 'requests' library not installed. Run: pip install requests", file=sys.stderr)
     sys.exit(1)
 
+# ── Config ────────────────────────────────────────────────────────────────────
+
 NOTION_TOKEN = os.environ.get("NOTION_TOKEN", "")
 NOTION_VERSION = "2022-06-28"
-BEDS_DB   = "660ba75d-a1d9-4b98-9006-c832a320df94"
-PLANTS_DB = "35f8fbd3-1096-4b50-a47b-f73e2e34e7c4"
-TASKS_DB  = "9b857676-d399-4710-9350-bb661826d709"
+BEDS_DB   = "4091d4c9-6ab4-4b03-a851-0445e0d1b618"
+PLANTS_DB = "d94180e9-c262-4e40-8814-8fed0bf25f11"
+TASKS_DB  = "4c8fd919-4605-48cc-aa56-3c15502ed925"
 
+# Pages to update (relative to this script's directory)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 HTML_PAGES = ["index.html", "plants.html", "tasks.html", "beds.html"]
+
+# ── Notion API ────────────────────────────────────────────────────────────────
 
 def notion_headers():
     if not NOTION_TOKEN:
@@ -41,13 +46,16 @@ def notion_headers():
         "Content-Type": "application/json",
     }
 
+
 def query_database(db_id, filter_body=None):
+    """Fetch all pages from a Notion database (handles pagination)."""
     url = f"https://api.notion.com/v1/databases/{db_id}/query"
     headers = notion_headers()
     results = []
     body = {}
     if filter_body:
         body.update(filter_body)
+
     while True:
         resp = requests.post(url, headers=headers, json=body, timeout=30)
         resp.raise_for_status()
@@ -56,12 +64,19 @@ def query_database(db_id, filter_body=None):
         if not data.get("has_more"):
             break
         body["start_cursor"] = data["next_cursor"]
+
     return results
 
+
+# ── Property extractors ───────────────────────────────────────────────────────
+
 def prop(page, name, fallback=None):
+    """Get a property dict from a Notion page."""
     return page.get("properties", {}).get(name, None) or {}
 
+
 def text_prop(page, name):
+    """Extract plain text from title or rich_text property."""
     p = prop(page, name)
     t = p.get("type", "")
     if t in ("title", "rich_text"):
@@ -72,38 +87,49 @@ def text_prop(page, name):
         return sel.get("name", "") if sel else ""
     return fallback or ""
 
+
 def select_prop(page, name):
     p = prop(page, name)
     sel = p.get("select")
     return sel.get("name", "") if sel else ""
 
+
 def checkbox_prop(page, name):
     p = prop(page, name)
     return bool(p.get("checkbox", False))
+
 
 def number_prop(page, name):
     p = prop(page, name)
     return p.get("number")
 
+
 def url_prop(page, name):
     p = prop(page, name)
     return p.get("url", "")
 
+
 def relation_urls(page, name):
+    """Extract page URLs from a relation property by looking at related page ids."""
     p = prop(page, name)
     ids = [r.get("id", "") for r in p.get("relation", [])]
     return [f"https://app.notion.com/p/{i.replace('-', '')}" for i in ids if i]
+
 
 def first_relation_url(page, name):
     urls = relation_urls(page, name)
     return urls[0] if urls else ""
 
+
 def page_url(page):
     pid = page.get("id", "").replace("-", "")
     return f"https://app.notion.com/p/{pid}" if pid else ""
 
+
+# ── Data fetchers ─────────────────────────────────────────────────────────────
+
 def fetch_beds():
-    print("Fetching beds...")
+    print("Fetching beds…")
     pages = query_database(BEDS_DB)
     beds = []
     for p in pages:
@@ -114,19 +140,21 @@ def fetch_beds():
             "aspect":     text_prop(p, "Aspect"),
             "zone":       text_prop(p, "Zone"),
             "dimensions": text_prop(p, "Dimensions"),
-            "area":       number_prop(p, "Area (m2)") or number_prop(p, "Area"),
+            "area":       number_prop(p, "Area (m²)") or number_prop(p, "Area"),
             "notes":      text_prop(p, "Notes"),
             "url":        page_url(p),
         })
     beds.sort(key=lambda b: b.get("name", ""))
-    print(f"  -> {len(beds)} beds")
+    print(f"  → {len(beds)} beds")
     return beds
 
+
 def fetch_plants(bed_url_map):
-    print("Fetching plants...")
+    print("Fetching plants…")
     pages = query_database(PLANTS_DB)
     plants = []
     for p in pages:
+        # Bed relation — try common property names
         bed_url = (first_relation_url(p, "Bed") or
                    first_relation_url(p, "Garden Bed") or
                    first_relation_url(p, "Beds"))
@@ -150,11 +178,12 @@ def fetch_plants(bed_url_map):
             "url":      page_url(p),
         })
     plants.sort(key=lambda pl: pl.get("name", ""))
-    print(f"  -> {len(plants)} plants")
+    print(f"  → {len(plants)} plants")
     return plants
 
+
 def fetch_tasks(plant_url_map):
-    print("Fetching tasks...")
+    print("Fetching tasks…")
     pages = query_database(TASKS_DB)
     tasks = []
     for p in pages:
@@ -171,38 +200,54 @@ def fetch_tasks(plant_url_map):
             "url":          page_url(p),
         })
     tasks.sort(key=lambda t: (t.get("month", ""), t.get("priority", "")))
-    print(f"  -> {len(tasks)} tasks")
+    print(f"  → {len(tasks)} tasks")
     return tasks
 
-DATA_RE = re.compile(r'<!-- DATA:START -->.*?<!-- DATA:END -->', re.DOTALL)
+
+# ── HTML injection ────────────────────────────────────────────────────────────
+
+DATA_RE = re.compile(
+    r'<!-- DATA:START -->.*?<!-- DATA:END -->',
+    re.DOTALL
+)
+
 
 def inject_data(html_path, garden_data):
+    """Replace the DATA block in an HTML file with fresh JSON."""
     with open(html_path, "r", encoding="utf-8") as f:
         content = f.read()
+
     data_json = json.dumps(garden_data, separators=(",", ":"), ensure_ascii=False)
     replacement = (
         "<!-- DATA:START -->\n"
         f'<script id="garden-data" type="application/json">{data_json}</script>\n'
         "<!-- DATA:END -->"
     )
+
     if DATA_RE.search(content):
         new_content = DATA_RE.sub(replacement, content)
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(new_content)
         print(f"  Updated {os.path.basename(html_path)}")
     else:
-        print(f"  WARNING: No DATA markers found in {html_path}")
+        print(f"  WARNING: No DATA:START/END markers found in {html_path} — skipping")
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     print("=" * 60)
-    print("Fairlawns Garden - Notion Sync")
+    print("Fairlawns Garden — Notion Sync")
     print(f"Date: {date.today()}")
     print("=" * 60)
 
+    # Fetch all data
     beds = fetch_beds()
     bed_url_map = {b["url"]: b["name"] for b in beds}
+
     plants = fetch_plants(bed_url_map)
     plant_url_map = {pl["url"]: pl["name"] for pl in plants}
+
     tasks = fetch_tasks(plant_url_map)
 
     garden_data = {
@@ -212,12 +257,14 @@ def main():
         "tasks":   tasks,
     }
 
+    # Write garden-data.json
     data_path = os.path.join(SCRIPT_DIR, "garden-data.json")
     with open(data_path, "w", encoding="utf-8") as f:
         json.dump(garden_data, f, indent=2, ensure_ascii=False)
     print(f"\nWrote {data_path}")
 
-    print("\nUpdating HTML pages...")
+    # Update HTML pages
+    print("\nUpdating HTML pages…")
     for page in HTML_PAGES:
         path = os.path.join(SCRIPT_DIR, page)
         if os.path.exists(path):
@@ -226,7 +273,8 @@ def main():
             print(f"  MISSING: {path}")
 
     print("\nSync complete.")
-    print(f"  Beds: {len(beds)} - Plants: {len(plants)} - Tasks: {len(tasks)}")
+    print(f"  Beds: {len(beds)} · Plants: {len(plants)} · Tasks: {len(tasks)}")
+
 
 if __name__ == "__main__":
     main()
