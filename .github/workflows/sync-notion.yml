@@ -5,7 +5,10 @@ on:
     - cron: '0 6,12,18 * * *'  # 3x daily at 6am, 12pm, 6pm UTC
   workflow_dispatch:  # allow manual trigger
 
-jobs:
+permissions:
+  contents: write
+  
+  jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
