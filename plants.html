@@ -210,9 +210,79 @@ function toggleDetail(btn){
   btn.textContent=open?'Hide details ▴':'Show details ▾';
 }
 
+// Flowering periods are free text ("Summer", "Late Spring–Early Summer",
+// "Early Summer (June–July)", "May–June, repeat flush late August–September"…)
+// rather than a clean month list, so matching a single month against them
+// needs to understand ranges and season names, not just substrings.
+const MONTH_ABBR = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+const MONTH_RE = /\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/gi;
+const DASH = '[\\s\\-\\u2010-\\u2015]';
+const SEASON_RE = new RegExp(
+  `\\b(early|mid|late)${DASH}+(early|mid|late)${DASH}*(spring|summer|autumn|fall|winter)\\b` +
+  `|\\b(early|mid|late)?${DASH}*(spring|summer|autumn|fall|winter)\\b`, 'gi');
+const SEASON_MONTHS = {winter:[11,0,1], spring:[2,3,4], summer:[5,6,7], autumn:[8,9,10], fall:[8,9,10]};
+const SEASON_QUALIFIER_MONTH = {
+  'early-winter':11,'mid-winter':0,'late-winter':1,
+  'early-spring':2,'mid-spring':3,'late-spring':4,
+  'early-summer':5,'mid-summer':6,'late-summer':7,
+  'early-autumn':8,'mid-autumn':9,'late-autumn':10,
+  'early-fall':8,'mid-fall':9,'late-fall':10,
+};
+
+function monthRange(startIdx, endIdx){
+  const out=[]; let i=startIdx;
+  while(true){ out.push(i); if(i===endIdx) break; i=(i+1)%12; }
+  return out;
+}
+
+function explicitMonths(segment){
+  const found=[]; MONTH_RE.lastIndex=0;
+  let m;
+  while((m=MONTH_RE.exec(segment))) found.push(MONTH_ABBR[m[1].slice(0,3).toLowerCase()]);
+  if(found.length===0) return null;
+  const out=new Set();
+  let i=0;
+  for(;i<found.length-1;i+=2) monthRange(found[i], found[i+1]).forEach(x=>out.add(x));
+  if(i<found.length) out.add(found[i]);
+  return out;
+}
+
+function seasonalMonths(segment){
+  const phrases=[]; SEASON_RE.lastIndex=0;
+  let m;
+  while((m=SEASON_RE.exec(segment))){
+    if(m[3]){
+      const a=SEASON_QUALIFIER_MONTH[`${m[1].toLowerCase()}-${m[3].toLowerCase()}`];
+      const b=SEASON_QUALIFIER_MONTH[`${m[2].toLowerCase()}-${m[3].toLowerCase()}`];
+      phrases.push(monthRange(a,b));
+    } else {
+      const qualifier=(m[4]||'').toLowerCase(), season=m[5].toLowerCase();
+      const qualified=SEASON_QUALIFIER_MONTH[`${qualifier}-${season}`];
+      phrases.push(qualified!==undefined ? [qualified] : SEASON_MONTHS[season]);
+    }
+  }
+  if(phrases.length===0) return null;
+  if(phrases.length===1) return new Set(phrases[0]);
+  const first=phrases[0], last=phrases[phrases.length-1];
+  return new Set(monthRange(first[0], last[last.length-1]));
+}
+
+function monthsForFlowering(flowering){
+  const result=new Set();
+  // The Notion sync has some mangled en-dashes (U+FFFD) in this field;
+  // treat them as a range separator like a normal dash for parsing.
+  flowering.replace(/�/g,'-').split(/[;,]/).forEach(segment=>{
+    const paren=segment.match(/\(([^)]*)\)/);
+    const explicit=(paren && explicitMonths(paren[1])) || explicitMonths(segment);
+    (explicit || seasonalMonths(segment) || []).forEach(x=>result.add(x));
+  });
+  return result;
+}
+
 function flowerMonthMatch(flowering, month){
   if(!flowering||!month) return true;
-  return flowering.toLowerCase().includes(month.toLowerCase());
+  const idx=flowerMonths.indexOf(month);
+  return monthsForFlowering(flowering).has(idx);
 }
 
 function render(){
