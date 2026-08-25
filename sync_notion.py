@@ -361,7 +361,12 @@ def inject_data(html_path, garden_data):
     )
 
     if DATA_RE.search(content):
-        new_content = DATA_RE.sub(replacement, content)
+        # Use a lambda, not the string directly: re.sub reinterprets backslash
+        # escapes (\n, \t, \1, ...) in a plain replacement string, which
+        # corrupts JSON payloads containing escaped newlines/tabs (e.g. from
+        # multi-line text properties). A function's return value is inserted
+        # verbatim, with no such reinterpretation.
+        new_content = DATA_RE.sub(lambda _m: replacement, content)
         with open(html_path, "w", encoding="utf-8") as f:
             f.write(new_content)
         print(f"  Updated {os.path.basename(html_path)}")
