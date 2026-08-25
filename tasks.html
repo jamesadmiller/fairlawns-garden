@@ -70,6 +70,9 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 .task-card-main{display:flex;gap:.75rem;padding:.9rem 1rem;align-items:flex-start;cursor:pointer}
 .task-card-main:hover{background:var(--ground)}
 .task-done-icon{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
+.task-done-btn{background:none;border:none;padding:0;margin:0;font-family:inherit;cursor:pointer;line-height:1;border-radius:4px}
+.task-done-btn:disabled{cursor:wait;opacity:.6}
+.task-done-btn.task-done-error{outline:2px solid #dc2626}
 .task-body{flex:1}
 .task-plant-line{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.3rem}
 .task-plant-name{font-family:'Lora',Georgia,serif;font-weight:600;font-size:1rem;color:var(--accent)}
@@ -139,11 +142,75 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 <!-- DATA:END -->
 <script>
 
+// Marking a task done writes back to Notion via a small Cloudflare Worker
+// proxy (it holds the Notion token; this page never sees it). Notion is
+// still the source of truth — the site's data only refreshes 3x/day, so
+// we keep a local override until the next sync catches up.
+const TASK_PROXY_URL = 'https://fairlawns-task-proxy.YOUR-SUBDOMAIN.workers.dev';
+const TASK_PROXY_KEY = 'REPLACE_WITH_SITE_KEY';
+const TASK_OVERRIDES_KEY = 'fairlawns-task-overrides';
+
+function getTaskOverrides(){
+  try { return JSON.parse(localStorage.getItem(TASK_OVERRIDES_KEY) || '{}'); } catch { return {}; }
+}
+function setTaskOverride(id, done){
+  try {
+    const o = getTaskOverrides(); o[id] = done;
+    localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o));
+  } catch {}
+}
+function applyTaskOverrides(taskList){
+  const o = getTaskOverrides();
+  let changed = false;
+  taskList.forEach(t=>{
+    if(!t.id || !Object.prototype.hasOwnProperty.call(o, t.id)) return;
+    if(o[t.id] === t.done){ delete o[t.id]; changed = true; }
+    else t.done = o[t.id];
+  });
+  if(changed){ try { localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o)); } catch {} }
+  return taskList;
+}
+
+async function postTaskDone(pageId, done){
+  const resp = await fetch(TASK_PROXY_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Site-Key': TASK_PROXY_KEY },
+    body: JSON.stringify({ pageId, done }),
+  });
+  const data = await resp.json().catch(()=>({ok:false}));
+  if(!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+}
+
+async function toggleDone(btn){
+  const task = taskById[btn.dataset.id];
+  if(!task || btn.disabled) return;
+  const newDone = !task.done;
+  btn.disabled = true;
+  btn.textContent = newDone ? '✅' : '⬜';
+  try {
+    await postTaskDone(task.id, newDone);
+    task.done = newDone;
+    setTaskOverride(task.id, newDone);
+    render();
+  } catch(e){
+    console.error('Failed to update task in Notion', e);
+    btn.textContent = task.done ? '✅' : '⬜';
+    btn.classList.add('task-done-error');
+    setTimeout(()=>btn.classList.remove('task-done-error'), 1500);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
 const DATA = JSON.parse(document.getElementById('garden-data').textContent);
 const tasks = DATA.tasks;
 const plants = DATA.plants;
 const plantMap = {};
 plants.forEach(p=>{ if(p.url) plantMap[p.url]={name:p.name, bed:p.bed, slug:p.slug}; });
+
+applyTaskOverrides(tasks);
+const taskById = {};
+tasks.forEach(t=>{ if(t.id) taskById[t.id]=t; });
 
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const TASK_TYPES = ['Prune','Feed','Mulch','Deadhead','Divide / Propagate','Plant','Water','Frost Protection','Harvest','Other'];
@@ -197,7 +264,9 @@ function renderTask(t){
   const notionLink=t.url?`<a class="notion-link" href="${t.url}" target="_blank" rel="noopener">View in Notion ↗</a>`:'';
   div.innerHTML=`
     <div class="task-card-main" onclick="toggleTask(this)">
-      <span class="task-done-icon">${done?'✅':'⬜'}</span>
+      ${t.id
+        ?`<button class="task-done-icon task-done-btn" data-id="${t.id}" title="${done?'Mark not done':'Mark done'}" onclick="event.stopPropagation();toggleDone(this)">${done?'✅':'⬜'}</button>`
+        :`<span class="task-done-icon">${done?'✅':'⬜'}</span>`}
       <div class="task-body">
         ${plantLine(t)}
         <div class="task-name-text">${escHtml((t.name||'').replace(/�/g,'—'))}</div>

@@ -1,0 +1,7 @@
+name = "fairlawns-task-proxy"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Secrets (never put these here — set them with `wrangler secret put <NAME>`):
+#   NOTION_TOKEN  — the Notion integration token, must have "Update content" capability
+#   SITE_KEY      — a random string the frontend also sends, to keep casual bots off the endpoint

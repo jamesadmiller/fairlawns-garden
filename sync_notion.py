@@ -298,6 +298,7 @@ def fetch_tasks(plant_url_map):
         plant_url = first_relation_url(p, "Plant") or first_relation_url(p, "Plants")
         instructions = text_prop(p, "Instructions")[:300].replace('\r', ' ').replace('\n', ' ')
         tasks.append({
+            "id":           p.get("id", ""),
             "name":         text_prop(p, "Task Name") or text_prop(p, "Name"),
             "type":         select_prop(p, "Task Type"),
             "month":        select_prop(p, "Month"),
