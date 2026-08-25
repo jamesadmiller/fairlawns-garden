@@ -510,6 +510,9 @@ function renderGrouping(g){
 const cardsList = document.getElementById('cards-list');
 const groupingsList = document.getElementById('groupings-list');
 
+// ── Filter system (operates on the underlying plant data, not the DOM) ──
+const state = {pos:'',ht:'',sun:'',dr:'',mo:'',q:''};
+
 function renderCards(){
   const toBuy = allPlants.filter(p => p.to_buy);
   cardsList.innerHTML = toBuy.map(renderCard).join('');
@@ -519,9 +522,6 @@ function renderCards(){
 
 groupingsList.innerHTML = groupings.map(renderGrouping).join('');
 renderCards();
-
-// ── Filter system (operates on the underlying plant data, not the DOM) ──
-const state = {pos:'',ht:'',sun:'',dr:'',mo:'',q:''};
 
 function applyFilters(){
   const cards = Array.from(document.querySelectorAll('.grid-wrap .card'));
