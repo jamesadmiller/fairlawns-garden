@@ -16,6 +16,7 @@ import mimetypes
 import os
 import re
 import sys
+import time
 from datetime import date, timezone, datetime
 from urllib.parse import urlparse
 
@@ -172,16 +173,23 @@ IMAGE_FETCH_HEADERS = {
 }
 
 
-def download_plant_image(url, slug):
+def download_plant_image(url, slug, max_retries=4):
     """Download a plant image (Notion's internal file URLs expire, so we
     fetch and commit it to the repo). Returns the relative path on success,
     or None on failure/no image."""
-    try:
-        resp = requests.get(url, timeout=30, headers=IMAGE_FETCH_HEADERS)
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"  WARNING: failed to download image for {slug}: {e}", file=sys.stderr)
-        return None
+    for attempt in range(max_retries + 1):
+        try:
+            resp = requests.get(url, timeout=30, headers=IMAGE_FETCH_HEADERS)
+            if resp.status_code == 429 and attempt < max_retries:
+                wait = float(resp.headers.get("Retry-After", 2 * (attempt + 1)))
+                print(f"  Rate limited fetching image for {slug}, retrying in {wait:.0f}s…", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            break
+        except Exception as e:
+            print(f"  WARNING: failed to download image for {slug}: {e}", file=sys.stderr)
+            return None
 
     os.makedirs(IMAGES_DIR, exist_ok=True)
     ext = guess_extension(url, resp.headers.get("Content-Type", ""))
