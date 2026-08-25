@@ -105,7 +105,7 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
   <div class="stat-chip"><strong id="stat-plants">—</strong>Plants</div>
   <div class="stat-chip"><strong id="stat-beds">—</strong>Beds</div>
   <div class="stat-chip"><strong id="stat-tasks">—</strong>Tasks</div>
-  <div class="stat-chip"><strong id="stat-aug">—</strong>August tasks</div>
+  <div class="stat-chip"><strong id="stat-month-count">—</strong><span id="stat-month-label">This month's tasks</span></div>
 </div>
 <div class="section-cards">
   <a class="section-card" href="plants.html">
@@ -130,58 +130,8 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
   </a>
 </div>
 <div class="this-month">
-  <h2 class="section-heading">🗓 August Tasks</h2>
-  <div class="task-row">
-      <span class="task-done">✅</span>
-      <div class="task-content">
-        <div class="task-name">Divide / Propagate — take cuttings to overwinter</div>
-        <div class="task-meta">
-          <span class="badge badge-type">Divide / Propagate</span>
-          <span class="badge badge-high">High</span>
-        </div>
-      </div>
-    </div>
-<div class="task-row">
-      <span class="task-done">✅</span>
-      <div class="task-content">
-        <div class="task-name">Divide / Propagate — take cuttings to overwinter</div>
-        <div class="task-meta">
-          <span class="badge badge-type">Divide / Propagate</span>
-          <span class="badge badge-high">High</span>
-        </div>
-      </div>
-    </div>
-<div class="task-row">
-      <span class="task-done">✅</span>
-      <div class="task-content">
-        <div class="task-name">Prune — minimal prune midsummer to early autumn only</div>
-        <div class="task-meta">
-          <span class="badge badge-type">Prune</span>
-          <span class="badge badge-high">High</span>
-        </div>
-      </div>
-    </div>
-<div class="task-row">
-      <span class="task-done">✅</span>
-      <div class="task-content">
-        <div class="task-name">Harvest — pick nectarines</div>
-        <div class="task-meta">
-          <span class="badge badge-type">Harvest</span>
-          <span class="badge badge-high">High</span>
-        </div>
-      </div>
-    </div>
-<div class="task-row">
-      <span class="task-done">✅</span>
-      <div class="task-content">
-        <div class="task-name">Deadhead — remove spent blooms</div>
-        <div class="task-meta">
-          <span class="badge badge-type">Deadhead</span>
-          <span class="badge badge-high">High</span>
-        </div>
-      </div>
-    </div>
-
+  <h2 class="section-heading" id="month-heading">🗓 This Month's Tasks</h2>
+  <div id="month-task-list"></div>
   <a class="view-more" href="tasks.html">View all tasks →</a>
 </div>
 <footer>Data from Notion · Last updated 2026-08-24</footer>
@@ -194,7 +144,38 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
   document.getElementById('stat-plants').textContent = d.plants.length;
   document.getElementById('stat-beds').textContent = d.beds.length;
   document.getElementById('stat-tasks').textContent = d.tasks.length;
-  document.getElementById('stat-aug').textContent = d.tasks.filter(t=>t.month==='August').length;
+
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const currentMonth = MONTHS[new Date().getMonth()];
+  const PRIORITY_RANK = {High:0, Medium:1, Low:2};
+
+  const monthTasks = d.tasks
+    .filter(t=>t.month===currentMonth)
+    .sort((a,b)=> (a.done?1:0)-(b.done?1:0) || (PRIORITY_RANK[a.priority]??3)-(PRIORITY_RANK[b.priority]??3));
+
+  document.getElementById('stat-month-count').textContent = monthTasks.length;
+  document.getElementById('stat-month-label').textContent = `${currentMonth} tasks`;
+  document.getElementById('month-heading').textContent = `🗓 ${currentMonth} Tasks`;
+
+  function escHtml(s){ const el=document.createElement('div'); el.textContent=s||''; return el.innerHTML; }
+  function prioClass(p){ return {High:'badge-high', Medium:'badge-medium', Low:'badge-low'}[p] || 'badge-type'; }
+
+  const listEl = document.getElementById('month-task-list');
+  if(monthTasks.length===0){
+    listEl.innerHTML = `<p class="card-desc">No tasks scheduled for ${currentMonth}.</p>`;
+  } else {
+    listEl.innerHTML = monthTasks.slice(0,6).map(t=>`
+      <div class="task-row">
+        <span class="task-done">${t.done?'✅':'⬜'}</span>
+        <div class="task-content">
+          <div class="task-name">${escHtml((t.name||'').replace(/�/g,'—'))}</div>
+          <div class="task-meta">
+            <span class="badge badge-type">${escHtml(t.type||'Other')}</span>
+            ${t.priority?`<span class="badge ${prioClass(t.priority)}">${escHtml(t.priority)}</span>`:''}
+          </div>
+        </div>
+      </div>`).join('');
+  }
 })();
 </script>
 </body>
