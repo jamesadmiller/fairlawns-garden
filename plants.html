@@ -121,20 +121,9 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 <div class="controls">
   <div class="search-wrap"><input id="search" type="search" placeholder="Search plants…" autocomplete="off"></div>
   <select id="filter-bed" class="filter-select"><option value="">All beds</option></select>
-  <select id="filter-type" class="filter-select">
-    <option value="">All types</option>
-    <option>Annual</option><option>Bulb</option><option>Climber</option>
-    <option>Perennial</option><option>Shrub</option><option>Tree</option>
-  </select>
-  <select id="filter-sun" class="filter-select">
-    <option value="">All sun levels</option>
-    <option>Full sun</option><option>Partial shade</option><option>Sun/partial shade</option>
-  </select>
-  <select id="filter-water" class="filter-select">
-    <option value="">All watering</option>
-    <option>Low</option><option>Low-moderate</option><option>Moderate</option>
-    <option>Moist</option><option>Regular</option>
-  </select>
+  <select id="filter-type" class="filter-select"><option value="">All types</option></select>
+  <select id="filter-sun" class="filter-select"><option value="">All sun levels</option></select>
+  <select id="filter-water" class="filter-select"><option value="">All watering</option></select>
   <select id="filter-flower" class="filter-select"><option value="">Any flowering month</option></select>
   <span class="count-label" id="plant-count">Loading…</span>
 </div>
@@ -158,9 +147,16 @@ const sunSel = document.getElementById('filter-sun');
 const waterSel = document.getElementById('filter-water');
 const flowerSel = document.getElementById('filter-flower');
 
-// Populate bed filter
+// Populate bed/type/sun/watering filters directly from the data, so a
+// new Notion select value shows up here without needing a code change.
+function populateFilter(sel, values){
+  values.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o)});
+}
 const allBeds = [...new Set(plants.map(p=>p.bed).filter(Boolean))].sort();
-allBeds.forEach(b=>{const o=document.createElement('option');o.value=b;o.textContent=b;bedSel.appendChild(o)});
+populateFilter(bedSel, allBeds);
+populateFilter(typeSel, [...new Set(plants.map(p=>p.type).filter(Boolean))].sort());
+populateFilter(sunSel, [...new Set(plants.map(p=>p.sun).filter(Boolean))].sort());
+populateFilter(waterSel, [...new Set(plants.map(p=>p.watering).filter(Boolean))].sort());
 
 // Populate flower month filter
 const flowerMonths = ['January','February','March','April','May','June','July','August','September','October','November','December'];
