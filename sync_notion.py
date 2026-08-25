@@ -164,12 +164,20 @@ def guess_extension(url, content_type):
     return ext or ".jpg"
 
 
+IMAGE_FETCH_HEADERS = {
+    # Some hosts (e.g. Wikimedia) reject requests without a UA identifying
+    # the client, per https://meta.wikimedia.org/wiki/User-Agent_policy
+    "User-Agent": "Mozilla/5.0 (compatible; FairlawnsGardenSync/1.0; "
+                  "+https://github.com/jamesadmiller/fairlawns-garden)",
+}
+
+
 def download_plant_image(url, slug):
     """Download a plant image (Notion's internal file URLs expire, so we
     fetch and commit it to the repo). Returns the relative path on success,
     or None on failure/no image."""
     try:
-        resp = requests.get(url, timeout=30)
+        resp = requests.get(url, timeout=30, headers=IMAGE_FETCH_HEADERS)
         resp.raise_for_status()
     except Exception as e:
         print(f"  WARNING: failed to download image for {slug}: {e}", file=sys.stderr)
