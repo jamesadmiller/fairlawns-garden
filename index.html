@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fairlawns Gardens</title>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 
 :root {
-  --bloom-a:#c8a96e;--bloom-b:#8b6f4e;--ground:#faf8f3;--ground2:#f0ece0;
-  --ink:#2d2416;--ink-soft:#6b5c40;--sage:#5a7a5a;--gold:#c8a96e;
-  --dusk:#7a6b8a;--rule:#d4c9b0;--accent:#8b6f4e;
+  --bloom-a:var(--gold);--bloom-b:var(--dusk);--ground:#F0EBE1;--ground2:#E6DFCF;
+  --ink:#1F1A0F;--ink-soft:#5A5040;--sage:#536048;--gold:#B8873A;
+  --dusk:#3C2E54;--rule:#D4CABC;--accent:var(--gold);--card-radius:6px;
 }
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ground:#1a1710;--ground2:#231f18;--ink:#ede8dc;--ink-soft:#9a9080;
-  --sage:#7a9068;--dusk:#a090c8;--bloom-a:#c89a50;--rule:#3a342a;--accent:#c89a50
+  --ground:#1A1710;--ground2:#231F18;--ink:#EDE8DC;--ink-soft:#9A9080;
+  --sage:#7A9068;--dusk:#A090C8;--gold:#C89A50;--rule:#3A342A
 }}
-[data-theme="dark"]{--ground:#1a1710;--ground2:#231f18;--ink:#ede8dc;--ink-soft:#9a9080;
-  --sage:#7a9068;--dusk:#a090c8;--bloom-a:#c89a50;--rule:#3a342a;--accent:#c89a50}
+[data-theme="dark"]{--ground:#1A1710;--ground2:#231F18;--ink:#EDE8DC;--ink-soft:#9A9080;
+  --sage:#7A9068;--dusk:#A090C8;--gold:#C89A50;--rule:#3A342A}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--ground);color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans-serif;
   font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -27,7 +27,7 @@ a:hover{text-decoration:underline}
 
 .site-nav{display:flex;align-items:center;gap:1rem;padding:.8rem 1.5rem;background:var(--ink);
   position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.3)}
-.nav-brand{font-family:'Lora',Georgia,serif;font-size:1rem;font-weight:600;color:var(--bloom-a);
+.nav-brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:1rem;font-weight:600;color:var(--bloom-a);
   text-decoration:none;white-space:nowrap}
 .nav-links{display:flex;gap:.25rem;margin-left:auto;flex-wrap:wrap}
 .nav-link{color:#c8b89a;text-decoration:none;font-size:.76rem;font-weight:500;
@@ -48,7 +48,7 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 .hero{padding:clamp(2.5rem,6vw,5rem) clamp(1.5rem,5vw,3rem) 2rem;max-width:860px}
 .hero-eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
   color:var(--sage);margin-bottom:1rem}
-.hero h1{font-family:'Lora',Georgia,serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:600;
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;
   color:var(--ink);line-height:1.15;margin-bottom:.75rem}
 .hero h1 span{color:var(--bloom-a)}
 .hero-tagline{font-size:1.05rem;color:var(--ink-soft);max-width:52ch}
@@ -59,17 +59,17 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 .stat-chip strong{color:var(--ink);font-size:1.15rem;display:block}
 .section-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:1rem;padding:2rem clamp(1.5rem,5vw,3rem)}
-.section-card{background:var(--ground2);border:1px solid var(--rule);border-radius:12px;
+.section-card{background:var(--ground2);border:1px solid var(--rule);border-radius:var(--card-radius);
   padding:1.5rem;cursor:pointer;text-decoration:none;color:inherit;
   transition:transform .15s,box-shadow .15s,border-color .15s;display:block}
-.section-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1);
+.section-card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.10);
   border-color:var(--bloom-a);text-decoration:none}
 .card-icon{font-size:2rem;margin-bottom:.75rem;display:block}
-.card-title{font-family:'Lora',Georgia,serif;font-size:1.15rem;font-weight:600;
+.card-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:400;
   color:var(--ink);margin-bottom:.4rem}
 .card-desc{font-size:.85rem;color:var(--ink-soft);line-height:1.5}
 .this-month{padding:0 clamp(1.5rem,5vw,3rem) 2rem}
-.section-heading{font-family:'Lora',Georgia,serif;font-size:1.35rem;font-weight:600;
+.section-heading{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:300;
   color:var(--ink);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--bloom-a)}
 .task-row{display:flex;gap:.75rem;align-items:flex-start;padding:.85rem 0;
   border-bottom:1px solid var(--rule)}
@@ -80,7 +80,7 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 .task-done-btn.task-done-error{outline:2px solid #dc2626}
 .task-content{flex:1}
 .task-plant-line{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.25rem}
-.task-plant-name{font-family:'Lora',Georgia,serif;font-weight:600;font-size:1rem;color:var(--accent)}
+.task-plant-name{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:1rem;color:var(--accent)}
 .task-plant-name:hover{text-decoration:underline}
 .task-bed-pill{font-size:.72rem;color:var(--ink-soft);background:var(--ground2);
   border:1px solid var(--rule);border-radius:20px;padding:.1rem .6rem;white-space:nowrap}
@@ -89,9 +89,9 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 .badge{display:inline-block;padding:.2rem .55rem;border-radius:4px;font-size:.72rem;
   font-weight:600;letter-spacing:.02em}
 .badge-type{background:var(--ground2);color:var(--ink-soft);border:1px solid var(--rule)}
-.badge-high{background:#fee2e2;color:#991b1b}
-.badge-medium{background:#fef3c7;color:#92400e}
-.badge-low{background:#dcfce7;color:#166534}
+.badge-high{background:#F0DCD4;color:#8B3A1E}
+.badge-medium{background:#F5E8C8;color:#6B4810}
+.badge-low{background:#DAE8D0;color:#2E5020}
 .view-more{display:inline-block;margin-top:1rem;font-size:.85rem;color:var(--accent);
   font-weight:500;text-decoration:none}
 .view-more:hover{text-decoration:underline}

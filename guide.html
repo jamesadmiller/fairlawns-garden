@@ -9,18 +9,43 @@
 :root {
   --ground:   #F0EBE1; --ground2:  #E6DFCF; --ink: #1F1A0F; --ink-soft: #5A5040;
   --sage:     #536048; --dusk:     #3C2E54; --gold: #B8873A; --rule: #D4CABC;
+  --bloom-a: var(--gold); --bloom-b: var(--dusk); --accent: var(--gold);
   --chip-hardy-bg:#DAE8D0; --chip-hardy-fg:#2E5020;
   --chip-half-bg:#F5E8C8;  --chip-half-fg:#6B4810;
   --card-radius:6px;
 }
-@media (prefers-color-scheme:dark) { :root {
+@media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) {
   --ground:#1A1710; --ground2:#231F18; --ink:#EDE8DC; --ink-soft:#9A9080;
   --sage:#7A9068; --dusk:#A090C8; --gold:#C89A50; --rule:#3A342A;
   --chip-hardy-bg:#1E3018; --chip-hardy-fg:#90C878;
   --chip-half-bg:#3A2C10; --chip-half-fg:#D8A850;
 }}
+[data-theme="dark"]{
+  --ground:#1A1710; --ground2:#231F18; --ink:#EDE8DC; --ink-soft:#9A9080;
+  --sage:#7A9068; --dusk:#A090C8; --gold:#C89A50; --rule:#3A342A;
+  --chip-hardy-bg:#1E3018; --chip-hardy-fg:#90C878;
+  --chip-half-bg:#3A2C10; --chip-half-fg:#D8A850;
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;font-size:20px;line-height:1.65;-webkit-font-smoothing:antialiased}
+
+/* Shared site navigation (same component used on index/plants/tasks/beds/plant) */
+.site-nav{display:flex;align-items:center;gap:1rem;padding:.8rem 1.5rem;background:var(--ink);
+  position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.nav-brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:1rem;font-weight:600;color:var(--bloom-a);
+  text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:.25rem;margin-left:auto;flex-wrap:wrap}
+.nav-link{color:#c8b89a;text-decoration:none;font-size:.76rem;font-weight:500;
+  padding:.35rem .65rem;border-radius:5px;transition:background .15s,color .15s;
+  letter-spacing:.04em;text-transform:uppercase}
+.nav-link:hover,.nav-link.active{background:rgba(200,169,110,.2);color:var(--bloom-a);text-decoration:none}
+.nav-toggle{display:none;background:none;border:none;color:#c8b89a;font-size:1.3rem;cursor:pointer;padding:.3rem}
+@media(max-width:640px){
+  .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;
+    background:var(--ink);padding:.5rem 1rem 1rem;gap:.1rem}
+  .site-nav.open .nav-links{display:flex}
+  .nav-toggle{display:block;margin-left:auto}
+}
 
 /* Header */
 .site-header{padding:clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,4rem) clamp(2rem,4vw,3.5rem);border-bottom:1px solid var(--rule);display:grid;grid-template-columns:1fr auto;gap:1.5rem 3rem;align-items:end}
@@ -168,13 +193,11 @@ body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans
 </style>
 </head>
 <body>
-<div style="background:#2d2416;padding:10px 24px;font-family:sans-serif;font-size:14px;display:flex;align-items:center;gap:1rem;">
-  <a href="index.html" style="color:#c8a96e;text-decoration:none;font-weight:500;">← Back to Fairlawns Gardens</a>
-  <span style="color:#6b5c40;font-size:12px;">|</span>
-  <a href="plants.html" style="color:#9a8a70;text-decoration:none;font-size:13px;">Plants</a>
-  <a href="tasks.html" style="color:#9a8a70;text-decoration:none;font-size:13px;">Tasks</a>
-  <a href="beds.html" style="color:#9a8a70;text-decoration:none;font-size:13px;">Beds</a>
-</div>
+<nav class="site-nav">
+  <a class="nav-brand" href="index.html">🌿 Fairlawns</a>
+  <div class="nav-links"><a href="plants.html" class="nav-link" >Plants</a><a href="tasks.html" class="nav-link" >Tasks</a><a href="beds.html" class="nav-link" >Beds</a><a href="guide.html" class="nav-link active" >New Plants Guide</a></div>
+  <button class="nav-toggle" onclick="this.closest('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
 
 <header class="site-header">
   <div>
