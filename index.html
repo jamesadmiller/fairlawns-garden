@@ -175,11 +175,11 @@ function applyTaskOverrides(taskList){
   if(changed){ try { localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o)); } catch {} }
   return taskList;
 }
-async function postTaskDone(pageId, done){
+async function postFieldUpdate(pageId, field, value){
   const resp = await fetch(TASK_PROXY_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'X-Site-Key': TASK_PROXY_KEY },
-    body: JSON.stringify({ pageId, done }),
+    body: JSON.stringify({ pageId, field, value }),
   });
   const data = await resp.json().catch(()=>({ok:false}));
   if(!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
@@ -210,7 +210,7 @@ async function postTaskDone(pageId, done){
     btn.disabled = true;
     btn.textContent = newDone ? '✅' : '⬜';
     try {
-      await postTaskDone(task.id, newDone);
+      await postFieldUpdate(task.id, 'done', newDone);
       task.done = newDone;
       setTaskOverride(task.id, newDone);
     } catch(e){

@@ -30,13 +30,14 @@ except ImportError:
 
 NOTION_TOKEN = os.environ.get("NOTION_TOKEN", "")
 NOTION_VERSION = "2022-06-28"
-BEDS_DB   = "4091d4c9-6ab4-4b03-a851-0445e0d1b618"
-PLANTS_DB = "d94180e9-c262-4e40-8814-8fed0bf25f11"
-TASKS_DB  = "4c8fd919-4605-48cc-aa56-3c15502ed925"
+BEDS_DB      = "4091d4c9-6ab4-4b03-a851-0445e0d1b618"
+PLANTS_DB    = "d94180e9-c262-4e40-8814-8fed0bf25f11"
+TASKS_DB     = "4c8fd919-4605-48cc-aa56-3c15502ed925"
+GROUPINGS_DB = "deb23399-e7f0-4ffc-baa1-17e1ba5d85e5"
 
 # Pages to update (relative to this script's directory)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-HTML_PAGES = ["index.html", "plants.html", "tasks.html", "beds.html", "plant.html"]
+HTML_PAGES = ["index.html", "plants.html", "tasks.html", "beds.html", "plant.html", "guide.html"]
 IMAGES_DIR = os.path.join(SCRIPT_DIR, "images", "plants")
 
 # ── Notion API ────────────────────────────────────────────────────────────────
@@ -260,6 +261,7 @@ def fetch_plants(bed_url_map):
             keep_images.add(os.path.basename(image))
 
         plants.append({
+            "id":            p.get("id", ""),
             "name":          name,
             "slug":          slug,
             "latin":         text_prop(p, "Latin Name"),
@@ -283,11 +285,36 @@ def fetch_plants(bed_url_map):
             "notes":         notes,
             "image":         image,
             "url":           page_url(p),
+            "to_buy":          checkbox_prop(p, "To Buy"),
+            "border_position": text_prop(p, "Border Position"),
+            "drought":         select_prop(p, "Drought Tolerance"),
+            "hardiness":       text_prop(p, "Hardiness"),
+            "suppliers":       text_prop(p, "Suppliers"),
         })
     plants.sort(key=lambda pl: pl.get("name", ""))
     cleanup_orphaned_images(keep_images)
     print(f"  \u2192 {len(plants)} plants")
     return plants
+
+
+def fetch_groupings(plant_url_map):
+    print("Fetching plant groupings\u2026")
+    pages = query_database(GROUPINGS_DB)
+    groupings = []
+    for p in pages:
+        member_urls = relation_urls(p, "Plants")
+        members = [plant_url_map[u] for u in member_urls if u in plant_url_map]
+        groupings.append({
+            "name":            text_prop(p, "Name"),
+            "conditions":      text_prop(p, "Conditions"),
+            "context":         text_prop(p, "Context").replace('\r', ' ').replace('\n', ' '),
+            "works_alongside": text_prop(p, "Works Alongside").replace('\r', ' ').replace('\n', ' '),
+            "plants":          members,
+            "url":             page_url(p),
+        })
+    groupings.sort(key=lambda g: g.get("name", ""))
+    print(f"  \u2192 {len(groupings)} groupings")
+    return groupings
 
 
 def fetch_tasks(plant_url_map):
@@ -355,14 +382,17 @@ def main():
 
     plants = fetch_plants(bed_url_map)
     plant_url_map = {pl["url"]: pl["name"] for pl in plants}
+    plant_url_info_map = {pl["url"]: {"name": pl["name"], "slug": pl["slug"]} for pl in plants}
 
     tasks = fetch_tasks(plant_url_map)
+    groupings = fetch_groupings(plant_url_info_map)
 
     garden_data = {
-        "updated": str(date.today()),
-        "beds":    beds,
-        "plants":  plants,
-        "tasks":   tasks,
+        "updated":   str(date.today()),
+        "beds":      beds,
+        "plants":    plants,
+        "tasks":     tasks,
+        "groupings": groupings,
     }
 
     data_path = os.path.join(SCRIPT_DIR, "garden-data.json")

@@ -86,6 +86,17 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
   margin-bottom:.15rem}
 .info-val{color:var(--ink)}
 .prose{font-size:.9rem;color:var(--ink);white-space:pre-line}
+.task-list-plain{display:flex;flex-direction:column}
+.task-row-plain{display:flex;gap:.7rem;align-items:flex-start;padding:.6rem 0;border-bottom:1px solid var(--rule)}
+.task-row-plain:last-child{border-bottom:none}
+.task-done-icon{font-size:1.05rem;flex-shrink:0;margin-top:.05rem}
+.task-done-btn{background:none;border:none;padding:0;margin:0;font-family:inherit;cursor:pointer;line-height:1;border-radius:4px}
+.task-done-btn:disabled{cursor:wait;opacity:.6}
+.task-done-btn.task-done-error{outline:2px solid #dc2626}
+.task-row-body{flex:1}
+.task-row-name{font-size:.88rem;color:var(--ink);margin-bottom:.3rem}
+.task-row-meta{display:flex;gap:.4rem;flex-wrap:wrap}
+.task-row-meta .badge{display:inline-block;padding:.18rem .5rem;border-radius:4px;font-size:.72rem;font-weight:600}
 .confidence-note{font-size:.78rem;color:var(--ink-soft);margin-top:.6rem;font-style:italic}
 .detail-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.4rem}
 .detail-links a{font-size:.85rem;font-weight:500}
@@ -109,8 +120,70 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 <!-- DATA:END -->
 <script>
 
+// Marking a task done writes back to Notion via a small Cloudflare Worker
+// proxy (it holds the Notion token; this page never sees it). Notion is
+// still the source of truth — the site's data only refreshes 3x/day, so
+// we keep a local override until the next sync catches up.
+const TASK_PROXY_URL = 'https://fairlawns-task-proxy.jamieadmiller.workers.dev';
+const TASK_PROXY_KEY = '5d9f7dbee2ce514417a724bb0bae0bca';
+const TASK_OVERRIDES_KEY = 'fairlawns-task-overrides';
+
+function getTaskOverrides(){
+  try { return JSON.parse(localStorage.getItem(TASK_OVERRIDES_KEY) || '{}'); } catch { return {}; }
+}
+function setTaskOverride(id, value){
+  try {
+    const o = getTaskOverrides(); o[id] = value;
+    localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o));
+  } catch {}
+}
+function applyTaskOverrides(taskList){
+  const o = getTaskOverrides();
+  let changed = false;
+  taskList.forEach(t=>{
+    if(!t.id || !Object.prototype.hasOwnProperty.call(o, t.id)) return;
+    if(o[t.id] === t.done){ delete o[t.id]; changed = true; }
+    else t.done = o[t.id];
+  });
+  if(changed){ try { localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o)); } catch {} }
+  return taskList;
+}
+async function postFieldUpdate(pageId, field, value){
+  const resp = await fetch(TASK_PROXY_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Site-Key': TASK_PROXY_KEY },
+    body: JSON.stringify({ pageId, field, value }),
+  });
+  const data = await resp.json().catch(()=>({ok:false}));
+  if(!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+}
+
+const taskById = {};
+async function toggleDone(btn){
+  const task = taskById[btn.dataset.id];
+  if(!task || btn.disabled) return;
+  const newDone = !task.done;
+  btn.disabled = true;
+  btn.textContent = newDone ? '✅' : '⬜';
+  try {
+    await postFieldUpdate(task.id, 'done', newDone);
+    task.done = newDone;
+    setTaskOverride(task.id, newDone);
+    btn.title = newDone ? 'Mark not done' : 'Mark done';
+  } catch(e){
+    console.error('Failed to update task in Notion', e);
+    btn.textContent = task.done ? '✅' : '⬜';
+    btn.classList.add('task-done-error');
+    setTimeout(()=>btn.classList.remove('task-done-error'), 1500);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
 const DATA = JSON.parse(document.getElementById('garden-data').textContent);
 const plants = DATA.plants || [];
+const tasks = DATA.tasks || [];
+applyTaskOverrides(tasks);
 const content = document.getElementById('content');
 
 function escHtml(s){if(!s)return '';const d=document.createElement('div');d.textContent=s;return d.innerHTML}
@@ -148,6 +221,28 @@ function renderPlant(p){
       ${p.propagation ? `<div class="info-item"><div class="info-label">Division / Propagation</div><div class="prose">${escHtml(p.propagation)}</div></div>` : ''}
     </div>` : '';
 
+  const relatedTasks = tasks.filter(t => t.plant_url && t.plant_url === p.url);
+  relatedTasks.forEach(t => { if(t.id) taskById[t.id] = t; });
+  const tasksSection = relatedTasks.length ? `
+    <div class="info-section">
+      <h2>Tasks</h2>
+      <div class="task-list-plain">
+        ${relatedTasks.map(t => `
+          <div class="task-row-plain">
+            ${t.id
+              ? `<button class="task-done-icon task-done-btn" data-id="${t.id}" title="${t.done?'Mark not done':'Mark done'}" onclick="toggleDone(this)">${t.done?'✅':'⬜'}</button>`
+              : `<span class="task-done-icon">${t.done?'✅':'⬜'}</span>`}
+            <div class="task-row-body">
+              <div class="task-row-name">${escHtml((t.name||'').replace(/�/g,'—'))}</div>
+              <div class="task-row-meta">
+                ${t.month ? `<span class="badge" style="background:var(--ground);border:1px solid var(--rule);color:var(--ink-soft)">${escHtml(t.month)}</span>` : ''}
+                ${t.priority ? `<span class="badge" style="background:${t.priority==='High'?'#fee2e2':t.priority==='Medium'?'#fef3c7':'#dcfce7'};color:${t.priority==='High'?'#991b1b':t.priority==='Medium'?'#92400e':'#166534'}">${escHtml(t.priority)}</span>` : ''}
+              </div>
+            </div>
+          </div>`).join('')}
+      </div>
+    </div>` : '';
+
   const wildlifeSection = p.wildlife ? `
     <div class="info-section">
       <h2>Wildlife value</h2>
@@ -180,6 +275,7 @@ function renderPlant(p){
     </div>
     ${growingInfo ? `<div class="info-section"><h2>Growing information</h2><div class="info-grid">${growingInfo}</div></div>` : ''}
     ${careSection}
+    ${tasksSection}
     ${wildlifeSection}
     ${notesSection}
     ${links.length ? `<div class="detail-links">${links.join('')}</div>` : ''}

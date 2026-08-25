@@ -55,6 +55,12 @@ body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans
 .card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
 .card:hover .card-img img{transform:scale(1.04)}
 .card-img-credit{position:absolute;bottom:0;right:0;font-size:9px;background:rgba(0,0,0,.45);color:rgba(255,255,255,.75);padding:2px 5px;letter-spacing:.03em}
+.buy-toggle{position:absolute;top:8px;right:8px;background:rgba(31,26,15,.72);color:#fff;border:none;
+  border-radius:20px;padding:5px 11px;font-size:12px;font-family:'Jost',sans-serif;cursor:pointer;
+  display:flex;align-items:center;gap:4px;transition:background .15s}
+.buy-toggle:hover{background:rgba(31,26,15,.9)}
+.buy-toggle:disabled{cursor:wait;opacity:.7}
+.buy-toggle.buy-toggle-error{outline:2px solid #dc2626}
 
 /* Card body */
 .card-body{padding:1.15rem 1.3rem 0;flex:1;display:flex;flex-direction:column}
@@ -178,7 +184,7 @@ body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans
   </div>
   <div class="header-meta">
     <span class="header-season">Autumn &amp; Spring planting</span>
-    <span class="header-count">23 varieties · UK nurseries</span>
+    <span class="header-count" id="header-count">— varieties · UK nurseries</span>
   </div>
 </header>
 
@@ -250,419 +256,7 @@ body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans
   </div>
 </div>
 <main class="grid-wrap"><div class="f-no-results" id="f-no-results">No plants match these filters.</div>
-
-<!-- ── 1. Geranium Rozanne ── -->
-<article class="card" style="--bloom-a:#7B64C2;--bloom-b:#A48ED8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Geranium_Rozanne_11zz.jpg?width=600" alt="Geranium 'Rozanne'" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Geranium 'Rozanne'</h2><span class="card-latin">Geranium 'Gerwat'</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">● Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 40–50 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Front · Middle</span></div>
-    <p class="card-desc">One of the most reliable garden perennials available. Saucer-shaped violet-blue flowers with a white eye bloom almost continuously from June through October — an extraordinary season. Spreads gently to fill gaps between shrubs. Pairs beautifully with Roses, softening planting edges. Does very well once established in dry conditions.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Ground cover</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=geranium+rozanne&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.thompson-morgan.com/search-results?q=geranium+rozanne" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=geranium+rozanne" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-
-<!-- ── 2. Achillea Terracotta ── -->
-<article class="card" style="--bloom-a:#C8703A;--bloom-b:#E0A870;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Achillea_Terracotta_2zz.jpg?width=600" alt="Achillea 'Terracotta'" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Achillea 'Terracotta'</h2><span class="card-latin">Yarrow</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">● Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–80 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle</span></div>
-    <p class="card-desc">Flat-headed flower plates in warm apricot-orange that weather and bleach to a soft buff as summer progresses — beautiful in a naturalistic scheme with Roses. Feathery aromatic foliage. One of the most drought-tolerant hardy perennials available, thriving in poor, well-drained soil. Works wonderfully cutting through the rounded forms of Hydrangea and Rhododendron.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Butterflies</span><span class="w-tag">Seed heads for birds</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=achillea+terracotta&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=achillea+terracotta" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=achillea+terracotta" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-
-<!-- ── 3. Nepeta Six Hills Giant ── -->
-<article class="card" style="--bloom-a:#8070B8;--bloom-b:#B0A0D0;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nepeta_x_faassenii_A.jpg?width=600" alt="Nepeta 'Six Hills Giant'" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Nepeta 'Six Hills Giant'</h2><span class="card-latin">Catmint</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H7 Fully Hardy</span><span class="chip-drought excellent">● Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Front · Middle</span></div>
-    <p class="card-desc">The classic cottage garden edging plant, and one of the most reliably drought-tolerant perennials there is. Soft silver-grey foliage and a long froth of lavender-blue spikes that, cut back after first flowering, repeat well into autumn. Quintessentially English in feel. A natural companion for Roses — traditionally planted at the base of standard roses.</p>
-    <div class="wildlife-row"><span class="w-tag">Bumblebees</span><span class="w-tag">Honey bees</span><span class="w-tag">Butterflies</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="5,6,7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.thompson-morgan.com/search-results?q=nepeta+catmint" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=nepeta" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.rhsplants.co.uk/search/_/search.nepeta/sort.0/" target="_blank" rel="noopener">RHS online shop</a></div>
-</article>
-
-<!-- ── 4. Eryngium tripartitum ── -->
-<article class="card" style="--bloom-a:#3E7CA8;--bloom-b:#7AAFC8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eryngium_July_2011-1.jpg?width=600" alt="Eryngium Sea Holly" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Eryngium × tripartitum</h2><span class="card-latin">Sea Holly</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought excellent">● Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle</span></div>
-    <p class="card-desc">Architectural steel-blue thistle-like flowers on steel-blue branching stems — one of the most structurally distinctive plants for a summer border. Thrives in poor, stony soil and withstands drought exceptionally well. Provides a cool, spiky contrast to the large rounded blooms of Hydrangea and the lush texture of Rhododendron. Striking dried and left through winter.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Winter structure</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=eryngium&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=eryngium" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=eryngium" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-
-<!-- ── 5. Knautia macedonica ── -->
-<article class="card" style="--bloom-a:#8C2848;--bloom-b:#C05070;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Knautia_macedonica_JRVdH_01.jpg?width=600" alt="Knautia macedonica" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Knautia macedonica</h2><span class="card-latin">Crimson Scabious</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought excellent">● Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–80 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle</span></div>
-    <p class="card-desc">Deep crimson pincushion flowers on wiry branching stems from June through October, dancing in any breeze. One of the best cottage garden plants for butterflies and one of the longest-flowering perennials available. Short-lived but self-seeds reliably. The rich colour provides a striking contrast to the pinks and whites of Peonies earlier in summer, then holds colour into autumn.</p>
-    <div class="wildlife-row"><span class="w-tag">Butterflies</span><span class="w-tag">Bees</span><span class="w-tag">Self-seeds</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=knautia+macedonica&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.thompson-morgan.com/search-results?q=knautia+macedonica" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://www.bethchatto.co.uk/search.php?q=knautia" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
-<!-- ── 6. Salvia nemorosa Caradonna ── -->
-<article class="card" style="--bloom-a:#3A2870;--bloom-b:#7060A8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salvia_nemorosa_'Caradonna'_with_bee.jpg?width=600" alt="Salvia nemorosa 'Caradonna'" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Salvia nemorosa 'Caradonna'</h2><span class="card-latin">Hardy Meadow Sage</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">● Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 50–70 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Front · Middle</span></div>
-    <p class="card-desc">Unlike the tender salvias already in the garden, this is fully frost-hardy and will return reliably each year without protection. Dark near-black stems carry deep violet flower spikes — a more architectural, upright habit than the tender varieties. Cut back after first flush and it repeats well. Superb at the front of a border threading through Roses and Peonies.</p>
-    <div class="wildlife-row"><span class="w-tag">Bumblebees</span><span class="w-tag">Honey bees</span><span class="w-tag">Long-tongue insects</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://hayloft.co.uk/catalogsearch/result/?q=salvia+caradonna" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.farmergracy.co.uk/search?q=salvia+caradonna&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=salvia+caradonna" target="_blank" rel="noopener">Sarah Raven</a></div>
-</article>
-
-<!-- ── 7. Geum Totally Tangerine ── -->
-<article class="card" style="--bloom-a:#D4702A;--bloom-b:#F0A860;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Geum_'Prince_of_Orange'_kz01.jpg?width=600" alt="Geum orange cultivar" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons (similar cultivar)</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Geum 'Totally Tangerine'</h2><span class="card-latin">Avens</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–80 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 40–50 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Front · Middle</span></div>
-    <p class="card-desc">Apricot-orange cup-shaped flowers on tall wiry stems, flowering from late May well into summer — one of the earliest perennials in the border after Peonies. A prolific flowerer and a long-standing favourite for English country garden borders. The warm apricot tones work beautifully with the salmon pinks of certain Roses and echo the palette of Azaleas.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Early season</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="5,6,7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=geum+totally+tangerine&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.thompson-morgan.com/search-results?q=geum+totally+tangerine" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=geum+totally+tangerine" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-
-<!-- ── 8. Helenium Sahin's Early Flowerer ── -->
-<article class="card" style="--bloom-a:#B83E18;--bloom-b:#E07838;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Helenium_autumnale,_2022-08-26,_Schenley_Park,_01.jpg?width=600" alt="Helenium" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Helenium 'Sahin's Early Flowerer'</h2><span class="card-latin">Sneezeweed</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 90–120 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Rich burnt-orange daisy flowers with a prominent dark central boss, one of the finest late-summer perennials. Starts flowering in July — earlier than most Heleniums — carrying warm tones into autumn. Provides colour precisely when summer shrubs are quietening down. Combines warmly with Achillea and pairs boldly with the cool blues of Hydrangea paniculata.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Butterflies</span><span class="w-tag">Late season</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=helenium&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=helenium" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://www.bethchatto.co.uk/search.php?q=helenium" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
-<!-- ── 9. Echinops Veitch's Blue ── -->
-<article class="card" style="--bloom-a:#365880;--bloom-b:#5888A8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Echinops_ritro_subsp._ruthenicus_sl4.jpg?width=600" alt="Echinops ritro Globe Thistle" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Echinops ritro 'Veitch's Blue'</h2><span class="card-latin">Globe Thistle</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">● Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 90–120 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Perfect steel-blue spheres on tall silver-white stems — one of the most structurally distinctive perennials for a summer border and arguably the best plant available for attracting bees. Extremely drought tolerant; thrives in poor soil in full sun. The upright architectural form provides strong contrast to the rounded flower heads of Hydrangea. Leaves through winter.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees (exceptional)</span><span class="w-tag">Goldfinches</span><span class="w-tag">Winter structure</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.thompson-morgan.com/search-results?q=echinops" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=echinops" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.bethchatto.co.uk/search.php?q=echinops" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
-<!-- ── 10. Verbena bonariensis ── -->
-<article class="card" style="--bloom-a:#7040A0;--bloom-b:#A070C8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Verbena_bonariensis_(1).jpg?width=600" alt="Verbena bonariensis" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Verbena bonariensis</h2><span class="card-latin">Tall Verbena</span></div></div>
-    <div class="card-chips"><span class="chip half">H3 Half-hardy</span><span class="chip-drought excellent">● Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 120–180 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Tall, airy wands of tiny bright purple flowers that float above everything else in the border — one of the great see-through plants for layering in front of shrubs. Half-hardy itself but self-seeds prolifically and freely in most UK gardens, so effectively permanent once established. Irreplaceable for butterflies. Plant in groups of 5 or more for the full effect.</p>
-    <div class="wildlife-row"><span class="w-tag">Butterflies (exceptional)</span><span class="w-tag">Bees</span><span class="w-tag">Self-seeds</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9,10,11"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=verbena+bonariensis&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.thompson-morgan.com/search-results?q=verbena+bonariensis" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=verbena+bonariensis" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-
-<!-- ── 11. Penstemon Garnet ── -->
-<article class="card" style="--bloom-a:#722040;--bloom-b:#A84868;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Penstemon_calycosus_flower.jpg?width=600" alt="Penstemon tubular flowers" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons (similar species)</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Penstemon 'Garnet'</h2><span class="card-latin">'Andenken an Friedrich Hahn'</span></div></div>
-    <div class="card-chips"><span class="chip half">H4 Half-hardy</span><span class="chip-drought excellent">◐ Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Middle</span></div>
-    <p class="card-desc">Deep wine-red tubular flowers carried in tall spikes from June through to the first hard frosts — one of the longest-flowering border plants available. One of the hardier Penstemons and survives most UK winters with a light mulch; take cuttings in August as insurance (the same method as your salvias). A classic English country garden plant that complements Roses beautifully.</p>
-    <div class="wildlife-row"><span class="w-tag">Bumblebees</span><span class="w-tag">Long-tongue insects</span><span class="w-tag">Long season</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9,10,11"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://hayloft.co.uk/catalogsearch/result/?q=penstemon+garnet" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.thompson-morgan.com/search-results?q=penstemon+garnet" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://www.farmergracy.co.uk/search?q=penstemon+garnet&type=product" target="_blank" rel="noopener">Farmer Gracy</a></div>
-</article>
-
-<!-- ── 12. Scabiosa Butterfly Blue ── -->
-<article class="card" style="--bloom-a:#7888C0;--bloom-b:#A8B4D8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scabiosa_columbaria_Butterfly_Blue_2.jpg?width=600" alt="Scabiosa 'Butterfly Blue'" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Scabiosa 'Butterfly Blue'</h2><span class="card-latin">Pincushion Flower</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–40 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Front</span></div>
-    <p class="card-desc">Periwinkle-blue pincushion flowers on long delicate stems, blooming from June right through September with deadheading. A small, neat plant — perfect for the front of borders and for weaving in and out of the feet of Roses and Peonies. Among the best plants available for attracting butterflies and a timeless feature of the English country garden. Compact and non-invasive.</p>
-    <div class="wildlife-row"><span class="w-tag">Butterflies</span><span class="w-tag">Bees</span><span class="w-tag">Front-of-border</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.thompson-morgan.com/search-results?q=scabiosa+butterfly+blue" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=scabiosa+butterfly+blue" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.sarahraven.com/search?q=scabiosa+butterfly+blue" target="_blank" rel="noopener">Sarah Raven</a></div>
-</article>
-
-<!-- ── 13. Persicaria Firetail ── -->
-<article class="card" style="--bloom-a:#B82020;--bloom-b:#E05050;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Persicaria_amplexicaulis_(7788855230).jpg?width=600" alt="Persicaria amplexicaulis" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Persicaria amplexicaulis 'Firetail'</h2><span class="card-latin">Red Bistort</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 100–120 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Bright crimson poker-like spikes held upright above bold, broad foliage from July right through to the first hard frosts. One of the longest-flowering and most trouble-free plants available — virtually no maintenance. Provides essential bulk and late colour as summer perennials wind down. Excellent in front of large shrubs like Hydrangea and Rhododendron.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Very long season</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9,10,11"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=persicaria+amplexicaulis&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=persicaria+amplexicaulis" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.bethchatto.co.uk/search.php?q=persicaria+amplexicaulis" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
-<!-- ── 14. Veronicastrum Fascination ── -->
-<article class="card" style="--bloom-a:#7070B0;--bloom-b:#A8A8D0;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Veronicastrum_virginicum02.jpg?width=600" alt="Veronicastrum virginicum" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Veronicastrum virginicum 'Fascination'</h2><span class="card-latin">Culver's Root</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 150–180 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Rear</span></div>
-    <p class="card-desc">Tall, elegant candelabra of pale lilac spires rising above whorled dark foliage — one of the most architectural border plants available and superb for providing vertical structure at the rear of a bed. Exceptional for bees. The upright form reads beautifully against the rounded flowering heads of Hydrangea. Does not need staking despite its height.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees (exceptional)</span><span class="w-tag">Hoverflies</span><span class="w-tag">Architectural</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=veronicastrum&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=veronicastrum" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://www.bethchatto.co.uk/search.php?q=veronicastrum" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
-<!-- ── 15. Rudbeckia Goldsturm ── -->
-<article class="card" style="--bloom-a:#CC9010;--bloom-b:#F0C030;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rudbeckia_fulgida_'Goldsturm'_(d.j.b.)_01.jpg?width=600" alt="Rudbeckia fulgida 'Goldsturm'" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Rudbeckia fulgida 'Goldsturm'</h2><span class="card-latin">Black-eyed Susan</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">● Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–70 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Middle</span></div>
-    <p class="card-desc">Masses of bright golden-yellow daisies with a dark central eye, flowering in August when the garden can feel tired — one of the most valuable late-season perennials for English gardens. Long-lasting, drought tolerant once established, and remarkably trouble-free. The seed heads left through winter provide food for Goldfinches and structural interest in the bare border.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Butterflies</span><span class="w-tag">Goldfinches (seed)</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.thompson-morgan.com/search-results?q=rudbeckia+goldsturm" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=rudbeckia+goldsturm" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.farmergracy.co.uk/search?q=rudbeckia+goldsturm&type=product" target="_blank" rel="noopener">Farmer Gracy</a></div>
-</article>
-
-<!-- ── 16. Campanula lactiflora ── -->
-<article class="card" style="--bloom-a:#484898;--bloom-b:#7070B8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Campanula_lactiflora_'Senior'._Locatie,_Tuinen_van_Mien_Ruys.jpg?width=600" alt="Campanula lactiflora" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Campanula lactiflora 'Prichard's Variety'</h2><span class="card-latin">Milky Bellflower</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 100–150 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Rich violet-blue bellflowers in large clusters on tall branching stems — a stately, old-fashioned plant that belongs at the heart of an English country garden. Pairs beautifully with Roses and Peonies, and bridges the gap between early summer and midsummer. May need light staking in exposed positions. Cut back after flowering for a second, lighter flush in autumn.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Classic cottage</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://hayloft.co.uk/catalogsearch/result/?q=campanula+lactiflora" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.thompson-morgan.com/search-results?q=campanula+lactiflora" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://www.bethchatto.co.uk/search.php?q=campanula+lactiflora" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
-<!-- ── 17. Sanguisorba Tanna ── -->
-<article class="card" style="--bloom-a:#6A1028;--bloom-b:#A03050;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sanguisorba_officinalis_2.JPG?width=600" alt="Sanguisorba officinalis" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Sanguisorba officinalis 'Tanna'</h2><span class="card-latin">Compact Burnet</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Good</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–40 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Front</span></div>
-    <p class="card-desc">Deep crimson-burgundy bobbin-like flower heads that nod gently on wiry stems — one of the most elegant and underused front-of-border perennials. 'Tanna' is a compact cultivar, unlike the species which can become large. The fine foliage and bobbing flowers feel light and naturalistic rather than formal. Outstanding for wildlife and adds unusual texture amongst broader-leaved companions.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Naturalistic</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=sanguisorba&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.bethchatto.co.uk/search.php?q=sanguisorba" target="_blank" rel="noopener">Beth Chatto</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=sanguisorba" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-
-<!-- ── 18. Origanum Herrenhausen ── -->
-<article class="card" style="--bloom-a:#7850A0;--bloom-b:#B080C8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Origanum_vulgare.JPG?width=600" alt="Origanum laevigatum" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons (similar species)</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Origanum laevigatum 'Herrenhausen'</h2><span class="card-latin">Ornamental Oregano</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought excellent">● Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Front · Middle</span></div>
-    <p class="card-desc">Clouds of tiny mauve-pink flowers above aromatic grey-green foliage, carried on reddish stems that give the whole plant a warm purple tinge even before it flowers. Superb for bees and thrives on being ignored in poor, dry soil — will actively sulk if given rich, moist conditions. One of the finest plants for Mediterranean-style planting that still reads as cottage garden.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees (exceptional)</span><span class="w-tag">Hoverflies</span><span class="w-tag">Drought hero</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.bethchatto.co.uk/search.php?q=origanum+herrenhausen" target="_blank" rel="noopener">Beth Chatto</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=origanum+herrenhausen" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.thompson-morgan.com/search-results?q=origanum+herrenhausen" target="_blank" rel="noopener">Thompson &amp; Morgan</a></div>
-</article>
-
-<!-- ── 19. Lychnis coronaria ── -->
-<article class="card" style="--bloom-a:#C02070;--bloom-b:#E050A0;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lychnis_coronaria_Gardeners_World_1zz.jpg?width=600" alt="Lychnis coronaria" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Lychnis coronaria</h2><span class="card-latin">Rose Campion</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought excellent">● Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 60–80 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 30–45 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Middle</span></div>
-    <p class="card-desc">Shocking cerise-magenta flowers on silver-white woolly stems and foliage — one of the most vivid plants in the border and an extraordinary foil for blue and purple companions. Short-lived (biennial or short perennial) but self-seeds with great enthusiasm and effectively becomes permanent. The silver foliage alone earns its place. The white-flowered form ‘Alba’ is quieter and equally beautiful.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Butterflies</span><span class="w-tag">Self-seeds freely</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.thompson-morgan.com/search-results?q=lychnis+coronaria" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=lychnis+coronaria" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.sarahraven.com/search?q=lychnis+coronaria" target="_blank" rel="noopener">Sarah Raven</a></div>
-</article>
-
-<!-- ── 20. Thalictrum Hewitt's Double ── -->
-<article class="card" style="--bloom-a:#9080C0;--bloom-b:#C0B0D8;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Thalictrum_delavayi.jpg?width=600" alt="Thalictrum delavayi" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Thalictrum delavayi 'Hewitt's Double'</h2><span class="card-latin">Meadow Rue</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought excellent">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 120–150 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Part shade</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">A cloud of tiny double pompom flowers in soft mauve-lilac on tall, airy, almost black stems — one of the most ethereally beautiful perennials available. The delicate flower cloud and fine blue-grey foliage make it invaluable as a see-through plant at the mid-to-rear of a border. Pairs extraordinarily well with Roses. May need light staking but this is always worth it.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">See-through</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="7,8,9"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=thalictrum+delavayi&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=thalictrum+delavayi" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=thalictrum+delavayi" target="_blank" rel="noopener">Hayloft</a></div>
-</article>
-<!-- ── 21. Lupin (Russell Lupin) ── -->
-<article class="card" style="--bloom-a:#7050C0;--bloom-b:#C060A0;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lupinus_polyphyllus_%28Russell_Lupin%29_%288170995765%29.jpg?width=600" alt="Russell Lupin" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Lupinus polyphyllus</h2><span class="card-latin">Russell Lupin</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H6 Fully Hardy</span><span class="chip-drought moderate">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 90–120 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 45–60 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun / Part shade</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Lupins bring bold, spire-like flower columns of intense purple, pink and bicolour to the early summer border. The stately vertical habit provides strong architectural punctuation among softer cottage-garden plants. They prefer cool, moist springs but cope well with English conditions given good drainage and sun. Cut spent spikes hard back immediately after flowering to encourage a second flush. Excellent alongside Peonies, Geraniums and Roses — in late spring before those plants take over, Lupins are the undisputed showpiece.</p>
-    <div class="wildlife-row"><span class="w-tag">Bumblebees</span><span class="w-tag">Butterflies</span><span class="w-tag">Seedheads</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="5,6,7"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=lupin&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://www.sarahraven.com/search?q=lupin" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=lupin" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.thompson-morgan.com/search-results?q=lupin" target="_blank" rel="noopener">Thompson &amp; Morgan</a></div>
-</article>
-
-<!-- ── 22. Japanese Anemone ── -->
-<article class="card" style="--bloom-a:#E080A0;--bloom-b:#ECC050;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Anemone_hupehensis_var._japonica_Bressingham_Glow_1zz.jpg?width=600" alt="Japanese Anemone" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Anemone × hybrida</h2><span class="card-latin">Japanese Anemone</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought moderate">◐ Drought: Moderate</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 80–120 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Sun / Part shade</span><span class="position-badge">Middle · Rear</span></div>
-    <p class="card-desc">Japanese Anemones fill the critical August–October gap when most perennials are fading, producing elegant saucer-shaped blooms in soft pink above dark green, vine-like foliage. They establish slowly but spread reliably once settled, forming impressive autumn clumps. Prefers positions with some moisture retention — avoid the very driest spots, which accounts for their occasional struggle in exceptionally hot summers. Outstanding at the front of Hydrangea and Magnolia where they naturalise beautifully over time.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Hoverflies</span><span class="w-tag">Seedheads</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="8,9,10"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=anemone+japonica&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=anemone+japonica" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.sarahraven.com/search?q=japanese+anemone" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://www.thompson-morgan.com/search-results?q=japanese+anemone" target="_blank" rel="noopener">Thompson &amp; Morgan</a></div>
-</article>
-<!-- ── 23. Lavender ── -->
-<article class="card" style="--bloom-a:#6050A0;--bloom-b:#9070C0;">
-  <div class="bloom-strip"></div>
-  <div class="card-img">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lavandula_angustifolia_2.jpg?width=600" alt="Lavandula angustifolia" loading="lazy" onerror="this.closest('.card-img').style.display='none'">
-    <span class="card-img-credit">© Wikimedia Commons</span>
-  </div>
-  <div class="card-body">
-    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name">Lavandula angustifolia</h2><span class="card-latin">English Lavender</span></div></div>
-    <div class="card-chips"><span class="chip hardy">H5 Fully Hardy</span><span class="chip-drought excellent">◈ Drought: Excellent</span></div>
-    <div class="card-stats"><span class="stat-item"><span class="stat-glyph">↕</span> 45–75 cm</span><span class="stat-item"><span class="stat-glyph">↔</span> 60–90 cm</span><span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> Full sun</span><span class="position-badge">Front · Middle</span></div>
-    <p class="card-desc">One of the most dependable plants in the English garden, and among the most drought-tolerant of all. 'Hidcote' is the benchmark — deep violet, very compact at around 45 cm, with an RHS AGM and near-universal availability. 'Munstead' flowers slightly earlier and is a little looser in habit. For more height and presence, *L.* × *intermedia* 'Grosso' (lavandin) reaches 75–90 cm with enormous spikes — excellent for cutting. Note: French lavender (*L. stoechas*, with the distinctive rabbit-ear bracts) is only H3 and may not survive a cold English winter reliably — treat it as a tender plant if you grow it.</p>
-    <div class="wildlife-row"><span class="w-tag">Bees</span><span class="w-tag">Butterflies</span><span class="w-tag">Fragrant</span></div>
-  </div>
-  <div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months" data-active="6,7,8"></div></div>
-  <div class="nursery-row"><span>Available from</span><a href="https://www.farmergracy.co.uk/search?q=lavandula+angustifolia&type=product" target="_blank" rel="noopener">Farmer Gracy</a> · <a href="https://hayloft.co.uk/catalogsearch/result/?q=lavender" target="_blank" rel="noopener">Hayloft</a> · <a href="https://www.sarahraven.com/search?q=lavender" target="_blank" rel="noopener">Sarah Raven</a> · <a href="https://www.thompson-morgan.com/search-results?q=lavender" target="_blank" rel="noopener">Thompson &amp; Morgan</a> · <a href="https://www.bethchatto.co.uk/search.php?q=lavender" target="_blank" rel="noopener">Beth Chatto</a></div>
-</article>
-
+<div id="cards-list"></div>
 </main>
 
 <!-- ══════ GROUPINGS ══════ -->
@@ -672,147 +266,7 @@ body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans
     <h2 class="groupings-title">Suggested bed groupings</h2>
   </div>
   <div class="groupings-grid">
-
-    <div class="group-card" style="--g-c1:#8070B8;--g-c2:#3E7CA8;--g-c3:#365880;">
-      <div class="group-stripe"></div>
-  <div class="gcoll gcoll-6"><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nepeta_x_faassenii_A.jpg?width=600" alt="Nepeta" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Nepeta</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Origanum_vulgare.JPG?width=600" alt="Origanum Herrenhausen" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Origanum 'Herrenhausen'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salvia_nemorosa_%27Caradonna%27_with_bee.jpg?width=600" alt="Salvia Caradonna" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Salvia 'Caradonna'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eryngium_July_2011-1.jpg?width=600" alt="Eryngium" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Eryngium</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Echinops_ritro_subsp._ruthenicus_sl4.jpg?width=600" alt="Echinops" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Echinops</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lavandula_angustifolia_2.jpg?width=600" alt="Lavender" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Lavender 'Hidcote'</figcaption></figure></div>
-      <div class="group-body">
-        <h3 class="group-name">The Dry Sunny Border</h3>
-        <p class="group-meta">Full sun · Poor, well-drained soil · May–September</p>
-        <p class="group-context">Five plants that actively thrive on drought and neglect. All will improve as summers get hotter — the combination looks better, not worse, without irrigation.</p>
-        <div class="group-swatches">
-          <div class="g-swatch" style="--sc:#8070B8;"></div><div class="g-swatch" style="--sc:#3A2870;"></div>
-          <div class="g-swatch" style="--sc:#3E7CA8;"></div><div class="g-swatch" style="--sc:#365880;"></div>
-          <div class="g-swatch" style="--sc:#7850A0;"></div>
-        </div>
-        <div class="group-plants">
-          <div class="gp-row"><span class="gp-name">Nepeta 'Six Hills Giant'</span><span class="gp-pos">Front</span></div>
-          <div class="gp-row"><span class="gp-name">Origanum 'Herrenhausen'</span><span class="gp-pos">Front</span></div>
-          <div class="gp-row"><span class="gp-name">Salvia nemorosa 'Caradonna'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Eryngium × tripartitum</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Echinops 'Veitch's Blue'</span><span class="gp-pos">Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Lavender 'Hidcote'</span><span class="gp-pos">Front edge</span></div>
-        </div>
-        <div class="group-pair"><strong>Works alongside</strong>Hydrangea, Magnolia — the cool blue palette softens both without competing</div>
-      </div>
-    </div>
-
-    <div class="group-card" style="--g-c1:#D4702A;--g-c2:#C8703A;--g-c3:#B82020;">
-      <div class="group-stripe"></div>
-  <div class="gcoll gcoll-5"><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Geum_%27Prince_of_Orange%27_kz01.jpg?width=600" alt="Geum" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Geum</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lychnis_coronaria_Gardeners_World_1zz.jpg?width=600" alt="Lychnis coronaria" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Lychnis coronaria</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Achillea_Terracotta_2zz.jpg?width=600" alt="Achillea Terracotta" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Achillea 'Terracotta'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Helenium_autumnale%2C_2022-08-26%2C_Schenley_Park%2C_01.jpg?width=600" alt="Helenium" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Helenium</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Persicaria_amplexicaulis_%287788855230%29.jpg?width=600" alt="Persicaria" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Persicaria</figcaption></figure></div>
-      <div class="group-body">
-        <h3 class="group-name">The Warm Sunset</h3>
-        <p class="group-meta">Sun to part shade · Any reasonable soil · May–October</p>
-        <p class="group-context">A hot palette that builds through summer, opening with Geum in May and sustained all the way through Persicaria in October. Lychnis provides the unexpected magenta spark that lifts the whole combination.</p>
-        <div class="group-swatches">
-          <div class="g-swatch" style="--sc:#D4702A;"></div><div class="g-swatch" style="--sc:#C8703A;"></div>
-          <div class="g-swatch" style="--sc:#B83E18;"></div><div class="g-swatch" style="--sc:#C02070;"></div>
-          <div class="g-swatch" style="--sc:#B82020;"></div>
-        </div>
-        <div class="group-plants">
-          <div class="gp-row"><span class="gp-name">Geum 'Totally Tangerine'</span><span class="gp-pos">Front/Mid</span></div>
-          <div class="gp-row"><span class="gp-name">Lychnis coronaria</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Achillea 'Terracotta'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Helenium 'Sahin's Early Flowerer'</span><span class="gp-pos">Mid/Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Persicaria 'Firetail'</span><span class="gp-pos">Rear</span></div>
-        </div>
-        <div class="group-pair"><strong>Works alongside</strong>Roses (warm tones), Azalea — echoes their warm palette and extends the season well beyond it</div>
-      </div>
-    </div>
-
-    <div class="group-card" style="--g-c1:#8C2848;--g-c2:#6030A0;--g-c3:#7888C0;">
-      <div class="group-stripe"></div>
-  <div class="gcoll gcoll-5"><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sanguisorba_officinalis_2.JPG?width=600" alt="Sanguisorba" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Sanguisorba</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scabiosa_columbaria_Butterfly_Blue_2.jpg?width=600" alt="Scabiosa Butterfly Blue" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Scabiosa 'Butterfly Blue'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Knautia_macedonica_JRVdH_01.jpg?width=600" alt="Knautia macedonica" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Knautia macedonica</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Verbena_bonariensis_%281%29.jpg?width=600" alt="Verbena bonariensis" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Verbena bonariensis</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Veronicastrum_virginicum02.jpg?width=600" alt="Veronicastrum" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Veronicastrum</figcaption></figure></div>
-      <div class="group-body">
-        <h3 class="group-name">The Pollinator Tapestry</h3>
-        <p class="group-meta">Sun · Free-draining soil preferred · June–October</p>
-        <p class="group-context">Outstanding for butterflies and bees from June right through October. Verbena and Veronicastrum act as airy see-through verticals; Sanguisorba and Scabiosa fill the front with quiet detail.</p>
-        <div class="group-swatches">
-          <div class="g-swatch" style="--sc:#6A1028;"></div><div class="g-swatch" style="--sc:#8C2848;"></div>
-          <div class="g-swatch" style="--sc:#6030A0;"></div><div class="g-swatch" style="--sc:#7070B0;"></div>
-          <div class="g-swatch" style="--sc:#7888C0;"></div>
-        </div>
-        <div class="group-plants">
-          <div class="gp-row"><span class="gp-name">Sanguisorba 'Tanna'</span><span class="gp-pos">Front</span></div>
-          <div class="gp-row"><span class="gp-name">Scabiosa 'Butterfly Blue'</span><span class="gp-pos">Front</span></div>
-          <div class="gp-row"><span class="gp-name">Knautia macedonica</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Verbena bonariensis</span><span class="gp-pos">Mid/Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Veronicastrum 'Fascination'</span><span class="gp-pos">Rear</span></div>
-        </div>
-        <div class="group-pair"><strong>Works alongside</strong>Any large shrub — the airy verticals work well in front of Hydrangea, Rhododendron or Magnolia</div>
-      </div>
-    </div>
-
-    <div class="group-card" style="--g-c1:#7B64C2;--g-c2:#484898;--g-c3:#722040;">
-      <div class="group-stripe"></div>
-  <div class="gcoll gcoll-6"><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Geranium_Rozanne_11zz.jpg?width=600" alt="Geranium Rozanne" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Geranium 'Rozanne'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Penstemon_calycosus_flower.jpg?width=600" alt="Penstemon Garnet" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Penstemon 'Garnet'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rudbeckia_fulgida_%27Goldsturm%27_%28d.j.b.%29_01.jpg?width=600" alt="Rudbeckia Goldsturm" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Rudbeckia 'Goldsturm'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Campanula_lactiflora_%27Senior%27._Locatie%2C_Tuinen_van_Mien_Ruys.jpg?width=600" alt="Campanula lactiflora" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Campanula lactiflora</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Thalictrum_delavayi.jpg?width=600" alt="Thalictrum delavayi" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Thalictrum delavayi</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lupinus_polyphyllus_%28Russell_Lupin%29_%288170995765%29.jpg?width=600" alt="Lupin" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Lupin</figcaption></figure></div>
-      <div class="group-body">
-        <h3 class="group-name">The Classic Country Border</h3>
-        <p class="group-meta">Sun to light shade · Good garden soil · May–October</p>
-        <p class="group-context">A timeless English border combination. Campanula and Thalictrum provide elegant height at the rear; Rudbeckia extends warm golden colour deep into autumn when everything else is winding down.</p>
-        <div class="group-swatches">
-          <div class="g-swatch" style="--sc:#7B64C2;"></div><div class="g-swatch" style="--sc:#722040;"></div>
-          <div class="g-swatch" style="--sc:#484898;"></div><div class="g-swatch" style="--sc:#9080C0;"></div>
-          <div class="g-swatch" style="--sc:#CC9010;"></div>
-        </div>
-        <div class="group-plants">
-          <div class="gp-row"><span class="gp-name">Geranium 'Rozanne'</span><span class="gp-pos">Front</span></div>
-          <div class="gp-row"><span class="gp-name">Penstemon 'Garnet'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Rudbeckia 'Goldsturm'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Campanula lactiflora</span><span class="gp-pos">Mid/Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Thalictrum 'Hewitt's Double'</span><span class="gp-pos">Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Lupin (Russell types)</span><span class="gp-pos">Middle · Rear</span></div>
-        </div>
-        <div class="group-pair"><strong>Works alongside</strong>Roses (any colour), Peonies — the violet-blue palette complements pink and red Roses without clashing</div>
-      </div>
-    </div>
-
-    <div class="group-card" style="--g-c1:#7B64C2;--g-c2:#3A2870;--g-c3:#8070B8;">
-      <div class="group-stripe"></div>
-  <div class="gcoll gcoll-5"><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nepeta_x_faassenii_A.jpg?width=600" alt="Nepeta" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Nepeta</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Geranium_Rozanne_11zz.jpg?width=600" alt="Geranium Rozanne" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Geranium 'Rozanne'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Salvia_nemorosa_%27Caradonna%27_with_bee.jpg?width=600" alt="Salvia Caradonna" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Salvia 'Caradonna'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Knautia_macedonica_JRVdH_01.jpg?width=600" alt="Knautia macedonica" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Knautia macedonica</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lupinus_polyphyllus_%28Russell_Lupin%29_%288170995765%29.jpg?width=600" alt="Lupin" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Lupin</figcaption></figure></div>
-      <div class="group-body">
-        <h3 class="group-name">The Peony Companions</h3>
-        <p class="group-meta">Sun to light shade · Any soil · May–October</p>
-        <p class="group-context">Designed to share a bed with the Peonies being redistributed around the garden. These four ensure continuity of interest from June through October after Peony season ends, without competing for water during dry months.</p>
-        <div class="group-swatches">
-          <div class="g-swatch" style="--sc:#7B64C2;"></div><div class="g-swatch" style="--sc:#3A2870;"></div>
-          <div class="g-swatch" style="--sc:#8070B8;"></div><div class="g-swatch" style="--sc:#8C2848;"></div>
-        </div>
-        <div class="group-plants">
-          <div class="gp-row"><span class="gp-name">Nepeta 'Six Hills Giant'</span><span class="gp-pos">Front edge</span></div>
-          <div class="gp-row"><span class="gp-name">Geranium 'Rozanne'</span><span class="gp-pos">Front (fills gaps)</span></div>
-          <div class="gp-row"><span class="gp-name">Salvia nemorosa 'Caradonna'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Knautia macedonica</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Lupin (Russell types)</span><span class="gp-pos">Middle · Rear</span></div>
-        </div>
-        <div class="group-pair"><strong>Key note</strong>Give plants 45–60 cm clearance from Peony crowns. Geranium 'Rozanne' is excellent for disguising dying Peony foliage in early summer</div>
-      </div>
-    </div>
-
-    <div class="group-card" style="--g-c1:#365880;--g-c2:#CC9010;--g-c3:#B83E18;">
-      <div class="group-stripe"></div>
-  <div class="gcoll gcoll-6"><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Achillea_Terracotta_2zz.jpg?width=600" alt="Achillea Terracotta" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Achillea 'Terracotta'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rudbeckia_fulgida_%27Goldsturm%27_%28d.j.b.%29_01.jpg?width=600" alt="Rudbeckia Goldsturm" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Rudbeckia 'Goldsturm'</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Helenium_autumnale%2C_2022-08-26%2C_Schenley_Park%2C_01.jpg?width=600" alt="Helenium" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Helenium</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Echinops_ritro_subsp._ruthenicus_sl4.jpg?width=600" alt="Echinops" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Echinops</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Persicaria_amplexicaulis_%287788855230%29.jpg?width=600" alt="Persicaria" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Persicaria</figcaption></figure><figure class="gcoll-cell"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Anemone_hupehensis_var._japonica_Bressingham_Glow_1zz.jpg?width=600" alt="Japanese Anemone" loading="lazy" onerror="this.closest('.gcoll-cell').style.background='var(--ground2)'"><figcaption>Japanese Anemone</figcaption></figure></div>
-      <div class="group-body">
-        <h3 class="group-name">The Late Summer Focus</h3>
-        <p class="group-meta">Full sun · Well-drained soil · July–October</p>
-        <p class="group-context">A combination where the season builds rather than peaks early — designed to carry the garden when spring shrubs and early perennials have finished, and fill the August–October gap.</p>
-        <div class="group-swatches">
-          <div class="g-swatch" style="--sc:#365880;"></div><div class="g-swatch" style="--sc:#CC9010;"></div>
-          <div class="g-swatch" style="--sc:#B83E18;"></div><div class="g-swatch" style="--sc:#C8703A;"></div>
-          <div class="g-swatch" style="--sc:#B82020;"></div>
-        </div>
-        <div class="group-plants">
-          <div class="gp-row"><span class="gp-name">Achillea 'Terracotta'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Rudbeckia 'Goldsturm'</span><span class="gp-pos">Middle</span></div>
-          <div class="gp-row"><span class="gp-name">Helenium 'Sahin's Early Flowerer'</span><span class="gp-pos">Mid/Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Echinops 'Veitch's Blue'</span><span class="gp-pos">Mid/Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Persicaria 'Firetail'</span><span class="gp-pos">Rear</span></div>
-          <div class="gp-row"><span class="gp-name">Japanese Anemone</span><span class="gp-pos">Middle · Rear</span></div>
-        </div>
-        <div class="group-pair"><strong>Works alongside</strong>Hydrangea paniculata (whose white flowers turn pink in August) — the warm tones complement the fading Hydrangea perfectly</div>
-      </div>
-    </div>
-
+  <div id="groupings-list"></div>
   </div>
 </section>
 
@@ -836,101 +290,296 @@ body{background:var(--ground);color:var(--ink);font-family:'Jost',system-ui,sans
 </footer>
 <p class="footer-credit">Fairlawns Garden · Perennial Planting Guide · August 2026 &nbsp;·&nbsp; Plant photographs: <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> (CC licensed)</p>
 
+<!-- DATA:START -->
+<script id="garden-data" type="application/json">{}</script>
+<!-- DATA:END -->
 <script>
-// Build month bars from data-active attributes
-document.querySelectorAll('.months[data-active]').forEach(el => {
-  const active = new Set(el.dataset.active.split(',').map(Number));
+
+const DATA = JSON.parse(document.getElementById('garden-data').textContent);
+const allPlants = DATA.plants || [];
+const groupings = DATA.groupings || [];
+const plantsBySlug = {};
+allPlants.forEach(p => { if(p.slug) plantsBySlug[p.slug] = p; });
+
+// Marking a plant "bought" writes back to Notion via a small Cloudflare
+// Worker proxy (it holds the Notion token; this page never sees it).
+const TASK_PROXY_URL = 'https://fairlawns-task-proxy.jamieadmiller.workers.dev';
+const TASK_PROXY_KEY = '5d9f7dbee2ce514417a724bb0bae0bca';
+const TASK_OVERRIDES_KEY = 'fairlawns-task-overrides';
+
+function getOverrides(){
+  try { return JSON.parse(localStorage.getItem(TASK_OVERRIDES_KEY) || '{}'); } catch { return {}; }
+}
+function setOverride(id, value){
+  try {
+    const o = getOverrides(); o[id] = value;
+    localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o));
+  } catch {}
+}
+function applyOverrides(list, field){
+  const o = getOverrides();
+  let changed = false;
+  list.forEach(item=>{
+    if(!item.id || !Object.prototype.hasOwnProperty.call(o, item.id)) return;
+    if(o[item.id] === item[field]){ delete o[item.id]; changed = true; }
+    else item[field] = o[item.id];
+  });
+  if(changed){ try { localStorage.setItem(TASK_OVERRIDES_KEY, JSON.stringify(o)); } catch {} }
+  return list;
+}
+async function postFieldUpdate(pageId, field, value){
+  const resp = await fetch(TASK_PROXY_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'X-Site-Key': TASK_PROXY_KEY },
+    body: JSON.stringify({ pageId, field, value }),
+  });
+  const data = await resp.json().catch(()=>({ok:false}));
+  if(!resp.ok || !data.ok) throw new Error(data.error || `HTTP ${resp.status}`);
+}
+
+applyOverrides(allPlants, 'to_buy');
+
+async function toggleBuy(btn){
+  const plant = plantsBySlug[btn.dataset.slug];
+  if(!plant || !plant.id || btn.disabled) return;
+  btn.disabled = true;
+  btn.textContent = '…';
+  try {
+    await postFieldUpdate(plant.id, 'toBuy', false);
+    plant.to_buy = false;
+    setOverride(plant.id, false);
+    renderCards();
+  } catch(e){
+    console.error('Failed to update plant in Notion', e);
+    btn.disabled = false;
+    btn.textContent = '🛒 Mark as bought';
+    btn.classList.add('buy-toggle-error');
+    setTimeout(()=>btn.classList.remove('buy-toggle-error'), 1500);
+  }
+}
+
+// Flowering-period parsing, shared with plants.html — free text like
+// "Summer (June–September)" or "Late Spring–Early Summer" needs to
+// resolve to a set of active months, not a literal substring match.
+const MONTH_ABBR = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,oct:9,nov:10,dec:11};
+const MONTH_RE = /\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\b/gi;
+const DASH = '[\\s\\-\\u2010-\\u2015]';
+const SEASON_RE = new RegExp(
+  `\\b(early|mid|late)${DASH}+(early|mid|late)${DASH}*(spring|summer|autumn|fall|winter)\\b` +
+  `|\\b(early|mid|late)?${DASH}*(spring|summer|autumn|fall|winter)\\b`, 'gi');
+const SEASON_MONTHS = {winter:[11,0,1], spring:[2,3,4], summer:[5,6,7], autumn:[8,9,10], fall:[8,9,10]};
+const SEASON_QUALIFIER_MONTH = {
+  'early-winter':11,'mid-winter':0,'late-winter':1,
+  'early-spring':2,'mid-spring':3,'late-spring':4,
+  'early-summer':5,'mid-summer':6,'late-summer':7,
+  'early-autumn':8,'mid-autumn':9,'late-autumn':10,
+  'early-fall':8,'mid-fall':9,'late-fall':10,
+};
+function monthRange(startIdx, endIdx){
+  const out=[]; let i=startIdx;
+  while(true){ out.push(i); if(i===endIdx) break; i=(i+1)%12; }
+  return out;
+}
+function explicitMonths(segment){
+  const found=[]; MONTH_RE.lastIndex=0;
+  let m;
+  while((m=MONTH_RE.exec(segment))) found.push(MONTH_ABBR[m[1].slice(0,3).toLowerCase()]);
+  if(found.length===0) return null;
+  const out=new Set();
+  let i=0;
+  for(;i<found.length-1;i+=2) monthRange(found[i], found[i+1]).forEach(x=>out.add(x));
+  if(i<found.length) out.add(found[i]);
+  return out;
+}
+function seasonalMonths(segment){
+  const phrases=[]; SEASON_RE.lastIndex=0;
+  let m;
+  while((m=SEASON_RE.exec(segment))){
+    if(m[3]){
+      const a=SEASON_QUALIFIER_MONTH[`${m[1].toLowerCase()}-${m[3].toLowerCase()}`];
+      const b=SEASON_QUALIFIER_MONTH[`${m[2].toLowerCase()}-${m[3].toLowerCase()}`];
+      phrases.push(monthRange(a,b));
+    } else {
+      const qualifier=(m[4]||'').toLowerCase(), season=m[5].toLowerCase();
+      const qualified=SEASON_QUALIFIER_MONTH[`${qualifier}-${season}`];
+      phrases.push(qualified!==undefined ? [qualified] : SEASON_MONTHS[season]);
+    }
+  }
+  if(phrases.length===0) return null;
+  if(phrases.length===1) return new Set(phrases[0]);
+  const first=phrases[0], last=phrases[phrases.length-1];
+  return new Set(monthRange(first[0], last[last.length-1]));
+}
+function monthsForFlowering(flowering){
+  const result=new Set();
+  (flowering||'').replace(/�/g,'-').split(/[;,]/).forEach(segment=>{
+    const paren=segment.match(/\(([^)]*)\)/);
+    const explicit=(paren && explicitMonths(paren[1])) || explicitMonths(segment);
+    (explicit || seasonalMonths(segment) || []).forEach(x=>result.add(x));
+  });
+  return result;
+}
+
+function escHtml(s){ const el=document.createElement('div'); el.textContent=s||''; return el.innerHTML; }
+
+function droughtGlyph(d){ return {Excellent:'●',Good:'◐',Moderate:'○',Poor:'○'}[d] || '●'; }
+
+function sizeStats(size){
+  const parts = (size||'').split(' × ');
+  if(parts.length!==2) return size ? `<span class="stat-item">${escHtml(size)}</span>` : '';
+  return `<span class="stat-item"><span class="stat-glyph">↕</span> ${escHtml(parts[0])}</span><span class="stat-item"><span class="stat-glyph">↔</span> ${escHtml(parts[1])}</span>`;
+}
+
+function suppliersRow(suppliers){
+  if(!suppliers) return '';
+  const links = suppliers.split('\n').map(line=>{
+    const i = line.indexOf(': ');
+    if(i<0) return '';
+    return `<a href="${escHtml(line.slice(i+2))}" target="_blank" rel="noopener">${escHtml(line.slice(0,i))}</a>`;
+  }).filter(Boolean).join(' · ');
+  return links ? `<div class="nursery-row"><span>Available from</span>${links}</div>` : '';
+}
+
+function monthBarHtml(flowering){
+  const active = monthsForFlowering(flowering);
   const labels = ['J','F','M','A','M','J','J','A','S','O','N','D'];
-  el.innerHTML = labels.map((_,i) =>
-    `<div class="month-cell${active.has(i+1)?' active':''}"></div>`
-  ).join('');
-  const row = document.createElement('div');
-  row.className = 'month-letters';
-  row.innerHTML = labels.map(l => `<span class="month-letter">${l}</span>`).join('');
-  el.after(row);
-});
+  const cells = labels.map((_,i)=>`<div class="month-cell${active.has(i)?' active':''}"></div>`).join('');
+  const letters = labels.map(l=>`<span class="month-letter">${l}</span>`).join('');
+  return `<div class="month-bar"><p class="month-bar-label">Flowering</p><div class="months">${cells}</div><div class="month-letters">${letters}</div></div>`;
+}
 
-// ── Filter system ──
-(function(){
-  const state = {pos:'',ht:'',sun:'',dr:'',mo:'',q:''};
-  const cards = Array.from(document.querySelectorAll('.grid-wrap .card')).map(card => {
-    const pos = (card.querySelector('.position-badge')?.textContent || '').toLowerCase();
+function renderCard(p){
+  const buyBtn = p.id
+    ? `<button class="buy-toggle" data-slug="${escHtml(p.slug)}" title="Mark as bought" onclick="toggleBuy(this)">🛒 Mark as bought</button>`
+    : '';
+  const hardyClass = /half-hardy/i.test(p.hardiness||'') ? 'half' : 'hardy';
+  const searchName = ((p.name||'') + ' ' + (p.latin||'')).toLowerCase();
+  return `
+<article class="card" data-name="${escHtml(searchName)}" data-slug="${escHtml(p.slug)}">
+  <div class="bloom-strip"></div>
+  <div class="card-img">
+    ${p.image?`<img src="${escHtml(p.image)}" alt="${escHtml(p.name)}" loading="lazy">`:''}
+    ${buyBtn}
+  </div>
+  <div class="card-body">
+    <div class="card-top"><div class="bloom-dot"></div><div class="card-name-block"><h2 class="card-name"><a href="plant.html?id=${encodeURIComponent(p.slug||'')}">${escHtml(p.name)}</a></h2>${p.latin?`<span class="card-latin">${escHtml(p.latin)}</span>`:''}</div></div>
+    <div class="card-chips">
+      ${p.hardiness?`<span class="chip ${hardyClass}">${escHtml(p.hardiness)}</span>`:''}
+      ${p.drought?`<span class="chip-drought ${escHtml(p.drought.toLowerCase())}">${droughtGlyph(p.drought)} Drought: ${escHtml(p.drought)}</span>`:''}
+    </div>
+    <div class="card-stats">
+      ${sizeStats(p.size)}
+      ${p.sun?`<span class="stat-item"><span class="stat-glyph sun-glyph">☀</span> ${escHtml(p.sun)}</span>`:''}
+      ${p.border_position?`<span class="position-badge">${escHtml(p.border_position)}</span>`:''}
+    </div>
+    <p class="card-desc">${escHtml(p.notes)}</p>
+    ${p.wildlife?`<div class="wildlife-row">${p.wildlife.split(',').map(w=>`<span class="w-tag">${escHtml(w.trim())}</span>`).join('')}</div>`:''}
+  </div>
+  ${monthBarHtml(p.flowering)}
+  ${suppliersRow(p.suppliers)}
+</article>`;
+}
 
-    // Height: extract all integers from the ↕ stat-item, take the max
-    const htEl = card.querySelector('.stat-glyph:not(.sun-glyph)');
-    const htText = htEl ? (htEl.closest('.stat-item')?.textContent || '') : '';
-    const nums = [...htText.matchAll(/\d+/g)].map(m => +m[0]);
+function renderGrouping(g){
+  const members = g.plants || [];
+  const memberRows = members.map(m => {
+    const full = plantsBySlug[m.slug];
+    const pos = full ? full.border_position || '' : '';
+    return `<div class="gp-row"><span class="gp-name"><a href="plant.html?id=${encodeURIComponent(m.slug||'')}">${escHtml(m.name)}</a></span><span class="gp-pos">${escHtml(pos)}</span></div>`;
+  }).join('');
+  const thumbs = members.map(m => {
+    const full = plantsBySlug[m.slug];
+    if(!full || !full.image) return '';
+    return `<figure class="gcoll-cell"><img src="${escHtml(full.image)}" alt="${escHtml(m.name)}" loading="lazy"><figcaption>${escHtml(m.name)}</figcaption></figure>`;
+  }).filter(Boolean).join('');
+  const collClass = `gcoll-${Math.min(members.length, 6)}`;
+  return `
+<div class="group-card" style="--g-c1:var(--sage);--g-c2:var(--gold);--g-c3:var(--dusk)">
+  <div class="group-stripe"></div>
+  ${thumbs?`<div class="gcoll ${collClass}">${thumbs}</div>`:''}
+  <div class="group-body">
+    <h3 class="group-name">${escHtml(g.name)}</h3>
+    <p class="group-meta">${escHtml(g.conditions)}</p>
+    <p class="group-context">${escHtml(g.context)}</p>
+    <div class="group-plants">${memberRows}</div>
+    ${g.works_alongside?`<div class="group-pair"><strong>Works alongside</strong>${escHtml(g.works_alongside)}</div>`:''}
+  </div>
+</div>`;
+}
+
+const cardsList = document.getElementById('cards-list');
+const groupingsList = document.getElementById('groupings-list');
+
+function renderCards(){
+  const toBuy = allPlants.filter(p => p.to_buy);
+  cardsList.innerHTML = toBuy.map(renderCard).join('');
+  document.getElementById('header-count').textContent = `${toBuy.length} varieties · UK nurseries`;
+  applyFilters();
+}
+
+groupingsList.innerHTML = groupings.map(renderGrouping).join('');
+renderCards();
+
+// ── Filter system (operates on the underlying plant data, not the DOM) ──
+const state = {pos:'',ht:'',sun:'',dr:'',mo:'',q:''};
+
+function applyFilters(){
+  const cards = Array.from(document.querySelectorAll('.grid-wrap .card'));
+  let shown = 0;
+  cards.forEach(el => {
+    const slug = el.dataset.slug;
+    const p = plantsBySlug[slug] || {};
+    const name = el.dataset.name || '';
+    const nums = [...(p.size||'').matchAll(/\d+/g)].map(m => +m[0]);
     const maxHt = nums.length ? Math.max(...nums) : 0;
     const ht = maxHt < 60 ? 'low' : maxHt <= 100 ? 'med' : 'tall';
-
-    // Sun
-    const sunText = (card.querySelector('.sun-glyph')?.closest('.stat-item')?.textContent || '').toLowerCase();
+    const sunText = (p.sun||'').toLowerCase();
     const sunFull = sunText.includes('sun');
     const sunPart = sunText.includes('part');
+    const pos = (p.border_position||'').toLowerCase();
+    const dr = (p.drought||'').toLowerCase();
+    const activeMonths = monthsForFlowering(p.flowering);
 
-    // Drought — read the second class on chip-drought element
-    const drEl = card.querySelector('[class*="chip-drought"]');
-    const dr = drEl ? ([...drEl.classList].find(c => c !== 'chip-drought') || '') : '';
-
-    // Flowering months
-    const activeMonths = new Set(
-      (card.querySelector('.months[data-active]')?.dataset.active || '').split(',').map(Number)
-    );
-
-    // Name (both display name and latin)
-    const name = ((card.querySelector('.card-name')?.textContent || '') + ' ' +
-                  (card.querySelector('.card-latin')?.textContent || '')).toLowerCase();
-
-    return {el:card, pos, ht, sunFull, sunPart, dr, activeMonths, name};
+    const ok =
+      (!state.q  || name.includes(state.q)) &&
+      (!state.pos || pos.includes(state.pos)) &&
+      (!state.ht  || ht === state.ht) &&
+      (!state.sun || (state.sun === 'full' ? sunFull : sunPart)) &&
+      (!state.dr  || dr === state.dr) &&
+      (!state.mo  || activeMonths.has(+state.mo - 1));
+    el.classList.toggle('f-hidden', !ok);
+    if(ok) shown++;
   });
-
   const total = cards.length;
+  document.getElementById('f-count').textContent =
+    shown === total ? total + ' plants' : shown + ' of ' + total + ' plants';
+  document.getElementById('f-no-results').classList.toggle('show', shown === 0);
+  const dirty = Object.values(state).some(v => v !== '');
+  document.getElementById('f-clear').classList.toggle('show', dirty);
+}
 
-  function run(){
-    let shown = 0;
-    cards.forEach(({el,pos,ht,sunFull,sunPart,dr,activeMonths,name}) => {
-      const ok =
-        (!state.q  || name.includes(state.q)) &&
-        (!state.pos || pos.includes(state.pos)) &&
-        (!state.ht  || ht === state.ht) &&
-        (!state.sun || (state.sun === 'full' ? sunFull : sunPart)) &&
-        (!state.dr  || dr === state.dr) &&
-        (!state.mo  || activeMonths.has(+state.mo));
-      el.classList.toggle('f-hidden', !ok);
-      if(ok) shown++;
-    });
-    document.getElementById('f-count').textContent =
-      shown === total ? total + ' plants' : shown + ' of ' + total + ' plants';
-    document.getElementById('f-no-results').classList.toggle('show', shown === 0);
-    const dirty = Object.values(state).some(v => v !== '');
-    document.getElementById('f-clear').classList.toggle('show', dirty);
-  }
+document.getElementById('f-search').addEventListener('input', e => {
+  state.q = e.target.value.trim().toLowerCase();
+  applyFilters();
+});
 
-  document.getElementById('f-search').addEventListener('input', e => {
-    state.q = e.target.value.trim().toLowerCase();
-    run();
+document.querySelectorAll('.fc[data-f]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const f = btn.dataset.f, v = btn.dataset.v;
+    state[f] = (state[f] === v) ? '' : v;
+    document.querySelectorAll('.fc[data-f="'+f+'"]').forEach(b =>
+      b.classList.toggle('active', b.dataset.v === state[f] || (state[f]==='' && b.dataset.v===''))
+    );
+    applyFilters();
   });
+});
 
-  document.querySelectorAll('.fc[data-f]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const f = btn.dataset.f, v = btn.dataset.v;
-      state[f] = (state[f] === v) ? '' : v;
-      document.querySelectorAll('.fc[data-f="'+f+'"]').forEach(b =>
-        b.classList.toggle('active', b.dataset.v === state[f] || (state[f]==='' && b.dataset.v===''))
-      );
-      run();
-    });
-  });
-
-  document.getElementById('f-clear').addEventListener('click', () => {
-    Object.keys(state).forEach(k => state[k] = '');
-    document.getElementById('f-search').value = '';
-    document.querySelectorAll('.fc[data-f]').forEach(b => b.classList.toggle('active', b.dataset.v === ''));
-    run();
-  });
-
-  run();
-})();
+document.getElementById('f-clear').addEventListener('click', () => {
+  Object.keys(state).forEach(k => state[k] = '');
+  document.getElementById('f-search').value = '';
+  document.querySelectorAll('.fc[data-f]').forEach(b => b.classList.toggle('active', b.dataset.v === ''));
+  applyFilters();
+});
 
 </script>
 </body>
