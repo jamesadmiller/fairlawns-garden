@@ -71,7 +71,12 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 .task-card-main:hover{background:var(--ground)}
 .task-done-icon{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
 .task-body{flex:1}
-.task-name-text{font-weight:600;font-size:.95rem;color:var(--ink);margin-bottom:.4rem}
+.task-plant-line{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.3rem}
+.task-plant-name{font-family:'Lora',Georgia,serif;font-weight:600;font-size:1rem;color:var(--accent)}
+.task-plant-name:hover{text-decoration:underline}
+.task-bed-pill{font-size:.72rem;color:var(--ink-soft);background:var(--ground);
+  border:1px solid var(--rule);border-radius:20px;padding:.1rem .6rem;white-space:nowrap}
+.task-name-text{font-weight:500;font-size:.88rem;color:var(--ink-soft);margin-bottom:.4rem}
 .task-badges{display:flex;gap:.4rem;flex-wrap:wrap}
 .badge{display:inline-block;padding:.18rem .5rem;border-radius:4px;font-size:.72rem;font-weight:600}
 .badge-high{background:#fee2e2;color:#991b1b}
@@ -138,7 +143,7 @@ const DATA = JSON.parse(document.getElementById('garden-data').textContent);
 const tasks = DATA.tasks;
 const plants = DATA.plants;
 const plantMap = {};
-plants.forEach(p=>{ if(p.url) plantMap[p.url]=p.name; });
+plants.forEach(p=>{ if(p.url) plantMap[p.url]={name:p.name, bed:p.bed, slug:p.slug}; });
 
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const TASK_TYPES = ['Prune','Feed','Mulch','Deadhead','Divide / Propagate','Plant','Water','Frost Protection','Harvest','Other'];
@@ -176,21 +181,30 @@ function escHtml(s){if(!s)return '';const d=document.createElement('div');d.text
 function typeBadge(t){const css=TYPE_CSS[t]||'type-Other';return `<span class="badge ${css}">${escHtml(t||'Other')}</span>`}
 function prioBadge(p){const css={'High':'badge-high','Medium':'badge-medium','Low':'badge-low'}[p]||'badge-pending';return `<span class="badge ${css}">${escHtml(p||'—')}</span>`}
 
+function plantLine(t){
+  const p=t.plant_url?plantMap[t.plant_url]:null;
+  if(!p) return '';
+  const name=p.slug
+    ?`<a class="task-plant-name" href="plant.html?id=${encodeURIComponent(p.slug)}" onclick="event.stopPropagation()">🌿 ${escHtml(p.name)}</a>`
+    :`<span class="task-plant-name">🌿 ${escHtml(p.name)}</span>`;
+  const bed=p.bed?`<span class="task-bed-pill">${escHtml(p.bed)}</span>`:'';
+  return `<div class="task-plant-line">${name}${bed}</div>`;
+}
+
 function renderTask(t){
   const div=document.createElement('div');div.className='task-card';
   const done=t.done;
-  const plantName=t.plant_url?plantMap[t.plant_url]:'';
   const notionLink=t.url?`<a class="notion-link" href="${t.url}" target="_blank" rel="noopener">View in Notion ↗</a>`:'';
   div.innerHTML=`
     <div class="task-card-main" onclick="toggleTask(this)">
       <span class="task-done-icon">${done?'✅':'⬜'}</span>
       <div class="task-body">
-        <div class="task-name-text">${escHtml(t.name)}</div>
+        ${plantLine(t)}
+        <div class="task-name-text">${escHtml((t.name||'').replace(/�/g,'—'))}</div>
         <div class="task-badges">
           ${typeBadge(t.type)}
           ${prioBadge(t.priority)}
           ${done?'<span class="badge badge-done">Done</span>':''}
-          ${plantName?`<span class="badge badge-pending">🌿 ${escHtml(plantName)}</span>`:''}
         </div>
       </div>
       <span class="task-expand-icon">▾</span>
