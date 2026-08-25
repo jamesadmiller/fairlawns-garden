@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant · Fairlawns Gardens</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --bloom-a:#c8a96e;--bloom-b:#8b6f4e;--ground:#faf8f3;--ground2:#f0ece0;
+  --ink:#2d2416;--ink-soft:#6b5c40;--sage:#5a7a5a;--gold:#c8a96e;
+  --dusk:#7a6b8a;--rule:#d4c9b0;--accent:#8b6f4e;
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#1a1710;--ground2:#231f18;--ink:#ede8dc;--ink-soft:#9a9080;
+  --sage:#7a9068;--dusk:#a090c8;--bloom-a:#c89a50;--rule:#3a342a;--accent:#c89a50
+}}
+[data-theme="dark"]{--ground:#1a1710;--ground2:#231f18;--ink:#ede8dc;--ink-soft:#9a9080;
+  --sage:#7a9068;--dusk:#a090c8;--bloom-a:#c89a50;--rule:#3a342a;--accent:#c89a50}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ground);color:var(--ink);font-family:'Inter',system-ui,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.site-nav{display:flex;align-items:center;gap:1rem;padding:.8rem 1.5rem;background:var(--ink);
+  position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.nav-brand{font-family:'Lora',Georgia,serif;font-size:1rem;font-weight:600;color:var(--bloom-a);
+  text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:.25rem;margin-left:auto;flex-wrap:wrap}
+.nav-link{color:#c8b89a;text-decoration:none;font-size:.76rem;font-weight:500;
+  padding:.35rem .65rem;border-radius:5px;transition:background .15s,color .15s;
+  letter-spacing:.04em;text-transform:uppercase}
+.nav-link:hover,.nav-link.active{background:rgba(200,169,110,.2);color:var(--bloom-a);text-decoration:none}
+.nav-toggle{display:none;background:none;border:none;color:#c8b89a;font-size:1.3rem;cursor:pointer;padding:.3rem}
+footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-soft);
+  border-top:1px solid var(--rule);margin-top:4rem}
+@media(max-width:640px){
+  .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;
+    background:var(--ink);padding:.5rem 1rem 1rem;gap:.1rem}
+  .site-nav.open .nav-links{display:flex}
+  .nav-toggle{display:block;margin-left:auto}
+}
+
+.back-bar{padding:1rem clamp(1.5rem,5vw,3rem) 0}
+.back-link{font-size:.85rem;color:var(--ink-soft);font-weight:500}
+.back-link:hover{color:var(--accent)}
+
+.detail-wrap{max-width:960px;margin:0 auto;padding:1rem clamp(1.5rem,5vw,3rem) 3rem}
+.detail-hero{display:grid;grid-template-columns:320px 1fr;gap:2rem;margin-bottom:2rem}
+@media(max-width:720px){.detail-hero{grid-template-columns:1fr}}
+.detail-image{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;
+  border:1px solid var(--rule);background:var(--ground2)}
+.detail-image-placeholder{width:100%;aspect-ratio:4/3;border-radius:14px;border:1px solid var(--rule);
+  background:var(--ground2);display:flex;align-items:center;justify-content:center;
+  font-size:3.5rem;color:var(--ink-soft)}
+.detail-title{display:flex;flex-direction:column;justify-content:center}
+.detail-title h1{font-family:'Lora',Georgia,serif;font-size:clamp(1.8rem,4vw,2.6rem);
+  font-weight:600;color:var(--ink);margin-bottom:.2rem}
+.detail-latin{font-family:'Lora',Georgia,serif;font-style:italic;font-size:1.1rem;
+  color:var(--ink-soft);margin-bottom:.9rem}
+.badges{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.9rem}
+.badge{display:inline-block;padding:.22rem .6rem;border-radius:4px;font-size:.78rem;font-weight:600}
+.type-Annual{background:#fef3c7;color:#78350f}
+.type-Bulb{background:#ede9fe;color:#4c1d95}
+.type-Climber{background:#d1fae5;color:#064e3b}
+.type-Perennial{background:#dbeafe;color:#1e3a8a}
+.type-Shrub{background:#dcfce7;color:#14532d}
+.type-Tree{background:#e0f2fe;color:#0c4a6e}
+.type-Other{background:var(--ground2);color:var(--ink-soft)}
+.sun-badge{background:#fef9c3;color:#713f12;border:1px solid #fde68a}
+.water-badge{background:#dbeafe;color:#1e40af;border:1px solid #bfdbfe}
+.frost-badge{background:#dbeafe;color:#1e40af}
+.bed-pill{display:inline-block;background:var(--ground);border:1px solid var(--rule);
+  border-radius:20px;padding:.22rem .8rem;font-size:.8rem;color:var(--accent);font-weight:500;
+  width:fit-content}
+
+.info-section{background:var(--ground2);border:1px solid var(--rule);border-radius:12px;
+  padding:1.25rem 1.4rem;margin-bottom:1.25rem}
+.info-section h2{font-family:'Lora',Georgia,serif;font-size:1.05rem;font-weight:600;
+  margin-bottom:.85rem;color:var(--ink)}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.9rem 1.5rem}
+.info-item{font-size:.88rem}
+.info-label{color:var(--ink-soft);font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;
+  margin-bottom:.15rem}
+.info-val{color:var(--ink)}
+.prose{font-size:.9rem;color:var(--ink);white-space:pre-line}
+.confidence-note{font-size:.78rem;color:var(--ink-soft);margin-top:.6rem;font-style:italic}
+.detail-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.4rem}
+.detail-links a{font-size:.85rem;font-weight:500}
+.not-found{padding:4rem 1.5rem;text-align:center;color:var(--ink-soft)}
+.not-found h1{font-family:'Lora',Georgia,serif;font-size:1.5rem;color:var(--ink);margin-bottom:.75rem}
+
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-brand" href="index.html">🌿 Fairlawns</a>
+  <div class="nav-links"><a href="plants.html" class="nav-link active" >Plants</a><a href="tasks.html" class="nav-link" >Tasks</a><a href="beds.html" class="nav-link" >Beds</a><a href="guide.html" class="nav-link" >New Plants Guide</a></div>
+  <button class="nav-toggle" onclick="this.closest('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+<div class="back-bar"><a class="back-link" href="plants.html">← Back to plant directory</a></div>
+<div id="content" class="detail-wrap"></div>
+<footer>Data from Notion · Last updated 2026-08-24</footer>
+
+<!-- DATA:START -->
+<script id="garden-data" type="application/json">{}</script>
+<!-- DATA:END -->
+<script>
+
+const DATA = JSON.parse(document.getElementById('garden-data').textContent);
+const plants = DATA.plants || [];
+const content = document.getElementById('content');
+
+function escHtml(s){if(!s)return '';const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function typeBadge(t){return `<span class="badge type-${t||'Other'}">${t||'—'}</span>`}
+function sunBadge(s){const icon=s&&s.includes('Full')?'☀️':s&&s.includes('Partial')?'🌤':'🌥';return `<span class="badge sun-badge">${icon} ${s||'—'}</span>`}
+function waterBadge(w){return `<span class="badge water-badge">💧 ${w||'—'}</span>`}
+
+function infoItem(label, value){
+  if(!value) return '';
+  return `<div class="info-item"><div class="info-label">${escHtml(label)}</div><div class="info-val">${escHtml(value)}</div></div>`;
+}
+
+function renderPlant(p){
+  document.title = `${p.name} · Fairlawns Gardens`;
+
+  const image = p.image
+    ? `<img class="detail-image" src="${escHtml(p.image)}" alt="${escHtml(p.name)}">`
+    : `<div class="detail-image-placeholder">🌿</div>`;
+
+  const frost = p.frost ? `<span class="badge frost-badge">❄️ Frost protection</span>` : '';
+
+  const growingInfo = [
+    infoItem('Mature size', p.size),
+    infoItem('Flower colour', p.colour),
+    infoItem('Flowering period', p.flowering),
+    infoItem('Difficulty', p.difficulty),
+    infoItem('Soil preference', p.soil),
+    infoItem('Prune in', p.pruning),
+  ].filter(Boolean).join('');
+
+  const careSection = (p.pruning_how || p.propagation) ? `
+    <div class="info-section">
+      <h2>Care</h2>
+      ${p.pruning_how ? `<div class="info-item" style="margin-bottom:.8rem"><div class="info-label">Pruning instructions</div><div class="prose">${escHtml(p.pruning_how)}</div></div>` : ''}
+      ${p.propagation ? `<div class="info-item"><div class="info-label">Division / Propagation</div><div class="prose">${escHtml(p.propagation)}</div></div>` : ''}
+    </div>` : '';
+
+  const wildlifeSection = p.wildlife ? `
+    <div class="info-section">
+      <h2>Wildlife value</h2>
+      <div class="prose">${escHtml(p.wildlife)}</div>
+    </div>` : '';
+
+  const notesSection = p.notes ? `
+    <div class="info-section">
+      <h2>Notes</h2>
+      <div class="prose">${escHtml(p.notes)}</div>
+    </div>` : '';
+
+  const links = [];
+  if(p.url) links.push(`<a href="${p.url}" target="_blank" rel="noopener">View in Notion ↗</a>`);
+  if(p.rhs_link) links.push(`<a href="${escHtml(p.rhs_link)}" target="_blank" rel="noopener">RHS plant profile ↗</a>`);
+
+  const confidence = p.id_confidence && p.id_confidence !== 'Confirmed'
+    ? `<div class="confidence-note">Identification: ${escHtml(p.id_confidence)}</div>` : '';
+
+  content.innerHTML = `
+    <div class="detail-hero">
+      ${image}
+      <div class="detail-title">
+        <h1>${escHtml(p.name)}</h1>
+        ${p.latin ? `<div class="detail-latin">${escHtml(p.latin)}</div>` : ''}
+        <div class="badges">${typeBadge(p.type)}${sunBadge(p.sun)}${waterBadge(p.watering)}${frost}</div>
+        ${p.bed ? `<span class="bed-pill">🌱 ${escHtml(p.bed)}</span>` : ''}
+        ${confidence}
+      </div>
+    </div>
+    ${growingInfo ? `<div class="info-section"><h2>Growing information</h2><div class="info-grid">${growingInfo}</div></div>` : ''}
+    ${careSection}
+    ${wildlifeSection}
+    ${notesSection}
+    ${links.length ? `<div class="detail-links">${links.join('')}</div>` : ''}
+  `;
+}
+
+function renderNotFound(){
+  content.innerHTML = `<div class="not-found"><h1>Plant not found</h1><p>We couldn't find that plant. It may have been removed or the link is out of date.</p><p style="margin-top:1rem"><a href="plants.html">← Back to plant directory</a></p></div>`;
+}
+
+const params = new URLSearchParams(location.search);
+const id = params.get('id');
+const plant = id ? plants.find(p => p.slug === id) : null;
+
+if(plant){
+  renderPlant(plant);
+} else {
+  renderNotFound();
+}
+
+</script>
+</body>
+</html>

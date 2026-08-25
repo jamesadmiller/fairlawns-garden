@@ -12,10 +12,12 @@ Databases:
 """
 
 import json
+import mimetypes
 import os
 import re
 import sys
 from datetime import date, timezone, datetime
+from urllib.parse import urlparse
 
 try:
     import requests
@@ -33,7 +35,8 @@ TASKS_DB  = "4c8fd919-4605-48cc-aa56-3c15502ed925"
 
 # Pages to update (relative to this script's directory)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-HTML_PAGES = ["index.html", "plants.html", "tasks.html", "beds.html"]
+HTML_PAGES = ["index.html", "plants.html", "tasks.html", "beds.html", "plant.html"]
+IMAGES_DIR = os.path.join(SCRIPT_DIR, "images", "plants")
 
 # ── Notion API ────────────────────────────────────────────────────────────────
 
@@ -109,6 +112,20 @@ def url_prop(page, name):
     return p.get("url", "")
 
 
+def files_prop_urls(page, name):
+    """Extract download URLs from a Notion 'files' property."""
+    p = prop(page, name)
+    if p.get("type") != "files":
+        return []
+    urls = []
+    for f in p.get("files", []):
+        if f.get("type") == "file":
+            urls.append(f.get("file", {}).get("url", ""))
+        elif f.get("type") == "external":
+            urls.append(f.get("external", {}).get("url", ""))
+    return [u for u in urls if u]
+
+
 def relation_urls(page, name):
     """Extract page URLs from a relation property by looking at related page ids."""
     p = prop(page, name)
@@ -124,6 +141,61 @@ def first_relation_url(page, name):
 def page_url(page):
     pid = page.get("id", "").replace("-", "")
     return f"https://app.notion.com/p/{pid}" if pid else ""
+
+
+# ── Plant slugs & images ─────────────────────────────────────────────────────
+
+def slugify(name):
+    s = re.sub(r'[^a-z0-9]+', '-', (name or "").lower()).strip('-')
+    return s or "plant"
+
+
+def make_slug(name, page_id):
+    short_id = page_id.replace('-', '')[:8]
+    return f"{slugify(name)}-{short_id}"
+
+
+def guess_extension(url, content_type):
+    ext = mimetypes.guess_extension((content_type or "").split(";")[0].strip())
+    if not ext or ext == ".jpe":
+        url_ext = os.path.splitext(urlparse(url).path)[1]
+        if url_ext:
+            ext = url_ext
+    return ext or ".jpg"
+
+
+def download_plant_image(url, slug):
+    """Download a plant image (Notion's internal file URLs expire, so we
+    fetch and commit it to the repo). Returns the relative path on success,
+    or None on failure/no image."""
+    try:
+        resp = requests.get(url, timeout=30)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"  WARNING: failed to download image for {slug}: {e}", file=sys.stderr)
+        return None
+
+    os.makedirs(IMAGES_DIR, exist_ok=True)
+    ext = guess_extension(url, resp.headers.get("Content-Type", ""))
+    filename = f"{slug}{ext}"
+    dest_path = os.path.join(IMAGES_DIR, filename)
+
+    if os.path.exists(dest_path):
+        with open(dest_path, "rb") as f:
+            if f.read() == resp.content:
+                return f"images/plants/{filename}"
+
+    with open(dest_path, "wb") as f:
+        f.write(resp.content)
+    return f"images/plants/{filename}"
+
+
+def cleanup_orphaned_images(keep_filenames):
+    if not os.path.isdir(IMAGES_DIR):
+        return
+    for fname in os.listdir(IMAGES_DIR):
+        if fname not in keep_filenames:
+            os.remove(os.path.join(IMAGES_DIR, fname))
 
 
 # ── Data fetchers ─────────────────────────────────────────────────────────────
@@ -153,30 +225,51 @@ def fetch_plants(bed_url_map):
     print("Fetching plants…")
     pages = query_database(PLANTS_DB)
     plants = []
+    keep_images = set()
     for p in pages:
         bed_url = (first_relation_url(p, "Bed") or
                    first_relation_url(p, "Garden Bed") or
-                   first_relation_url(p, "Beds"))
+                   first_relation_url(p, "Beds") or
+                   first_relation_url(p, "Bed Name"))
         bed_name = bed_url_map.get(bed_url, "")
-        notes = text_prop(p, "Notes")[:200].replace('\r', ' ').replace('\n', ' ')
+        notes = text_prop(p, "Notes").replace('\r', ' ').replace('\n', ' ')
+        name = text_prop(p, "Plant Name") or text_prop(p, "Name")
+        slug = make_slug(name, p.get("id", ""))
+
+        image = ""
+        image_urls = files_prop_urls(p, "Plant Image")
+        if image_urls:
+            image = download_plant_image(image_urls[0], slug) or ""
+        if image:
+            keep_images.add(os.path.basename(image))
+
         plants.append({
-            "name":       text_prop(p, "Plant Name") or text_prop(p, "Name"),
-            "latin":      text_prop(p, "Latin Name"),
-            "type":       select_prop(p, "Type"),
-            "sun":        select_prop(p, "Sunlight"),
-            "watering":   select_prop(p, "Watering"),
-            "flowering":  text_prop(p, "Flowering Period"),
-            "colour":     text_prop(p, "Flower Colour"),
-            "size":       text_prop(p, "Mature Size"),
-            "difficulty": select_prop(p, "Difficulty"),
-            "pruning":    text_prop(p, "Pruning Month"),
-            "frost":      checkbox_prop(p, "Frost Protection"),
-            "bed":        bed_name,
-            "bed_url":    bed_url,
-            "notes":      notes,
-            "url":        page_url(p),
+            "name":          name,
+            "slug":          slug,
+            "latin":         text_prop(p, "Latin Name"),
+            "type":          select_prop(p, "Type"),
+            "sun":           select_prop(p, "Sunlight"),
+            "watering":      select_prop(p, "Watering"),
+            "flowering":     text_prop(p, "Flowering Period"),
+            "colour":        text_prop(p, "Flower Colour"),
+            "size":          text_prop(p, "Mature Size (H x Spr)"),
+            "difficulty":    select_prop(p, "Difficulty"),
+            "pruning":       text_prop(p, "Pruning Month"),
+            "pruning_how":   text_prop(p, "Pruning Instructions").replace('\r', ' ').replace('\n', ' '),
+            "soil":          text_prop(p, "Soil Preference"),
+            "propagation":   text_prop(p, "Division / Propagation"),
+            "wildlife":      text_prop(p, "Wildlife Value"),
+            "id_confidence": select_prop(p, "ID Confidence"),
+            "rhs_link":      url_prop(p, "RHS Link"),
+            "frost":         checkbox_prop(p, "Frost Protection"),
+            "bed":           bed_name,
+            "bed_url":       bed_url,
+            "notes":         notes,
+            "image":         image,
+            "url":           page_url(p),
         })
     plants.sort(key=lambda pl: pl.get("name", ""))
+    cleanup_orphaned_images(keep_images)
     print(f"  \u2192 {len(plants)} plants")
     return plants
 
