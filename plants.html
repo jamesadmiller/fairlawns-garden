@@ -197,6 +197,7 @@ function renderCard(p){
     </div>
     <div class="plant-detail">
       ${p.size?`<div class="detail-row"><span class="detail-label">Mature size</span><span class="detail-val">${escHtml(p.size)}</span></div>`:''}
+      ${p.border_position?`<div class="detail-row"><span class="detail-label">Border position</span><span class="detail-val">${escHtml(p.border_position)}</span></div>`:''}
       ${p.difficulty?`<div class="detail-row"><span class="detail-label">Difficulty</span><span class="detail-val">${escHtml(p.difficulty)}</span></div>`:''}
       ${p.pruning?`<div class="detail-row"><span class="detail-label">Prune in</span><span class="detail-val">${escHtml(p.pruning)}</span></div>`:''}
       ${p.colour?`<div class="detail-row"><span class="detail-label">Flower colour</span><span class="detail-val">${escHtml(p.colour)}</span></div>`:''}

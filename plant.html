@@ -212,6 +212,7 @@ function renderPlant(p){
     infoItem('Difficulty', p.difficulty),
     infoItem('Soil preference', p.soil),
     infoItem('Prune in', p.pruning),
+    infoItem('Border position', p.border_position),
   ].filter(Boolean).join('');
 
   const careSection = (p.pruning_how || p.propagation) ? `
