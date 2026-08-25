@@ -158,6 +158,38 @@
   ],
   "plants": [
     {
+      "id": "3c7b6675-06ae-8175-9343-eba2fbc8c392",
+      "name": "Achillea 'Terracotta'",
+      "slug": "achillea-terracotta-3c7b6675",
+      "latin": "Yarrow",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "June–September",
+      "colour": "",
+      "size": "60–80 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Butterflies, Seed heads for birds",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Flat-headed flower plates in warm apricot-orange that weather and bleach to a soft buff as summer progresses — beautiful in a naturalistic scheme with Roses. Feathery aromatic foliage. One of the most drought-tolerant hardy perennials available, thriving in poor, well-drained soil. Works wonderfully cutting through the rounded forms of Hydrangea and Rhododendron.",
+      "image": "images/plants/achillea-terracotta-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae81759343eba2fbc8c392",
+      "to_buy": true,
+      "border_position": "Middle",
+      "drought": "Excellent",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=achillea+terracotta&type=product\nSarah Raven: https://www.sarahraven.com/search?q=achillea+terracotta\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=achillea+terracotta"
+    },
+    {
+      "id": "3b9b6675-06ae-8171-99d4-e627e208105e",
       "name": "Acidanthera",
       "slug": "acidanthera-3b9b6675",
       "latin": "Gladiolus murielae",
@@ -180,9 +212,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Scented; tender. Protection: lift/store or overwinter frost-free in Oct–Nov.",
       "image": "images/plants/acidanthera-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817199d4e627e208105e"
+      "url": "https://app.notion.com/p/3b9b667506ae817199d4e627e208105e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8157-ac27-f6e79d3ff3b4",
       "name": "Aconite Winter",
       "slug": "aconite-winter-3bab6675",
       "latin": "Eranthis hyemalis",
@@ -205,9 +243,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Winter aconite. One of the first flowers of the year, appearing with snowdrops. Bright yellow buttercup-like flowers with a collar of green leaves. Naturalises in dappled shade under deciduous trees. H7 hardy. Plant tubers in autumn, 5cm deep, or plant 'in the green' after flowering for better establishment. Best in humus-rich moist but well-drained soil.",
       "image": "images/plants/aconite-winter-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8157ac27f6e79d3ff3b4"
+      "url": "https://app.notion.com/p/3bab667506ae8157ac27f6e79d3ff3b4",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-819f-bc32-cff35dd436e4",
       "name": "Allium 'Cameleon'",
       "slug": "allium-cameleon-3b9b6675",
       "latin": "Allium 'Cameleon'",
@@ -230,9 +274,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/allium-cameleon-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae819fbc32cff35dd436e4"
+      "url": "https://app.notion.com/p/3b9b667506ae819fbc32cff35dd436e4",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8162-aca6-c2858021e2a2",
       "name": "Allium 'Graceful Beauty'",
       "slug": "allium-graceful-beauty-3b9b6675",
       "latin": "Allium 'Graceful Beauty'",
@@ -255,9 +305,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/allium-graceful-beauty-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8162aca6c2858021e2a2"
+      "url": "https://app.notion.com/p/3b9b667506ae8162aca6c2858021e2a2",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8142-9976-c899e766b5a1",
       "name": "Allium Giganteum",
       "slug": "allium-giganteum-3b9b6675",
       "latin": "Allium giganteum",
@@ -280,9 +336,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/allium-giganteum-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81429976c899e766b5a1"
+      "url": "https://app.notion.com/p/3b9b667506ae81429976c899e766b5a1",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8153-9a39-d2f8541c2d4c",
       "name": "Allium caeruleum",
       "slug": "allium-caeruleum-3bab6675",
       "latin": "Allium caeruleum",
@@ -305,9 +367,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Blue drumstick allium. Flowers appear after foliage dies back — best mingled among other perennials to hide yellowing leaves. Excellent cut flower. Plant 10cm deep, 10cm apart in light sandy well-drained soil in full sun. Irritant to skin and eyes. Source: Thompson & Morgan https://www.thompson-morgan.com/p/allium-caeruleum/WKC1292TM",
       "image": "images/plants/allium-caeruleum-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81539a39d2f8541c2d4c"
+      "url": "https://app.notion.com/p/3bab667506ae81539a39d2f8541c2d4c",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-818b-8218-e9f1bd5ce574",
       "name": "Allium moly",
       "slug": "allium-moly-3b9b6675",
       "latin": "Allium moly",
@@ -330,9 +398,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/allium-moly-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae818b8218e9f1bd5ce574"
+      "url": "https://app.notion.com/p/3b9b667506ae818b8218e9f1bd5ce574",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81c1-8d5e-dd8abda44bd2",
       "name": "Allium oreophilum",
       "slug": "allium-oreophilum-3b9b6675",
       "latin": "Allium oreophilum",
@@ -355,9 +429,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/allium-oreophilum-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81c18d5edd8abda44bd2"
+      "url": "https://app.notion.com/p/3b9b667506ae81c18d5edd8abda44bd2",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-8015-b67f-d333d477cdb3",
       "name": "Allium sphaerocephalon",
       "slug": "allium-sphaerocephalon-3bdb6675",
       "latin": "Allium sphaerocephalon",
@@ -380,9 +460,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/allium-sphaerocephalon-3bdb6675.png",
-      "url": "https://app.notion.com/p/3bdb667506ae8015b67fd333d477cdb3"
+      "url": "https://app.notion.com/p/3bdb667506ae8015b67fd333d477cdb3",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81e7-9813-f726ef214dec",
       "name": "Allium sphaerocephalon",
       "slug": "allium-sphaerocephalon-3b9b6675",
       "latin": "Allium sphaerocephalon",
@@ -405,9 +491,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/allium-sphaerocephalon-3b9b6675.png",
-      "url": "https://app.notion.com/p/3b9b667506ae81e79813f726ef214dec"
+      "url": "https://app.notion.com/p/3b9b667506ae81e79813f726ef214dec",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-818a-a220-f91d661e85e0",
       "name": "Alstroemeria 'Noah'",
       "slug": "alstroemeria-noah-3b9b6675",
       "latin": "Alstroemeria 'Noah' (Mini Series)",
@@ -430,9 +522,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Compact Mini Series Alstroemeria. Low-growing clump-forming perennial, ideal for front of borders and containers. Long flowering season from summer into autumn. Best left undisturbed for first two winters to establish well. Apply a dry mulch in first two winters for protection. Skin allergen — always wear gloves when handling foliage or roots. RHS profile: https://www.rhs.org.uk/plants/349391/alstroemeria-noah-(mini-series)/details",
       "image": "images/plants/alstroemeria-noah-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae818aa220f91d661e85e0"
+      "url": "https://app.notion.com/p/3b9b667506ae818aa220f91d661e85e0",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8180-bacf-d20d9b853e17",
+      "name": "Anemone × hybrida",
+      "slug": "anemone-hybrida-3c7b6675",
+      "latin": "Japanese Anemone",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "August–October",
+      "colour": "",
+      "size": "80–120 cm × 60–90 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Seedheads",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Japanese Anemones fill the critical August–October gap when most perennials are fading, producing elegant saucer-shaped blooms in soft pink above dark green, vine-like foliage. They establish slowly but spread reliably once settled, forming impressive autumn clumps. Prefers positions with some moisture retention — avoid the very driest spots, which accounts for their occasional struggle in exceptionally hot summers. Outstanding at the front of Hydrangea and Magnolia where they naturalise beautifully over time.",
+      "image": "images/plants/anemone-hybrida-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8180bacfd20d9b853e17",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Moderate",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=anemone+japonica&type=product\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=anemone+japonica\nSarah Raven: https://www.sarahraven.com/search?q=japanese+anemone\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=japanese+anemone"
+    },
+    {
+      "id": "3b9b6675-06ae-8188-bad1-eaf8df143164",
       "name": "Anise Hyssop",
       "slug": "anise-hyssop-3b9b6675",
       "latin": "Agastache foeniculum",
@@ -455,9 +584,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/anise-hyssop-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8188bad1eaf8df143164"
+      "url": "https://app.notion.com/p/3b9b667506ae8188bad1eaf8df143164",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8143-b75d-c5098eb49c0b",
       "name": "Antirrhinum 'Madame Butterfly Red'",
       "slug": "antirrhinum-madame-butterfly-red-3bbb6675",
       "latin": "Antirrhinum majus 'Madame Butterfly Red'",
@@ -480,9 +615,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Snapdragon. Half-hardy annual/short-lived perennial, usually grown as an annual. Large double azalea-type blooms in rich crimson red on tall stems — excellent for cutting. Tolerates dappled shade but best in full sun. F1 hybrid so does not reliably self-seed true. May be susceptible to antirrhinum rust, downy mildew, powdery mildew and Fusarium wilt. Source: Crocus https://www.crocus.co.uk/plants/_/antirrhinum-majus-madame-butterfly-red/classid.2000050381/",
       "image": "images/plants/antirrhinum-madame-butterfly-red-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae8143b75dc5098eb49c0b"
+      "url": "https://app.notion.com/p/3bbb667506ae8143b75dc5098eb49c0b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a0-900c-c0dc1822599f",
       "name": "Astilbe 'Dark Side of the Moon'",
       "slug": "astilbe-dark-side-of-the-moon-3b9b6675",
       "latin": "Astilbe 'Dark Side of the Moon'",
@@ -505,9 +646,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/astilbe-dark-side-of-the-moon-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a0900cc0dc1822599f"
+      "url": "https://app.notion.com/p/3b9b667506ae81a0900cc0dc1822599f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81f6-a6ac-fe28b3fdfc19",
       "name": "Bear's Breech",
       "slug": "bear-s-breech-3b9b6675",
       "latin": "Acanthus mollis",
@@ -530,9 +677,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Can spread; deep roots.",
       "image": "images/plants/bear-s-breech-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81f6a6acfe28b3fdfc19"
+      "url": "https://app.notion.com/p/3b9b667506ae81f6a6acfe28b3fdfc19",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b3-bf62-efa71934012e",
       "name": "Bearded Iris",
       "slug": "bearded-iris-3b9b6675",
       "latin": "Iris germanica",
@@ -555,9 +708,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Expose rhizomes to sun.",
       "image": "images/plants/bearded-iris-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b3bf62efa71934012e"
+      "url": "https://app.notion.com/p/3b9b667506ae81b3bf62efa71934012e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-817c-ba78-df2e09e34e41",
       "name": "Begonia 'Starshine Appleblossom'",
       "slug": "begonia-starshine-appleblossom-3bbb6675",
       "latin": "Begonia 'Starshine Appleblossom' (Starshine Series)",
@@ -580,9 +739,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Tuberous begonia from the Starshine Series — RHS Fleuroselect trial entry. Compact, free-flowering with soft apple blossom pink double blooms. Excellent for beds, borders and containers. Not frost hardy — lift tubers in autumn and store dry and frost-free. Replant in spring after all frost risk passes.",
       "image": "images/plants/begonia-starshine-appleblossom-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae817cba78df2e09e34e41"
+      "url": "https://app.notion.com/p/3bbb667506ae817cba78df2e09e34e41",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8117-a205-cf1a83335f01",
       "name": "Begonia 'Starshine Calypso'",
       "slug": "begonia-starshine-calypso-3bbb6675",
       "latin": "Begonia 'Starshine Calypso' (Starshine Series)",
@@ -605,9 +770,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Tuberous begonia from the Starshine Series — RHS Fleuroselect trial entry. Compact, free-flowering with warm coral-orange double blooms. Excellent for beds, borders and containers. Not frost hardy — lift tubers in autumn and store dry and frost-free. Replant in spring after all frost risk passes.",
       "image": "images/plants/begonia-starshine-calypso-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae8117a205cf1a83335f01"
+      "url": "https://app.notion.com/p/3bbb667506ae8117a205cf1a83335f01",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8177-adab-fa2f80828f71",
       "name": "Black-eyed Susan",
       "slug": "black-eyed-susan-3b9b6675",
       "latin": "Rudbeckia hirta",
@@ -630,9 +801,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/black-eyed-susan-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8177adabfa2f80828f71"
+      "url": "https://app.notion.com/p/3b9b667506ae8177adabfa2f80828f71",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-810f-80f0-fa684629bf03",
       "name": "Blue Iris",
       "slug": "blue-iris-3b9b6675",
       "latin": "Iris germanica",
@@ -655,9 +832,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Expose rhizomes to sun.",
       "image": "images/plants/blue-iris-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae810f80f0fa684629bf03"
+      "url": "https://app.notion.com/p/3b9b667506ae810f80f0fa684629bf03",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a7-8766-f8e30b90c30b",
       "name": "Braeburn Hillwell Apple Tree (dwarf)",
       "slug": "braeburn-hillwell-apple-tree-dwarf-3b9b6675",
       "latin": "Malus domestica",
@@ -680,9 +863,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Harvest Oct; stores well. Feed with potash-rich fertiliser in Mar.",
       "image": "images/plants/braeburn-hillwell-apple-tree-dwarf-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a78766f8e30b90c30b"
+      "url": "https://app.notion.com/p/3b9b667506ae81a78766f8e30b90c30b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8192-9e3a-c20f4549c114",
       "name": "Buddleia",
       "slug": "buddleia-3b9b6675",
       "latin": "Buddleja davidii",
@@ -705,9 +894,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Deadhead to reduce self-seeding.",
       "image": "images/plants/buddleia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81929e3ac20f4549c114"
+      "url": "https://app.notion.com/p/3b9b667506ae81929e3ac20f4549c114",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81da-929e-fefe97cc7b33",
       "name": "Buddleia",
       "slug": "buddleia-3b9b6675",
       "latin": "Buddleja davidii",
@@ -730,9 +925,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Deadhead to reduce self-seeding.",
       "image": "images/plants/buddleia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81da929efefe97cc7b33"
+      "url": "https://app.notion.com/p/3b9b667506ae81da929efefe97cc7b33",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8126-800d-c9e3d6d84461",
       "name": "Bugle",
       "slug": "bugle-3b9b6675",
       "latin": "Ajuga reptans",
@@ -755,9 +956,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/bugle-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8126800dc9e3d6d84461"
+      "url": "https://app.notion.com/p/3b9b667506ae8126800dc9e3d6d84461",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81c8-8507-c31b8ec2e654",
       "name": "Camassia leichtlinii 'Caerulea'",
       "slug": "camassia-leichtlinii-caerulea-3bab6675",
       "latin": "Camassia leichtlinii subsp. suksdorfii Caerulea Group",
@@ -780,9 +987,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Tall clump-forming bulbous perennial with long linear leaves. Star-shaped blue flowers in upright racemes. H4 hardy (to -10°C). Grow in moist but well-drained, humus-rich, fertile soil. Intolerant of waterlogging. May self-seed prolifically — deadhead spent spikes if spread needs managing. Generally pest and disease free. Ornamental bulb — not to be eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/100145/camassia-leichtlinii-subsp-suksdorfii-caerulea-group/details",
       "image": "images/plants/camassia-leichtlinii-caerulea-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81c88507c31b8ec2e654"
+      "url": "https://app.notion.com/p/3bab667506ae81c88507c31b8ec2e654",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8135-b8ba-f253ffa97be3",
+      "name": "Campanula lactiflora 'Prichard's Variety'",
+      "slug": "campanula-lactiflora-prichard-s-variety-3c7b6675",
+      "latin": "Milky Bellflower",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "June–August",
+      "colour": "",
+      "size": "100–150 cm × 60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Classic cottage",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Rich violet-blue bellflowers in large clusters on tall branching stems — a stately, old-fashioned plant that belongs at the heart of an English country garden. Pairs beautifully with Roses and Peonies, and bridges the gap between early summer and midsummer. May need light staking in exposed positions. Cut back after flowering for a second, lighter flush in autumn.",
+      "image": "images/plants/campanula-lactiflora-prichard-s-variety-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8135b8baf253ffa97be3",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Moderate",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Hayloft: https://hayloft.co.uk/catalogsearch/result/?q=campanula+lactiflora\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=campanula+lactiflora\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=campanula+lactiflora"
+    },
+    {
+      "id": "3b9b6675-06ae-81d2-a58f-fce107260d91",
       "name": "Candle Larkspur 'Mighty Atom'",
       "slug": "candle-larkspur-mighty-atom-3b9b6675",
       "latin": "Delphinium elatum",
@@ -805,9 +1049,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/candle-larkspur-mighty-atom-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81d2a58ffce107260d91"
+      "url": "https://app.notion.com/p/3b9b667506ae81d2a58ffce107260d91",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bcb6675-06ae-81ed-b67b-deeadb7881aa",
       "name": "Cherry Plum",
       "slug": "cherry-plum-3bcb6675",
       "latin": "Prunus cerasifera",
@@ -830,9 +1080,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "Cherry plum. Also known as myrobalan, myrobalan plum, mirabelle and weeping plum. Upright, rounded, twiggy deciduous tree. Small white flowers in early spring as leaves open, sometimes followed by edible red, orange or yellow plum-like fruit about 2.5cm long. H6 hardy. RHS Plants for Pollinators. Excellent for wildlife and cottage/informal gardens. Grows in most soils in full sun. Prune in mid-summer only if silver leaf is a problem — never prune in winter. May be susceptible to aphids, caterpillars, peach leaf curl, silver leaf, bacterial canker, blossom wilt and honey fungus. High risk host for Xylella fastidiosa.",
       "image": "images/plants/cherry-plum-3bcb6675.jpg",
-      "url": "https://app.notion.com/p/3bcb667506ae81edb67bdeeadb7881aa"
+      "url": "https://app.notion.com/p/3bcb667506ae81edb67bdeeadb7881aa",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81eb-9ac4-cee46faebd4e",
       "name": "China Rose",
       "slug": "china-rose-3b9b6675",
       "latin": "Rosa chinensis",
@@ -855,9 +1111,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "",
       "image": "images/plants/china-rose-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81eb9ac4cee46faebd4e"
+      "url": "https://app.notion.com/p/3b9b667506ae81eb9ac4cee46faebd4e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81f0-a339-ed51cbd8b463",
       "name": "Chionodoxa Mixed",
       "slug": "chionodoxa-mixed-3bab6675",
       "latin": "Chionodoxa luciliae",
@@ -880,9 +1142,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Glory of the Snow. Bright star-shaped flowers in blue or white, appearing very early in spring. Naturalises freely. H6 hardy. Plant 5–8cm deep in autumn. Excellent for underplanting shrubs and in grass.",
       "image": "images/plants/chionodoxa-mixed-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81f0a339ed51cbd8b463"
+      "url": "https://app.notion.com/p/3bab667506ae81f0a339ed51cbd8b463",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-81c4-9560-e448b1de6b29",
       "name": "Clematis 'Doctor Ruppel'",
       "slug": "clematis-doctor-ruppel-3bbb6675",
       "latin": "Clematis 'Doctor Ruppel' (EL)",
@@ -905,9 +1173,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Identified from second-flush flower Aug 2026 (smaller, 6-sepal blooms typical of the repeat flush; first flush in May has larger, ruffled 8-sepal flowers — confirm ID then). Growing in pot on trellis. Roots prefer to be cool and shaded — mulch the pot or place a tile over the compost surface. Keep pot well watered as clematis in containers dry out quickly. Repot every 2–3 years into fresh compost. Compact and well suited to container growing. Holds flower colour well in sun.",
       "image": "images/plants/clematis-doctor-ruppel-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae81c49560e448b1de6b29"
+      "url": "https://app.notion.com/p/3bbb667506ae81c49560e448b1de6b29",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8195-9740-efb6244642b1",
       "name": "Common Comfrey",
       "slug": "common-comfrey-3b9b6675",
       "latin": "Symphytum officinale",
@@ -930,9 +1204,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "Leaves excellent for compost/liquid feed.",
       "image": "images/plants/common-comfrey-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81959740efb6244642b1"
+      "url": "https://app.notion.com/p/3b9b667506ae81959740efb6244642b1",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-817a-ab6e-f40591ac00f7",
       "name": "Common Foxglove",
       "slug": "common-foxglove-3b9b6675",
       "latin": "Digitalis purpurea",
@@ -955,9 +1235,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/common-foxglove-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817aab6ef40591ac00f7"
+      "url": "https://app.notion.com/p/3b9b667506ae817aab6ef40591ac00f7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8085-be3b-cc4edac3a6ee",
       "name": "Common Hyacinth (mixed)",
       "slug": "common-hyacinth-mixed-3bab6675",
       "latin": "Hyacinthus orientalis",
@@ -980,9 +1266,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/common-hyacinth-mixed-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8085be3bcc4edac3a6ee"
+      "url": "https://app.notion.com/p/3bab667506ae8085be3bcc4edac3a6ee",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b9-9782-edaa68712f51",
       "name": "Common Hyacinth (mixed)",
       "slug": "common-hyacinth-mixed-3b9b6675",
       "latin": "Hyacinthus orientalis",
@@ -1005,9 +1297,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/common-hyacinth-mixed-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b99782edaa68712f51"
+      "url": "https://app.notion.com/p/3b9b667506ae81b99782edaa68712f51",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-815b-89d1-f0ab5800cfab",
       "name": "Common Mallow",
       "slug": "common-mallow-3b9b6675",
       "latin": "Malva sylvestris",
@@ -1030,9 +1328,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/common-mallow-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae815b89d1f0ab5800cfab"
+      "url": "https://app.notion.com/p/3b9b667506ae815b89d1f0ab5800cfab",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8131-b22e-eacda0c0fe53",
       "name": "Conference Pear Tree (dwarf)",
       "slug": "conference-pear-tree-dwarf-3b9b6675",
       "latin": "Pyrus communis",
@@ -1055,9 +1359,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Harvest Sep–Oct; ripen off the tree. Feed with potash-rich fertiliser in Mar.",
       "image": "images/plants/conference-pear-tree-dwarf-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8131b22eeacda0c0fe53"
+      "url": "https://app.notion.com/p/3b9b667506ae8131b22eeacda0c0fe53",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8156-a001-fec4617b70e6",
       "name": "Corn Poppy",
       "slug": "corn-poppy-3b9b6675",
       "latin": "Papaver rhoeas",
@@ -1080,9 +1390,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/corn-poppy-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8156a001fec4617b70e6"
+      "url": "https://app.notion.com/p/3b9b667506ae8156a001fec4617b70e6",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81fe-aabb-c7b28ac90115",
       "name": "Cornflower",
       "slug": "cornflower-3b9b6675",
       "latin": "Centaurea cyanus",
@@ -1105,9 +1421,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/cornflower-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81feaabbc7b28ac90115"
+      "url": "https://app.notion.com/p/3b9b667506ae81feaabbc7b28ac90115",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8155-879e-ddc5fa2306b9",
       "name": "Creeping Phlox",
       "slug": "creeping-phlox-3b9b6675",
       "latin": "Phlox subulata",
@@ -1130,9 +1452,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/creeping-phlox-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8155879eddc5fa2306b9"
+      "url": "https://app.notion.com/p/3b9b667506ae8155879eddc5fa2306b9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8110-953d-f71b1567e08a",
       "name": "Crevice Alumroot",
       "slug": "crevice-alumroot-3b9b6675",
       "latin": "Heuchera micrantha",
@@ -1155,9 +1483,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/crevice-alumroot-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8110953df71b1567e08a"
+      "url": "https://app.notion.com/p/3b9b667506ae8110953df71b1567e08a",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b3-bd2b-dcd7d51fb829",
       "name": "Crocus",
       "slug": "crocus-3b9b6675",
       "latin": "Crocus spp.",
@@ -1180,9 +1514,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/crocus-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b3bd2bdcd7d51fb829"
+      "url": "https://app.notion.com/p/3b9b667506ae81b3bd2bdcd7d51fb829",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8161-9d48-d7fadfa2ced6",
       "name": "Crocus Dutch White",
       "slug": "crocus-dutch-white-3bab6675",
       "latin": "Crocus vernus (white cultivar)",
@@ -1205,9 +1545,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Dutch white crocus. Large pure white goblet-shaped flowers appearing very early in the year. Excellent for naturalising in grass or at the front of borders. H6 hardy. Plant 5–8cm deep in autumn. Not to be eaten; wear gloves.",
       "image": "images/plants/crocus-dutch-white-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81619d48d7fadfa2ced6"
+      "url": "https://app.notion.com/p/3bab667506ae81619d48d7fadfa2ced6",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-815e-bb19-dc55ce8ca47a",
       "name": "Crocus sieberi 'Firefly'",
       "slug": "crocus-sieberi-firefly-3bab6675",
       "latin": "Crocus sieberi subsp. atticus 'Firefly'",
@@ -1230,9 +1576,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Free-flowering species crocus. Pale violet flowers with a striking yellow throat, scented. Very early flowering — one of the first bulbs to appear in late winter. RHS Plants for Pollinators. H6 hardy (to -20°C). Ideal for pots, containers, rock gardens and garden edges. Grow in gritty, poor to moderately fertile, well-drained soil in full sun. May be susceptible to rodents and birds eating corms. Corms may rot in storage if damp. Not to be eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/258250/crocus-sieberi-subsp-atticus-firefly/details",
       "image": "images/plants/crocus-sieberi-firefly-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae815ebb19dc55ce8ca47a"
+      "url": "https://app.notion.com/p/3bab667506ae815ebb19dc55ce8ca47a",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8146-af5e-f5579eccd1db",
       "name": "Daffodil White Diamonds",
       "slug": "daffodil-white-diamonds-3bab6675",
       "latin": "Narcissus (white large-cupped or small-cupped variety)",
@@ -1255,9 +1607,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Daffodil White Diamonds. Pure white petals with a short yellow cup. Excellent for naturalising in grass and borders. H6 hardy. Plant 10cm deep in autumn. Harmful if eaten; wear gloves.",
       "image": "images/plants/daffodil-white-diamonds-3bab6675.png",
-      "url": "https://app.notion.com/p/3bab667506ae8146af5ef5579eccd1db"
+      "url": "https://app.notion.com/p/3bab667506ae8146af5ef5579eccd1db",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-816e-8c71-fc8c9f73e732",
       "name": "Daphne 'Perfume Princess'",
       "slug": "daphne-perfume-princess-3bbb6675",
       "latin": "Daphne 'Dapjur01'",
@@ -1280,9 +1638,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Upright bushy evergreen to semi-evergreen shrub. Thick glossy dark green leaves. Large clusters of highly perfumed pale pink flowers January–March — outstanding winter scent. Good for partial shade or woodland areas. Not reliably hardy in exposed conditions. Resents transplanting — do not move. TOXIC if eaten, skin irritant — always wear gloves when handling. Toxic to pets.",
       "image": "images/plants/daphne-perfume-princess-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae816e8c71fc8c9f73e732"
+      "url": "https://app.notion.com/p/3bbb667506ae816e8c71fc8c9f73e732",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81e3-bd5f-d027726c0beb",
       "name": "Dense Blazing Star",
       "slug": "dense-blazing-star-3b9b6675",
       "latin": "Liatris spicata",
@@ -1305,9 +1669,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/dense-blazing-star-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81e3bd5fd027726c0beb"
+      "url": "https://app.notion.com/p/3b9b667506ae81e3bd5fd027726c0beb",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-812b-98f3-eb87eeb5ec43",
       "name": "Dianthus barbatus 'Rockin' Red'",
       "slug": "dianthus-barbatus-rockin-red-3bab6675",
       "latin": "Dianthus Rockin' Red 'Pas1141436' (Rockin' Series)",
@@ -1330,9 +1700,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Sweet William. Bushy, short-lived perennial usually grown as an annual or biennial. Dark green narrowly lance-shaped leaves. Lightly fragrant. Skin allergen — wear gloves when handling. May self-seed. Replace every 1–2 years for best display.",
       "image": "images/plants/dianthus-barbatus-rockin-red-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae812b98f3eb87eeb5ec43"
+      "url": "https://app.notion.com/p/3bab667506ae812b98f3eb87eeb5ec43",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-812c-b22c-c4b43494acca",
       "name": "Dutch Iris 'Lion King'",
       "slug": "dutch-iris-lion-king-3bab6675",
       "latin": "Iris 'Lion King' (Dutch)",
@@ -1355,9 +1731,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "RHS AGM holder. Dutch iris bulbous perennial. Striking bicolour flowers — rich mahogany-red/copper standards over golden-yellow falls with red veining. Excellent for cutting. Summer dormant — foliage dies back after flowering. H6 hardy (to -20°C). Plant in well-drained soil in a sunny position. Harmful if eaten; wear gloves when handling. May be susceptible to slugs, snails, thrips, leaf spots, ink disease, bulb rot and viruses. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/257900/iris-lion-king-dut/details",
       "image": "images/plants/dutch-iris-lion-king-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae812cb22cc4b43494acca"
+      "url": "https://app.notion.com/p/3bab667506ae812cb22cc4b43494acca",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-811d-942a-f1b76088ce7f",
       "name": "Echinacea 'Sunseeker Red'",
       "slug": "echinacea-sunseeker-red-3bdb6675",
       "latin": "Echinacea 'Apecssired'PBR (SunSeekers Series)",
@@ -1380,9 +1762,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "SunSeekers Series. RHS Plants for Pollinators. Compact upright perennial with deep red blooms and a prominent orange-brown cone. Long flowering season. Excellent cut flower. Leave seedheads standing through winter for birds — cut back to just above soil level in late winter only. Divide in spring or autumn to maintain vigour. Resents disturbance so leave established clumps undisturbed where possible.",
       "image": "images/plants/echinacea-sunseeker-red-3bdb6675.jpg",
-      "url": "https://app.notion.com/p/3bdb667506ae811d942af1b76088ce7f"
+      "url": "https://app.notion.com/p/3bdb667506ae811d942af1b76088ce7f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8136-9d82-ec0f281c41ed",
+      "name": "Echinops ritro 'Veitch's Blue'",
+      "slug": "echinops-ritro-veitch-s-blue-3c7b6675",
+      "latin": "Globe Thistle",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "July–October",
+      "colour": "",
+      "size": "90–120 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees (exceptional), Goldfinches, Winter structure",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Perfect steel-blue spheres on tall silver-white stems — one of the most structurally distinctive perennials for a summer border and arguably the best plant available for attracting bees. Extremely drought tolerant; thrives in poor soil in full sun. The upright architectural form provides strong contrast to the rounded flower heads of Hydrangea. Leaves through winter.",
+      "image": "images/plants/echinops-ritro-veitch-s-blue-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae81369d82ec0f281c41ed",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Excellent",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Thompson & Morgan: https://www.thompson-morgan.com/search-results?q=echinops\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=echinops\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=echinops"
+    },
+    {
+      "id": "3b9b6675-06ae-8137-95a8-c51a213d37b9",
       "name": "English Lavender",
       "slug": "english-lavender-3b9b6675",
       "latin": "Lavandula angustifolia",
@@ -1405,9 +1824,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Avoid pruning into old wood.",
       "image": "images/plants/english-lavender-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae813795a8c51a213d37b9"
+      "url": "https://app.notion.com/p/3b9b667506ae813795a8c51a213d37b9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8190-ad68-ca7e701383b0",
       "name": "English Lavender",
       "slug": "english-lavender-3b9b6675",
       "latin": "Lavandula angustifolia",
@@ -1430,9 +1855,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Avoid pruning into old wood.",
       "image": "images/plants/english-lavender-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8190ad68ca7e701383b0"
+      "url": "https://app.notion.com/p/3b9b667506ae8190ad68ca7e701383b0",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81db-9f4f-c0c610475753",
       "name": "English Lavender",
       "slug": "english-lavender-3b9b6675",
       "latin": "Lavandula angustifolia",
@@ -1455,9 +1886,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Avoid pruning into old wood.",
       "image": "images/plants/english-lavender-3b9b6675.webp",
-      "url": "https://app.notion.com/p/3b9b667506ae81db9f4fc0c610475753"
+      "url": "https://app.notion.com/p/3b9b667506ae81db9f4fc0c610475753",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8167-8c0f-c6ca5c19226c",
       "name": "Eremurus 'Ruiter Hybrid'",
       "slug": "eremurus-ruiter-hybrid-3bab6675",
       "latin": "Eremurus × isabellinus Ruiter hybrids",
@@ -1480,9 +1917,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Herbaceous perennial growing from fleshy star-shaped roots. Tall spectacular flower spikes with conspicuous stamens. Drought resistant once established. H6 hardy (to -20°C) but young spring growth vulnerable to late frosts — protect with fleece if frost forecast when shoots emerge. Needs winter cold to flower. Leaves die back after flowering — plant among other perennials to disguise the gap. May need staking in windy sites. Mulch in autumn but avoid covering crown. May be susceptible to slugs and snails. Handle roots carefully — very brittle. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/63817/eremurus-x-isabellinus-ruiter-hybrids/details",
       "image": "images/plants/eremurus-ruiter-hybrid-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81678c0fc6ca5c19226c"
+      "url": "https://app.notion.com/p/3bab667506ae81678c0fc6ca5c19226c",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8120-94ff-ce5172369994",
+      "name": "Eryngium × tripartitum",
+      "slug": "eryngium-tripartitum-3c7b6675",
+      "latin": "Sea Holly",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "July–October",
+      "colour": "",
+      "size": "60–90 cm × 30–45 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Winter structure",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Architectural steel-blue thistle-like flowers on steel-blue branching stems — one of the most structurally distinctive plants for a summer border. Thrives in poor, stony soil and withstands drought exceptionally well. Provides a cool, spiky contrast to the large rounded blooms of Hydrangea and the lush texture of Rhododendron. Striking dried and left through winter.",
+      "image": "images/plants/eryngium-tripartitum-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae812094ffce5172369994",
+      "to_buy": true,
+      "border_position": "Middle",
+      "drought": "Excellent",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=eryngium&type=product\nSarah Raven: https://www.sarahraven.com/search?q=eryngium\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=eryngium"
+    },
+    {
+      "id": "3b9b6675-06ae-81fb-889b-ff75542827ca",
       "name": "Feverfew",
       "slug": "feverfew-3b9b6675",
       "latin": "Tanacetum parthenium",
@@ -1505,9 +1979,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/feverfew-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81fb889bff75542827ca"
+      "url": "https://app.notion.com/p/3b9b667506ae81fb889bff75542827ca",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8130-8188-ee9b21d8cdc6",
       "name": "Field Forget-me-not",
       "slug": "field-forget-me-not-3b9b6675",
       "latin": "Myosotis arvensis",
@@ -1530,9 +2010,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/field-forget-me-not-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81308188ee9b21d8cdc6"
+      "url": "https://app.notion.com/p/3b9b667506ae81308188ee9b21d8cdc6",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8146-bea9-ca930119e822",
       "name": "Fritillaria",
       "slug": "fritillaria-3b9b6675",
       "latin": "Fritillaria spp.",
@@ -1555,9 +2041,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/fritillaria-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8146bea9ca930119e822"
+      "url": "https://app.notion.com/p/3b9b667506ae8146bea9ca930119e822",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-816e-8207-ee3c7e54deea",
       "name": "Garden Dahlia",
       "slug": "garden-dahlia-3b9b6675",
       "latin": "Dahlia pinnata",
@@ -1580,9 +2072,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Store tubers frost-free. Protection: lift/store or overwinter frost-free in Oct–Nov.",
       "image": "images/plants/garden-dahlia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae816e8207ee3c7e54deea"
+      "url": "https://app.notion.com/p/3b9b667506ae816e8207ee3c7e54deea",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b6-889f-cd37dba5c0cc",
       "name": "Garden Lupine",
       "slug": "garden-lupine-3b9b6675",
       "latin": "Lupinus polyphyllus",
@@ -1605,9 +2103,77 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/garden-lupine-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b6889fcd37dba5c0cc"
+      "url": "https://app.notion.com/p/3b9b667506ae81b6889fcd37dba5c0cc",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8119-ae95-ce95767d4a41",
+      "name": "Geranium 'Rozanne'",
+      "slug": "geranium-rozanne-3c7b6675",
+      "latin": "Geranium 'Gerwat'",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "June–October",
+      "colour": "",
+      "size": "40–50 cm × 60–90 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Ground cover",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "One of the most reliable garden perennials available. Saucer-shaped violet-blue flowers with a white eye bloom almost continuously from June through October — an extraordinary season. Spreads gently to fill gaps between shrubs. Pairs beautifully with Roses, softening planting edges. Does very well once established in dry conditions.",
+      "image": "images/plants/geranium-rozanne-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8119ae95ce95767d4a41",
+      "to_buy": true,
+      "border_position": "Front · Middle",
+      "drought": "Good",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=geranium+rozanne&type=product\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=geranium+rozanne\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=geranium+rozanne"
+    },
+    {
+      "id": "3c7b6675-06ae-815f-8b70-ec2b2effced8",
+      "name": "Geum 'Totally Tangerine'",
+      "slug": "geum-totally-tangerine-3c7b6675",
+      "latin": "Avens",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "May–September",
+      "colour": "",
+      "size": "60–80 cm × 40–50 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Early season",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Apricot-orange cup-shaped flowers on tall wiry stems, flowering from late May well into summer — one of the earliest perennials in the border after Peonies. A prolific flowerer and a long-standing favourite for English country garden borders. The warm apricot tones work beautifully with the salmon pinks of certain Roses and echo the palette of Azaleas.",
+      "image": "images/plants/geum-totally-tangerine-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae815f8b70ec2b2effced8",
+      "to_buy": true,
+      "border_position": "Front · Middle",
+      "drought": "Moderate",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=geum+totally+tangerine&type=product\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=geum+totally+tangerine\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=geum+totally+tangerine"
+    },
+    {
+      "id": "3b9b6675-06ae-81fb-922d-ec4b9d4c32bb",
       "name": "Geum coccineum",
       "slug": "geum-coccineum-3b9b6675",
       "latin": "Geum coccineum",
@@ -1630,9 +2196,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/geum-coccineum-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81fb922dec4b9d4c32bb"
+      "url": "https://app.notion.com/p/3b9b667506ae81fb922dec4b9d4c32bb",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b6-9d1c-e60baded3db0",
       "name": "Giant Allium (Gladiator)",
       "slug": "giant-allium-gladiator-3b9b6675",
       "latin": "Allium giganteum",
@@ -1655,9 +2227,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/giant-allium-gladiator-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b69d1ce60baded3db0"
+      "url": "https://app.notion.com/p/3b9b667506ae81b69d1ce60baded3db0",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8118-824b-e46356d28932",
       "name": "Giant Globe-thistle",
       "slug": "giant-globe-thistle-3b9b6675",
       "latin": "Echinops ritro",
@@ -1680,9 +2258,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/giant-globe-thistle-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8118824be46356d28932"
+      "url": "https://app.notion.com/p/3b9b667506ae8118824be46356d28932",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a2-a3ff-e2b48d7ad63d",
       "name": "Gladiolus",
       "slug": "gladiolus-3b9b6675",
       "latin": "Gladiolus spp.",
@@ -1705,9 +2289,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Dry corms before storage.",
       "image": "images/plants/gladiolus-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a2a3ffe2b48d7ad63d"
+      "url": "https://app.notion.com/p/3b9b667506ae81a2a3ffe2b48d7ad63d",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81dd-a82d-ea78448ae2ce",
       "name": "Gladiolus",
       "slug": "gladiolus-3b9b6675",
       "latin": "Gladiolus spp.",
@@ -1730,9 +2320,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Dry corms before storage. Protection: lift/store or overwinter frost-free in Oct–Nov.",
       "image": "images/plants/gladiolus-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81dda82dea78448ae2ce"
+      "url": "https://app.notion.com/p/3b9b667506ae81dda82dea78448ae2ce",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-814e-8521-e0b86c717610",
       "name": "Globe Candytuft",
       "slug": "globe-candytuft-3b9b6675",
       "latin": "Iberis umbellata",
@@ -1755,9 +2351,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/globe-candytuft-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae814e8521e0b86c717610"
+      "url": "https://app.notion.com/p/3b9b667506ae814e8521e0b86c717610",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81e9-b927-eafc51906303",
       "name": "Grape Leaf Anemone",
       "slug": "grape-leaf-anemone-3b9b6675",
       "latin": "Anemone tomentosa",
@@ -1780,9 +2382,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/grape-leaf-anemone-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81e9b927eafc51906303"
+      "url": "https://app.notion.com/p/3b9b667506ae81e9b927eafc51906303",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8180-a10c-c5189c9dec14",
       "name": "Grecian Wildflower",
       "slug": "grecian-wildflower-3b9b6675",
       "latin": "Anemone blanda",
@@ -1805,9 +2413,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "",
       "image": "images/plants/grecian-wildflower-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8180a10cc5189c9dec14"
+      "url": "https://app.notion.com/p/3b9b667506ae8180a10cc5189c9dec14",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81cc-9075-e0bb3ad0b60b",
       "name": "Grecian Wildflower",
       "slug": "grecian-wildflower-3b9b6675",
       "latin": "Anemone blanda",
@@ -1830,9 +2444,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/grecian-wildflower-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81cc9075e0bb3ad0b60b"
+      "url": "https://app.notion.com/p/3b9b667506ae81cc9075e0bb3ad0b60b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-81ec-a376-ea399a1d0096",
+      "name": "Helenium 'Sahin's Early Flowerer'",
+      "slug": "helenium-sahin-s-early-flowerer-3c7b6675",
+      "latin": "Sneezeweed",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "July–October",
+      "colour": "",
+      "size": "90–120 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Butterflies, Late season",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Rich burnt-orange daisy flowers with a prominent dark central boss, one of the finest late-summer perennials. Starts flowering in July — earlier than most Heleniums — carrying warm tones into autumn. Provides colour precisely when summer shrubs are quietening down. Combines warmly with Achillea and pairs boldly with the cool blues of Hydrangea paniculata.",
+      "image": "images/plants/helenium-sahin-s-early-flowerer-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae81eca376ea399a1d0096",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Moderate",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=helenium&type=product\nSarah Raven: https://www.sarahraven.com/search?q=helenium\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=helenium"
+    },
+    {
+      "id": "3b9b6675-06ae-8146-bac6-c9cf48c33724",
       "name": "Himalayan Cranesbill",
       "slug": "himalayan-cranesbill-3b9b6675",
       "latin": "Geranium himalayense",
@@ -1855,9 +2506,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/himalayan-cranesbill-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8146bac6c9cf48c33724"
+      "url": "https://app.notion.com/p/3b9b667506ae8146bac6c9cf48c33724",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81d7-9f41-e9caba330a84",
       "name": "Honeysuckle 'Rhubarb & Custard'",
       "slug": "honeysuckle-rhubarb-custard-3b9b6675",
       "latin": "Lonicera periclymenum 'Rhubarb and Custard'",
@@ -1880,9 +2537,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Compact climbing honeysuckle. Deep red buds opening to creamy-yellow fragrant flowers. Suitable for pots, containers, walls and trellises. More compact than many other Lonicera periclymenum varieties. Berries attractive to birds. Shade tolerant.",
       "image": "images/plants/honeysuckle-rhubarb-custard-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81d79f41e9caba330a84"
+      "url": "https://app.notion.com/p/3b9b667506ae81d79f41e9caba330a84",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81aa-8933-d1ca6335efe1",
       "name": "Horseshoe Geranium",
       "slug": "horseshoe-geranium-3b9b6675",
       "latin": "Pelargonium zonale",
@@ -1905,9 +2568,15 @@
       "bed_url": "",
       "notes": "Overwinter indoors. Protection: lift/store or overwinter frost-free in Oct–Nov.",
       "image": "images/plants/horseshoe-geranium-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81aa8933d1ca6335efe1"
+      "url": "https://app.notion.com/p/3b9b667506ae81aa8933d1ca6335efe1",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-811a-a861-f51050a3055f",
       "name": "Hosta sieboldii",
       "slug": "hosta-sieboldii-3b9b6675",
       "latin": "Hosta sieboldii",
@@ -1930,9 +2599,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae818db2c5cb936f811982",
       "notes": "",
       "image": "images/plants/hosta-sieboldii-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae811aa861f51050a3055f"
+      "url": "https://app.notion.com/p/3b9b667506ae811aa861f51050a3055f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bcb6675-06ae-8190-9de8-d293d68a7157",
       "name": "Hydrangea petiolaris",
       "slug": "hydrangea-petiolaris-3bcb6675",
       "latin": "Hydrangea petiolaris",
@@ -1955,9 +2630,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "Climbing hydrangea. RHS AGM holder. RHS Plants for Pollinators. Large self-clinging deciduous climber with broadly oval leaves turning yellow in autumn. Flat lacecap flowerheads to 20cm across in early summer. Growing up a trellis along the back and south side of the Back Centre Bed. South-facing aspect with partial shade from the walnut tree canopy overhead — ideal conditions. Slow to establish in first 1–2 years then grows vigorously. Self-clings by aerial roots — no tying in required once established but may grip the trellis firmly over time. H5 hardy. Skin allergen — wear gloves when handling. Harmful to dogs and cats if eaten. Pruning Group 11 — prune after flowering only if needed to restrict size. May be susceptible to aphids, capsid bug, hydrangea scale, vine weevil, leaf spot, powdery mildew, grey mould and honey fungus (rarely).",
       "image": "images/plants/hydrangea-petiolaris-3bcb6675.jpg",
-      "url": "https://app.notion.com/p/3bcb667506ae81909de8d293d68a7157"
+      "url": "https://app.notion.com/p/3bcb667506ae81909de8d293d68a7157",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bcb6675-06ae-8122-9248-d7f5482a5ce5",
       "name": "Hypericum 'Hidcote'",
       "slug": "hypericum-hidcote-3bcb6675",
       "latin": "Hypericum × hidcoteense 'Hidcote'",
@@ -1980,9 +2661,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "St John's Wort 'Hidcote'. RHS AGM holder. Large semi-evergreen upright shrub with abundant golden yellow flowers over a very long season. One of the most popular and reliable garden shrubs in the UK. Tolerates most soils and aspects. Fruit are ornamental — not to be eaten. Wear gloves when handling.",
       "image": "images/plants/hypericum-hidcote-3bcb6675.webp",
-      "url": "https://app.notion.com/p/3bcb667506ae81229248d7f5482a5ce5"
+      "url": "https://app.notion.com/p/3bcb667506ae81229248d7f5482a5ce5",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8119-a11a-e0f94858954b",
       "name": "Hypericum 'Hidcote'",
       "slug": "hypericum-hidcote-3b9b6675",
       "latin": "Hypericum × hidcoteense 'Hidcote'",
@@ -2005,9 +2692,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "St John's Wort 'Hidcote'. RHS AGM holder. Large semi-evergreen upright shrub with abundant golden yellow flowers over a very long season. One of the most popular and reliable garden shrubs in the UK. Tolerates most soils and aspects. Fruit are ornamental — not to be eaten. Wear gloves when handling.",
       "image": "images/plants/hypericum-hidcote-3b9b6675.webp",
-      "url": "https://app.notion.com/p/3b9b667506ae8119a11ae0f94858954b"
+      "url": "https://app.notion.com/p/3b9b667506ae8119a11ae0f94858954b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-815a-837a-e38f987b282b",
       "name": "Indian Hawthorn",
       "slug": "indian-hawthorn-3b9b6675",
       "latin": "Rhaphiolepis indica",
@@ -2030,9 +2723,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/indian-hawthorn-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae815a837ae38f987b282b"
+      "url": "https://app.notion.com/p/3b9b667506ae815a837ae38f987b282b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81e4-8d91-e82ef35771da",
       "name": "Ipheion Mix",
       "slug": "ipheion-mix-3bab6675",
       "latin": "Ipheion uniflorum",
@@ -2055,9 +2754,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Spring starflower. Dainty pale blue-violet star-shaped flowers with a faint vanilla scent. Naturalises readily. H5 hardy. Grows in any well-drained soil. Plant 5–10cm deep in autumn. Not to be eaten; wear gloves.",
       "image": "images/plants/ipheion-mix-3bab6675.webp",
-      "url": "https://app.notion.com/p/3bab667506ae81e48d91e82ef35771da"
+      "url": "https://app.notion.com/p/3bab667506ae81e48d91e82ef35771da",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8140-a3e8-dabfda61d45b",
       "name": "Iris reticulata 'Alida'",
       "slug": "iris-reticulata-alida-3bab6675",
       "latin": "Iris reticulata 'Alida'",
@@ -2080,9 +2785,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Dwarf bulbous iris. 'Alida' has clear sky-blue flowers with a yellow ridge on the falls. Very early flowering. Good for pots, rock gardens and front of borders. H6 hardy. Plant 8–10cm deep in autumn in very well-drained soil — prone to rot in wet conditions. Lift and dry if soil is heavy. Not to be eaten; wear gloves.",
       "image": "images/plants/iris-reticulata-alida-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8140a3e8dabfda61d45b"
+      "url": "https://app.notion.com/p/3bab667506ae8140a3e8dabfda61d45b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-811b-847d-f4eecf29de43",
       "name": "Irish Saxifrage",
       "slug": "irish-saxifrage-3b9b6675",
       "latin": "Saxifraga umbrosa",
@@ -2105,9 +2816,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/irish-saxifrage-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae811b847df4eecf29de43"
+      "url": "https://app.notion.com/p/3b9b667506ae811b847df4eecf29de43",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8189-961e-da8148691fb6",
       "name": "Japanese Barberry",
       "slug": "japanese-barberry-3b9b6675",
       "latin": "Berberis thunbergii",
@@ -2130,9 +2847,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Thorny.",
       "image": "images/plants/japanese-barberry-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8189961eda8148691fb6"
+      "url": "https://app.notion.com/p/3b9b667506ae8189961eda8148691fb6",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b1-913c-c8af5f2ba2e9",
       "name": "Japanese Barberry",
       "slug": "japanese-barberry-3b9b6675",
       "latin": "Berberis thunbergii",
@@ -2155,9 +2878,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Thorny.",
       "image": "images/plants/japanese-barberry-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b1913cc8af5f2ba2e9"
+      "url": "https://app.notion.com/p/3b9b667506ae81b1913cc8af5f2ba2e9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b4-8b89-dd1d82653506",
       "name": "Japanese Barberry",
       "slug": "japanese-barberry-3b9b6675",
       "latin": "Berberis thunbergii",
@@ -2180,9 +2909,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae818db2c5cb936f811982",
       "notes": "Thorny.",
       "image": "images/plants/japanese-barberry-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b48b89dd1d82653506"
+      "url": "https://app.notion.com/p/3b9b667506ae81b48b89dd1d82653506",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8118-b4fe-c7dd27a30e4c",
       "name": "Japanese Camellia",
       "slug": "japanese-camellia-3b9b6675",
       "latin": "Camellia japonica",
@@ -2205,9 +2940,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae818db2c5cb936f811982",
       "notes": "Protect flower buds from late frosts. Use rainwater in hard-water areas. Feed with ericaceous fertiliser in Apr and Jun.",
       "image": "images/plants/japanese-camellia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8118b4fec7dd27a30e4c"
+      "url": "https://app.notion.com/p/3b9b667506ae8118b4fec7dd27a30e4c",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81ac-b51c-e8675a36271e",
       "name": "Japanese Maple Tree",
       "slug": "japanese-maple-tree-3b9b6675",
       "latin": "Acer palmatum",
@@ -2230,9 +2971,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Shelter from wind; protect from late frosts. Protection: wrap/insulate pot in Nov to protect roots.",
       "image": "images/plants/japanese-maple-tree-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81acb51ce8675a36271e"
+      "url": "https://app.notion.com/p/3b9b667506ae81acb51ce8675a36271e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-811c-ae1c-f5a16bcc9c5a",
       "name": "Japanese Pieris",
       "slug": "japanese-pieris-3b9b6675",
       "latin": "Pieris japonica",
@@ -2255,9 +3002,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "Feed with ericaceous fertiliser in Apr and Jun.",
       "image": "images/plants/japanese-pieris-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae811cae1cf5a16bcc9c5a"
+      "url": "https://app.notion.com/p/3b9b667506ae811cae1cf5a16bcc9c5a",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8171-93e0-e2eda211ca02",
       "name": "Japanese Skimmia",
       "slug": "japanese-skimmia-3b9b6675",
       "latin": "Skimmia japonica",
@@ -2280,9 +3033,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "Feed with ericaceous fertiliser in Apr and Jun.",
       "image": "images/plants/japanese-skimmia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817193e0e2eda211ca02"
+      "url": "https://app.notion.com/p/3b9b667506ae817193e0e2eda211ca02",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8141-9580-eb1ff5548640",
       "name": "Jerusalem Artichoke",
       "slug": "jerusalem-artichoke-3b9b6675",
       "latin": "Helianthus tuberosus",
@@ -2305,9 +3064,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "May spread via tubers — monitor and remove if needed.",
       "image": "images/plants/jerusalem-artichoke-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81419580eb1ff5548640"
+      "url": "https://app.notion.com/p/3b9b667506ae81419580eb1ff5548640",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8180-a5f1-c2cd0bf6223c",
+      "name": "Knautia macedonica",
+      "slug": "knautia-macedonica-3c7b6675",
+      "latin": "Crimson Scabious",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "June–October",
+      "colour": "",
+      "size": "60–80 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Butterflies, Bees, Self-seeds",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Deep crimson pincushion flowers on wiry branching stems from June through October, dancing in any breeze. One of the best cottage garden plants for butterflies and one of the longest-flowering perennials available. Short-lived but self-seeds reliably. The rich colour provides a striking contrast to the pinks and whites of Peonies earlier in summer, then holds colour into autumn.",
+      "image": "images/plants/knautia-macedonica-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8180a5f1c2cd0bf6223c",
+      "to_buy": true,
+      "border_position": "Middle",
+      "drought": "Good",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=knautia+macedonica&type=product\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=knautia+macedonica\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=knautia"
+    },
+    {
+      "id": "3b9b6675-06ae-8140-a55c-c14eea830190",
       "name": "Korean Rose",
       "slug": "korean-rose-3b9b6675",
       "latin": "Rosa rugosa",
@@ -2330,9 +3126,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/korean-rose-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8140a55cc14eea830190"
+      "url": "https://app.notion.com/p/3b9b667506ae8140a55cc14eea830190",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8168-826e-dec8cf310794",
       "name": "Lamb's Ear",
       "slug": "lamb-s-ear-3b9b6675",
       "latin": "Stachys byzantina",
@@ -2355,9 +3157,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/lamb-s-ear-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8168826edec8cf310794"
+      "url": "https://app.notion.com/p/3b9b667506ae8168826edec8cf310794",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-814f-bbb2-d9148d30412d",
+      "name": "Lavandula angustifolia",
+      "slug": "lavandula-angustifolia-3c7b6675",
+      "latin": "English Lavender",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "June–August",
+      "colour": "",
+      "size": "45–75 cm × 60–90 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Butterflies, Fragrant",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "One of the most dependable plants in the English garden, and among the most drought-tolerant of all. 'Hidcote' is the benchmark — deep violet, very compact at around 45 cm, with an RHS AGM and near-universal availability. 'Munstead' flowers slightly earlier and is a little looser in habit. For more height and presence, L. × intermedia 'Grosso' (lavandin) reaches 75–90 cm with enormous spikes — excellent for cutting. Note: French lavender (L. stoechas, with the distinctive rabbit-ear bracts) is only H3 and may not survive a cold English winter reliably — treat it as a tender plant if you grow it.",
+      "image": "images/plants/lavandula-angustifolia-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae814fbbb2d9148d30412d",
+      "to_buy": true,
+      "border_position": "Front · Middle",
+      "drought": "Excellent",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=lavandula+angustifolia&type=product\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=lavender\nSarah Raven: https://www.sarahraven.com/search?q=lavender\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=lavender\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=lavender"
+    },
+    {
+      "id": "3bab6675-06ae-81b0-8a7a-de21e7e545f2",
       "name": "Leucojum aestivum",
       "slug": "leucojum-aestivum-3bab6675",
       "latin": "Leucojum aestivum",
@@ -2380,9 +3219,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "Summer snowflake. Tall nodding white bell-shaped flowers with distinctive green petal tips. Despite its name it flowers in spring. Loves moist conditions. H6 hardy. Plant 10–15cm deep in autumn. Excellent beside water, in boggy areas or in grass. RHS AGM holder. Harmful if eaten; wear gloves.",
       "image": "images/plants/leucojum-aestivum-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81b08a7ade21e7e545f2"
+      "url": "https://app.notion.com/p/3bab667506ae81b08a7ade21e7e545f2",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8157-805f-d338bc9ad5b0",
       "name": "Lily",
       "slug": "lily-3b9b6675",
       "latin": "Lilium spp.",
@@ -2405,9 +3250,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/lily-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8157805fd338bc9ad5b0"
+      "url": "https://app.notion.com/p/3b9b667506ae8157805fd338bc9ad5b0",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8117-8e74-ef4292943cfb",
       "name": "Lily Leek",
       "slug": "lily-leek-3b9b6675",
       "latin": "Allium giganteum",
@@ -2430,9 +3281,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/lily-leek-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81178e74ef4292943cfb"
+      "url": "https://app.notion.com/p/3b9b667506ae81178e74ef4292943cfb",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81c5-9aee-d70e9ad2fdef",
       "name": "Lobelia cardinalis",
       "slug": "lobelia-cardinalis-3b9b6675",
       "latin": "Lobelia cardinalis",
@@ -2455,9 +3312,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/lobelia-cardinalis-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81c59aeed70e9ad2fdef"
+      "url": "https://app.notion.com/p/3b9b667506ae81c59aeed70e9ad2fdef",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81f0-b55d-db6791732109",
       "name": "Lord Napier Patio Nectarine Tree (dwarf)",
       "slug": "lord-napier-patio-nectarine-tree-dwarf-3b9b6675",
       "latin": "Prunus persica var. nucipersica",
@@ -2480,9 +3343,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Avoid winter pruning. Harvest Aug. Feed with potash-rich fertiliser in Mar.",
       "image": "images/plants/lord-napier-patio-nectarine-tree-dwarf-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81f0b55ddb6791732109"
+      "url": "https://app.notion.com/p/3b9b667506ae81f0b55ddb6791732109",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-815c-9088-f27c255232a9",
       "name": "Lupins",
       "slug": "lupins-3bbb6675",
       "latin": "Lupinus polyphyllus",
@@ -2505,9 +3374,77 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Suspected Lupinus polyphyllus or hybrid. A Lupin entry already exists in the Back Bed — confirm variety if possible.",
       "image": "images/plants/lupins-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae815c9088f27c255232a9"
+      "url": "https://app.notion.com/p/3bbb667506ae815c9088f27c255232a9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8135-a4bd-fae84b50712e",
+      "name": "Lupinus polyphyllus",
+      "slug": "lupinus-polyphyllus-3c7b6675",
+      "latin": "Russell Lupin",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "May–July",
+      "colour": "",
+      "size": "90–120 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bumblebees, Butterflies, Seedheads",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Lupins bring bold, spire-like flower columns of intense purple, pink and bicolour to the early summer border. The stately vertical habit provides strong architectural punctuation among softer cottage-garden plants. They prefer cool, moist springs but cope well with English conditions given good drainage and sun. Cut spent spikes hard back immediately after flowering to encourage a second flush. Excellent alongside Peonies, Geraniums and Roses — in late spring before those plants take over, Lupins are the undisputed showpiece.",
+      "image": "images/plants/lupinus-polyphyllus-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8135a4bdfae84b50712e",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Moderate",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=lupin&type=product\nSarah Raven: https://www.sarahraven.com/search?q=lupin\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=lupin\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=lupin"
+    },
+    {
+      "id": "3c7b6675-06ae-8132-acb9-f3df0a928041",
+      "name": "Lychnis coronaria",
+      "slug": "lychnis-coronaria-3c7b6675",
+      "latin": "Rose Campion",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "June–August",
+      "colour": "",
+      "size": "60–80 cm × 30–45 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Butterflies, Self-seeds freely",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Shocking cerise-magenta flowers on silver-white woolly stems and foliage — one of the most vivid plants in the border and an extraordinary foil for blue and purple companions. Short-lived (biennial or short perennial) but self-seeds with great enthusiasm and effectively becomes permanent. The silver foliage alone earns its place. The white-flowered form 'Alba' is quieter and equally beautiful.",
+      "image": "images/plants/lychnis-coronaria-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8132acb9f3df0a928041",
+      "to_buy": true,
+      "border_position": "Middle",
+      "drought": "Excellent",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Thompson & Morgan: https://www.thompson-morgan.com/search-results?q=lychnis+coronaria\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=lychnis+coronaria\nSarah Raven: https://www.sarahraven.com/search?q=lychnis+coronaria"
+    },
+    {
+      "id": "3bab6675-06ae-81a6-93a6-dd07b9cebcbd",
       "name": "Magnolia 'Susan'",
       "slug": "magnolia-susan-3bab6675",
       "latin": "Magnolia 'Susan'",
@@ -2530,9 +3467,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "RHS AGM holder. Upright medium-sized deciduous shrub. Deep reddish-purple buds opening to fragrant cupped flowers, red-purple outside and pink within. More compact and upright than M. × soulangeana. Flowers mid-spring. Prune only between midsummer and early autumn — never in spring or winter. Needs sheltered position — late frosts can damage flower buds. Moist, humus-rich, well-drained neutral to acid soil. Ordered from Gardening Express Apr 2022 (#601283336).",
       "image": "images/plants/magnolia-susan-3bab6675.webp",
-      "url": "https://app.notion.com/p/3bab667506ae81a693a6dd07b9cebcbd"
+      "url": "https://app.notion.com/p/3bab667506ae81a693a6dd07b9cebcbd",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8127-a7d5-c47fb82b7d22",
       "name": "Mahala mat",
       "slug": "mahala-mat-3b9b6675",
       "latin": "Ceanothus prostratus",
@@ -2555,9 +3498,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Mahala mat. Creeping prostrate evergreen shrub forming a dense low mat. Leathery dark green toothed leaves. Produces masses of bright blue flowers in spring. RHS Plants for Pollinators. Drought resistant once established — excellent for increasingly dry summers. H4 hardy. Needs full sun and a sheltered south or west-facing position. Lime tolerant but may become chlorotic on shallow chalk. Pruning Group 8 — prune after flowering. May be susceptible to scale insects and honey fungus. Ordered from Gardening Express Apr 2022 (#601283336). RHS profile: https://www.rhs.org.uk/plants/28896/ceanothus-prostratus/details",
       "image": "images/plants/mahala-mat-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8127a7d5c47fb82b7d22"
+      "url": "https://app.notion.com/p/3b9b667506ae8127a7d5c47fb82b7d22",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81c3-907c-f5e755fdda20",
       "name": "Mealycup Sage",
       "slug": "mealycup-sage-3b9b6675",
       "latin": "Salvia farinacea",
@@ -2580,9 +3529,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/mealycup-sage-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81c3907cf5e755fdda20"
+      "url": "https://app.notion.com/p/3b9b667506ae81c3907cf5e755fdda20",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-817a-837d-f3b4498d1ce7",
       "name": "Montbretia",
       "slug": "montbretia-3b9b6675",
       "latin": "Crocosmia x crocosmiiflora",
@@ -2605,9 +3560,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/montbretia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817a837df3b4498d1ce7"
+      "url": "https://app.notion.com/p/3b9b667506ae817a837df3b4498d1ce7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-812a-a07c-ebf603035b3d",
       "name": "Mountain Clematis",
       "slug": "mountain-clematis-3b9b6675",
       "latin": "Clematis montana",
@@ -2630,9 +3591,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/mountain-clematis-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae812aa07cebf603035b3d"
+      "url": "https://app.notion.com/p/3b9b667506ae812aa07cebf603035b3d",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8123-adea-c9beeb5ff52e",
       "name": "Mountain Flax",
       "slug": "mountain-flax-3b9b6675",
       "latin": "Phormium tenax",
@@ -2655,9 +3622,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/mountain-flax-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8123adeac9beeb5ff52e"
+      "url": "https://app.notion.com/p/3b9b667506ae8123adeac9beeb5ff52e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8129-8c9b-f612dfedddc7",
       "name": "Muscari",
       "slug": "muscari-3b9b6675",
       "latin": "Muscari armeniacum",
@@ -2680,9 +3653,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/muscari-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81298c9bf612dfedddc7"
+      "url": "https://app.notion.com/p/3b9b667506ae81298c9bf612dfedddc7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-81ae-8d4d-f3e384a2ae27",
       "name": "Muscari (Purple/Blue)",
       "slug": "muscari-purple-blue-3bdb6675",
       "latin": "Muscari spp.",
@@ -2705,9 +3684,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Grape hyacinth. From T&M Purple Rain Mix — planted as a blue carpet beneath the purple tulips. Plant 5–10cm deep in autumn. Not to be eaten; wear gloves.",
       "image": "images/plants/muscari-purple-blue-3bdb6675.jpg",
-      "url": "https://app.notion.com/p/3bdb667506ae81ae8d4df3e384a2ae27"
+      "url": "https://app.notion.com/p/3bdb667506ae81ae8d4df3e384a2ae27",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8163-8d60-fddfe110814d",
       "name": "Muscari armeniacum",
       "slug": "muscari-armeniacum-3bab6675",
       "latin": "Muscari armeniacum",
@@ -2730,9 +3715,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Grape hyacinth. Dense cobalt blue flower spikes. Naturalises freely and spreads. Excellent underplanting for tulips. H6 hardy. Plant 5–10cm deep in autumn. Not to be eaten; wear gloves. Note: a generic Muscari entry already exists in the Wild Garden & Meadow — this entry records this specific additional purchase.",
       "image": "images/plants/muscari-armeniacum-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81638d60fddfe110814d"
+      "url": "https://app.notion.com/p/3bab667506ae81638d60fddfe110814d",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81f0-b3a2-ddb69c81362c",
       "name": "Narcissus 'Dick Wilden'",
       "slug": "narcissus-dick-wilden-3b9b6675",
       "latin": "Narcissus 'Dick Wilden'",
@@ -2755,9 +3746,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/narcissus-dick-wilden-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81f0b3a2ddb69c81362c"
+      "url": "https://app.notion.com/p/3b9b667506ae81f0b3a2ddb69c81362c",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81db-8c28-e377507ada82",
       "name": "Narcissus 'Double Duo'",
       "slug": "narcissus-double-duo-3bab6675",
       "latin": "Narcissus 'Double Duo'",
@@ -2780,9 +3777,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Double-flowered miniature narcissus. Compact plants with richly coloured double flowers in yellow-orange. Good for pots, borders and naturalising. Plant 8–10cm deep in autumn. Harmful if eaten; wear gloves. Source: Thompson & Morgan https://www.thompson-morgan.com/p/narcissus-double-duo/60827TM",
       "image": "images/plants/narcissus-double-duo-3bab6675.png",
-      "url": "https://app.notion.com/p/3bab667506ae81db8c28e377507ada82"
+      "url": "https://app.notion.com/p/3bab667506ae81db8c28e377507ada82",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-819f-bbee-eca905c7d484",
       "name": "Narcissus 'Flower Drift'",
       "slug": "narcissus-flower-drift-3b9b6675",
       "latin": "Narcissus 'Flower Drift'",
@@ -2805,9 +3808,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/narcissus-flower-drift-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae819fbbeeeca905c7d484"
+      "url": "https://app.notion.com/p/3b9b667506ae819fbbeeeca905c7d484",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8161-af1a-e02c13384e4e",
       "name": "Narcissus 'Pipit'",
       "slug": "narcissus-pipit-3b9b6675",
       "latin": "Narcissus 'Pipit'",
@@ -2830,9 +3839,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/narcissus-pipit-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8161af1ae02c13384e4e"
+      "url": "https://app.notion.com/p/3b9b667506ae8161af1ae02c13384e4e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-81ef-9357-c2202a881dac",
       "name": "Narcissus 'Tahiti'",
       "slug": "narcissus-tahiti-3bdb6675",
       "latin": "Narcissus 'Tahiti'",
@@ -2855,9 +3870,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "RHS AGM holder. Large double-flowered daffodil, golden yellow with orange frill. Scented. Naturalises well. Plant 10cm deep in autumn. Harmful if eaten; wear gloves. Ordered from T&M as part of Spring Apricot Shades Mix.",
       "image": "images/plants/narcissus-tahiti-3bdb6675.jpg",
-      "url": "https://app.notion.com/p/3bdb667506ae81ef9357c2202a881dac"
+      "url": "https://app.notion.com/p/3bdb667506ae81ef9357c2202a881dac",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81ab-bd5d-c8e229d21a2b",
       "name": "Narcissus Miniature Mixed",
       "slug": "narcissus-miniature-mixed-3bab6675",
       "latin": "Narcissus spp. (miniature mixed)",
@@ -2880,9 +3901,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Miniature narcissus mixed varieties. Compact forms ideal for pots, window boxes and containers. Mix may include varieties such as Tete-a-Tete, Jack Snipe, February Gold and others. Plant 8–10cm deep in autumn in free-draining compost. Excellent for early spring colour in pots. Harmful if eaten; wear gloves. Source: Thompson & Morgan https://www.thompson-morgan.com/p/narcissus-miniature-mixed/P93264TM",
       "image": "images/plants/narcissus-miniature-mixed-3bab6675.png",
-      "url": "https://app.notion.com/p/3bab667506ae81abbd5dc8e229d21a2b"
+      "url": "https://app.notion.com/p/3bab667506ae81abbd5dc8e229d21a2b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8148-b357-ea2f66ce5418",
+      "name": "Nepeta 'Six Hills Giant'",
+      "slug": "nepeta-six-hills-giant-3c7b6675",
+      "latin": "Catmint",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "May–October",
+      "colour": "",
+      "size": "60–90 cm × 60–90 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bumblebees, Honey bees, Butterflies",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "The classic cottage garden edging plant, and one of the most reliably drought-tolerant perennials there is. Soft silver-grey foliage and a long froth of lavender-blue spikes that, cut back after first flowering, repeat well into autumn. Quintessentially English in feel. A natural companion for Roses — traditionally planted at the base of standard roses.",
+      "image": "images/plants/nepeta-six-hills-giant-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8148b357ea2f66ce5418",
+      "to_buy": true,
+      "border_position": "Front · Middle",
+      "drought": "Excellent",
+      "hardiness": "H7 Fully Hardy",
+      "suppliers": "Thompson & Morgan: https://www.thompson-morgan.com/search-results?q=nepeta+catmint\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=nepeta\nRHS online shop: https://www.rhsplants.co.uk/search/_/search.nepeta/sort.0/"
+    },
+    {
+      "id": "3b9b6675-06ae-816d-b91c-e5d0e6b0f023",
       "name": "Netted Iris",
       "slug": "netted-iris-3b9b6675",
       "latin": "Iris reticulata",
@@ -2905,9 +3963,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/netted-iris-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae816db91ce5d0e6b0f023"
+      "url": "https://app.notion.com/p/3b9b667506ae816db91ce5d0e6b0f023",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8164-9de6-db5d8b81901a",
       "name": "Opium Poppy",
       "slug": "opium-poppy-3b9b6675",
       "latin": "Papaver somniferum",
@@ -2930,9 +3994,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/opium-poppy-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81649de6db5d8b81901a"
+      "url": "https://app.notion.com/p/3b9b667506ae81649de6db5d8b81901a",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-810a-840e-e33830bd80a9",
       "name": "Oregon Grape",
       "slug": "oregon-grape-3b9b6675",
       "latin": "Mahonia aquifolium",
@@ -2955,9 +4025,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/oregon-grape-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae810a840ee33830bd80a9"
+      "url": "https://app.notion.com/p/3b9b667506ae810a840ee33830bd80a9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a7-8cb5-fd98f640adba",
       "name": "Oriental Poppy",
       "slug": "oriental-poppy-3b9b6675",
       "latin": "Papaver orientale",
@@ -2980,9 +4056,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/oriental-poppy-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a78cb5fd98f640adba"
+      "url": "https://app.notion.com/p/3b9b667506ae81a78cb5fd98f640adba",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8188-822b-f2a844f87e7e",
+      "name": "Origanum laevigatum 'Herrenhausen'",
+      "slug": "origanum-laevigatum-herrenhausen-3c7b6675",
+      "latin": "Ornamental Oregano",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "July–October",
+      "colour": "",
+      "size": "45–60 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees (exceptional), Hoverflies, Drought hero",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Clouds of tiny mauve-pink flowers above aromatic grey-green foliage, carried on reddish stems that give the whole plant a warm purple tinge even before it flowers. Superb for bees and thrives on being ignored in poor, dry soil — will actively sulk if given rich, moist conditions. One of the finest plants for Mediterranean-style planting that still reads as cottage garden.",
+      "image": "images/plants/origanum-laevigatum-herrenhausen-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8188822bf2a844f87e7e",
+      "to_buy": true,
+      "border_position": "Front · Middle",
+      "drought": "Excellent",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Beth Chatto: https://www.bethchatto.co.uk/search.php?q=origanum+herrenhausen\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=origanum+herrenhausen\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=origanum+herrenhausen"
+    },
+    {
+      "id": "3b9b6675-06ae-8113-96a9-c142d4a21fbd",
       "name": "Oxeye Daisy",
       "slug": "oxeye-daisy-3b9b6675",
       "latin": "Leucanthemum vulgare",
@@ -3005,9 +4118,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/oxeye-daisy-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae811396a9c142d4a21fbd"
+      "url": "https://app.notion.com/p/3b9b667506ae811396a9c142d4a21fbd",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81c2-bb91-d5b34ed16656",
       "name": "Oxeye Daisy",
       "slug": "oxeye-daisy-3b9b6675",
       "latin": "Leucanthemum vulgare",
@@ -3030,9 +4149,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/oxeye-daisy-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81c2bb91d5b34ed16656"
+      "url": "https://app.notion.com/p/3b9b667506ae81c2bb91d5b34ed16656",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81db-972d-e8e27c65a318",
       "name": "Pampas Grass",
       "slug": "pampas-grass-3b9b6675",
       "latin": "Cortaderia selloana",
@@ -3055,9 +4180,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Wear gloves and protective clothing when pruning — leaves are very sharp.",
       "image": "images/plants/pampas-grass-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81db972de8e27c65a318"
+      "url": "https://app.notion.com/p/3b9b667506ae81db972de8e27c65a318",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8112-9dd9-daab82f4bc72",
+      "name": "Penstemon 'Garnet'",
+      "slug": "penstemon-garnet-3c7b6675",
+      "latin": "'Andenken an Friedrich Hahn'",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "June–November",
+      "colour": "",
+      "size": "60–90 cm × 30–45 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bumblebees, Long-tongue insects, Long season",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Deep wine-red tubular flowers carried in tall spikes from June through to the first hard frosts — one of the longest-flowering border plants available. One of the hardier Penstemons and survives most UK winters with a light mulch; take cuttings in August as insurance (the same method as your salvias). A classic English country garden plant that complements Roses beautifully.",
+      "image": "images/plants/penstemon-garnet-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae81129dd9daab82f4bc72",
+      "to_buy": true,
+      "border_position": "Middle",
+      "drought": "Good",
+      "hardiness": "H4 Half-hardy",
+      "suppliers": "Hayloft: https://hayloft.co.uk/catalogsearch/result/?q=penstemon+garnet\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=penstemon+garnet\nFarmer Gracy: https://www.farmergracy.co.uk/search?q=penstemon+garnet&type=product"
+    },
+    {
+      "id": "3b9b6675-06ae-8136-a2c3-f156ae343088",
       "name": "Peony 'Shirley Temple'",
       "slug": "peony-shirley-temple-3b9b6675",
       "latin": "Paeonia lactiflora 'Shirley Temple'",
@@ -3080,9 +4242,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "RHS AGM holder. Herbaceous perennial. One of the most beautiful peonies — large fully double fragrant flowers opening rose-pink and fading to ivory white. May need staking as large blooms are heavy. Newly planted peonies rarely flower in year 1 — best in years 2–3 onwards. Can live for decades once established. Skin irritant; harmful to pets (dogs, cats). Watch for peony wilt and honey fungus. Excellent cut flower. Ordered from Farmer Gracy (FG857326 Jul 2022). Farmer Gracy: https://www.farmergracy.co.uk/products/peony-shirley-temple-bare-roots-uk. RHS profile: https://www.rhs.org.uk/plants/54831/paeonia-lactiflora-shirley-temple/details",
       "image": "images/plants/peony-shirley-temple-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8136a2c3f156ae343088"
+      "url": "https://app.notion.com/p/3b9b667506ae8136a2c3f156ae343088",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-813d-b7b3-d95bbbb938d1",
       "name": "Perennial Cornflower",
       "slug": "perennial-cornflower-3b9b6675",
       "latin": "Centaurea montana",
@@ -3105,9 +4273,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/perennial-cornflower-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae813db7b3d95bbbb938d1"
+      "url": "https://app.notion.com/p/3b9b667506ae813db7b3d95bbbb938d1",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8104-8e2d-dd8e3e7a4d63",
+      "name": "Persicaria amplexicaulis 'Firetail'",
+      "slug": "persicaria-amplexicaulis-firetail-3c7b6675",
+      "latin": "Red Bistort",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "July–November",
+      "colour": "",
+      "size": "100–120 cm × 60–90 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Very long season",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Bright crimson poker-like spikes held upright above bold, broad foliage from July right through to the first hard frosts. One of the longest-flowering and most trouble-free plants available — virtually no maintenance. Provides essential bulk and late colour as summer perennials wind down. Excellent in front of large shrubs like Hydrangea and Rhododendron.",
+      "image": "images/plants/persicaria-amplexicaulis-firetail-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae81048e2ddd8e3e7a4d63",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Good",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=persicaria+amplexicaulis&type=product\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=persicaria+amplexicaulis\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=persicaria+amplexicaulis"
+    },
+    {
+      "id": "3b9b6675-06ae-8169-9b06-da46ad1bfd61",
       "name": "Peruvian Lily",
       "slug": "peruvian-lily-3b9b6675",
       "latin": "Alstroemeria spp.",
@@ -3130,9 +4335,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "",
       "image": "images/plants/peruvian-lily-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81699b06da46ad1bfd61"
+      "url": "https://app.notion.com/p/3b9b667506ae81699b06da46ad1bfd61",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a2-acec-c2ba7de38e4f",
       "name": "Photinia serratifolia",
       "slug": "photinia-serratifolia-3b9b6675",
       "latin": "Photinia serratifolia",
@@ -3155,9 +4366,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "",
       "image": "images/plants/photinia-serratifolia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a2acecc2ba7de38e4f"
+      "url": "https://app.notion.com/p/3b9b667506ae81a2acecc2ba7de38e4f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-817b-b147-d60e36c47981",
       "name": "Photinia serratifolia",
       "slug": "photinia-serratifolia-3b9b6675",
       "latin": "Photinia serratifolia",
@@ -3180,9 +4397,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/photinia-serratifolia-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817bb147d60e36c47981"
+      "url": "https://app.notion.com/p/3b9b667506ae817bb147d60e36c47981",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8176-86f3-c2cc6911a744",
       "name": "Plantain Lily",
       "slug": "plantain-lily-3b9b6675",
       "latin": "Hosta spp.",
@@ -3205,9 +4428,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Mulch around base to deter slugs.",
       "image": "images/plants/plantain-lily-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817686f3c2cc6911a744"
+      "url": "https://app.notion.com/p/3b9b667506ae817686f3c2cc6911a744",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-818e-ae25-ec532b33fddb",
       "name": "Pomegranate Tree",
       "slug": "pomegranate-tree-3b9b6675",
       "latin": "Punica granatum",
@@ -3230,9 +4459,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Wrap pot in winter. Protection: wrap/insulate pot in Nov to protect roots.",
       "image": "images/plants/pomegranate-tree-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae818eae25ec532b33fddb"
+      "url": "https://app.notion.com/p/3b9b667506ae818eae25ec532b33fddb",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81aa-91c9-c1acab379eb9",
       "name": "Poppy Anemone",
       "slug": "poppy-anemone-3b9b6675",
       "latin": "Anemone coronaria",
@@ -3255,9 +4490,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/poppy-anemone-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81aa91c9c1acab379eb9"
+      "url": "https://app.notion.com/p/3b9b667506ae81aa91c9c1acab379eb9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8161-b10d-e1f5936c62c0",
       "name": "Potentilla nepalensis 'Miss Willmott'",
       "slug": "potentilla-nepalensis-miss-willmott-3bbb6675",
       "latin": "Potentilla nepalensis 'Miss Willmott'",
@@ -3280,9 +4521,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Nepal cinquefoil. Low mounding clump of deep green strawberry-like leaves. Cherry-red to deep pink cup-shaped flowers over a long season. RHS Plants for Pollinators. Fruit are ornamental — not to be eaten. Wear gloves when handling. May become straggly — support with surrounding plants or twiggy sticks if needed.",
       "image": "images/plants/potentilla-nepalensis-miss-willmott-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae8161b10de1f5936c62c0"
+      "url": "https://app.notion.com/p/3bbb667506ae8161b10de1f5936c62c0",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8150-90af-f92bb3a54f0f",
       "name": "Prairie Blazing Star",
       "slug": "prairie-blazing-star-3b9b6675",
       "latin": "Liatris pycnostachya",
@@ -3305,9 +4552,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/prairie-blazing-star-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae815090aff92bb3a54f0f"
+      "url": "https://app.notion.com/p/3b9b667506ae815090aff92bb3a54f0f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-81ea-bb75-f05fd431c9cd",
       "name": "Primula vialii 'Red Rose'",
       "slug": "primula-vialii-red-rose-3bbb6675",
       "latin": "Primula vialii",
@@ -3330,9 +4583,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Orchid primula (Vial's primrose). One of the most striking and unusual primulas — erect spikes of red buds opening to rose-pink flowers from the base upwards, giving a dramatic bicolour effect. Short-lived perennial, best treated as biennial in some gardens. Self-seeds where happy. Requires consistently moist conditions — will not tolerate drought. RHS AGM holder. May be susceptible to aphids, vine weevil, slugs and red spider mite.",
       "image": "images/plants/primula-vialii-red-rose-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae81eabb75f05fd431c9cd"
+      "url": "https://app.notion.com/p/3bbb667506ae81eabb75f05fd431c9cd",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8171-a48c-f18c6181518f",
       "name": "Purple Vervain",
       "slug": "purple-vervain-3b9b6675",
       "latin": "Verbena bonariensis",
@@ -3355,9 +4614,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/purple-vervain-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8171a48cf18c6181518f"
+      "url": "https://app.notion.com/p/3b9b667506ae8171a48cf18c6181518f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81cb-9397-d28540736350",
       "name": "Pussy Willow",
       "slug": "pussy-willow-3b9b6675",
       "latin": "Salix caprea",
@@ -3380,9 +4645,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/pussy-willow-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81cb9397d28540736350"
+      "url": "https://app.notion.com/p/3b9b667506ae81cb9397d28540736350",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8135-8ed1-d2d3e88ac914",
       "name": "Rambling Rose",
       "slug": "rambling-rose-3b9b6675",
       "latin": "Rosa spp.",
@@ -3405,9 +4676,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "",
       "image": "images/plants/rambling-rose-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81358ed1d2d3e88ac914"
+      "url": "https://app.notion.com/p/3b9b667506ae81358ed1d2d3e88ac914",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8138-88dc-d8d14a88ad55",
       "name": "Red Hot Poker",
       "slug": "red-hot-poker-3b9b6675",
       "latin": "Kniphofia uvaria",
@@ -3430,9 +4707,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/red-hot-poker-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae813888dcd8d14a88ad55"
+      "url": "https://app.notion.com/p/3b9b667506ae813888dcd8d14a88ad55",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81df-80d7-dabf7eee7369",
       "name": "Rhododendron 'Nancy Evans'",
       "slug": "rhododendron-nancy-evans-3b9b6675",
       "latin": "Rhododendron 'Nancy Evans'",
@@ -3455,9 +4738,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Feed with ericaceous fertiliser in Apr and Jun.",
       "image": "images/plants/rhododendron-nancy-evans-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81df80d7dabf7eee7369"
+      "url": "https://app.notion.com/p/3b9b667506ae81df80d7dabf7eee7369",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bcb6675-06ae-81be-a0ee-e3a5573d9bc8",
       "name": "Rosa 'Bright as a Button'",
       "slug": "rosa-bright-as-a-button-3bcb6675",
       "latin": "Rosa Bright as a Button ('Chewsumsigns'PBR) (persica hybrid) (S)",
@@ -3480,9 +4769,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Persica hybrid shrub rose. Repeat-flowering with dark green glossy foliage. Scented single blooms with bright pink petals, a striking magenta eye and boss of golden stamens. RHS trial entry (persica hybrid trial). Fruit ornamental — not to be eaten. Wear gloves when handling. Apply balanced fertiliser and mulch in late winter/early spring and again in early summer for best flowering. May be susceptible to aphids, blackspot, powdery mildew, rose leafhopper and red spider mite.",
       "image": "images/plants/rosa-bright-as-a-button-3bcb6675.jpg",
-      "url": "https://app.notion.com/p/3bcb667506ae81bea0eee3a5573d9bc8"
+      "url": "https://app.notion.com/p/3bcb667506ae81bea0eee3a5573d9bc8",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bcb6675-06ae-81a3-a3f6-ef068d66febf",
       "name": "Rosa 'Meteor'",
       "slug": "rosa-meteor-3bcb6675",
       "latin": "Rosa Meteor ('Korzeigar'PBR) (F)",
@@ -3505,9 +4800,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "Floribunda bush rose. Compact bushy habit with bright orange-yellow flowers in clusters from summer to autumn. Semi-evergreen. H5 hardy. Fruit ornamental — not to be eaten. Wear gloves when handling. May be susceptible to aphids, blackspot, powdery mildew and rust. Apply balanced fertiliser and mulch in late winter/early spring and again in early summer for best flowering.",
       "image": "images/plants/rosa-meteor-3bcb6675.jpg",
-      "url": "https://app.notion.com/p/3bcb667506ae81a3a3f6ef068d66febf"
+      "url": "https://app.notion.com/p/3bcb667506ae81a3a3f6ef068d66febf",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8133-9ef1-c0e7d84a5b9a",
       "name": "Rose Campion",
       "slug": "rose-campion-3b9b6675",
       "latin": "Lychnis coronaria",
@@ -3530,9 +4831,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/rose-campion-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81339ef1c0e7d84a5b9a"
+      "url": "https://app.notion.com/p/3b9b667506ae81339ef1c0e7d84a5b9a",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-812b-b16d-def5af0a4e63",
       "name": "Rose Spirea",
       "slug": "rose-spirea-3b9b6675",
       "latin": "Spiraea japonica",
@@ -3555,9 +4862,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/rose-spirea-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae812bb16ddef5af0a4e63"
+      "url": "https://app.notion.com/p/3b9b667506ae812bb16ddef5af0a4e63",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b8-a5b1-d302b0ec70a7",
       "name": "Royal Lily",
       "slug": "royal-lily-3b9b6675",
       "latin": "Lilium regale",
@@ -3580,9 +4893,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/royal-lily-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b8a5b1d302b0ec70a7"
+      "url": "https://app.notion.com/p/3b9b667506ae81b8a5b1d302b0ec70a7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-81c6-998a-c9cf84c827ec",
+      "name": "Rudbeckia fulgida 'Goldsturm'",
+      "slug": "rudbeckia-fulgida-goldsturm-3c7b6675",
+      "latin": "Black-eyed Susan",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "August–October",
+      "colour": "",
+      "size": "60–70 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Butterflies, Goldfinches (seed)",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Masses of bright golden-yellow daisies with a dark central eye, flowering in August when the garden can feel tired — one of the most valuable late-season perennials for English gardens. Long-lasting, drought tolerant once established, and remarkably trouble-free. The seed heads left through winter provide food for Goldfinches and structural interest in the bare border.",
+      "image": "images/plants/rudbeckia-fulgida-goldsturm-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae81c6998ac9cf84c827ec",
+      "to_buy": true,
+      "border_position": "Middle",
+      "drought": "Good",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Thompson & Morgan: https://www.thompson-morgan.com/search-results?q=rudbeckia+goldsturm\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=rudbeckia+goldsturm\nFarmer Gracy: https://www.farmergracy.co.uk/search?q=rudbeckia+goldsturm&type=product"
+    },
+    {
+      "id": "3bab6675-06ae-8115-b9ef-c086c427183a",
       "name": "Russian Snowdrop",
       "slug": "russian-snowdrop-3bab6675",
       "latin": "Galanthus woronowii",
@@ -3605,9 +4955,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "Russian snowdrop. Green-leaved snowdrop species. Naturalises easily under deciduous trees. H6 hardy. Ideal for planting under the walnut tree in the centre section. Source: Thompson & Morgan https://www.thompson-morgan.com/p/russian-snowdrop/P91323TM. Also planted in Back Wild Garden & Meadow.",
       "image": "images/plants/russian-snowdrop-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8115b9efc086c427183a"
+      "url": "https://app.notion.com/p/3bab667506ae8115b9efc086c427183a",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-811f-b442-ffb5c14c3b17",
       "name": "Russian Snowdrop",
       "slug": "russian-snowdrop-3bab6675",
       "latin": "Galanthus woronowii",
@@ -3630,9 +4986,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "Russian snowdrop. Green-leaved snowdrop species with slightly larger flowers than common snowdrop. Spreads freely and naturalises easily. H6 hardy. Plant in autumn 5–10cm deep, or 'in the green' after flowering for better establishment. Ideal for naturalising under deciduous trees. Source: Thompson & Morgan https://www.thompson-morgan.com/p/russian-snowdrop/P91323TM. Also planted in Back Centre Section (under walnut tree).",
       "image": "images/plants/russian-snowdrop-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae811fb442ffb5c14c3b17"
+      "url": "https://app.notion.com/p/3bab667506ae811fb442ffb5c14c3b17",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8181-9468-cad9e8e46e61",
       "name": "Salvia 'Caramia'",
       "slug": "salvia-caramia-3bbb6675",
       "latin": "Salvia nemorosa 'Caramia'",
@@ -3655,9 +5017,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Balkan clary. Closely related to the popular 'Caradonna' but with a slightly broader, more spreading habit. Rich violet-purple flower spikes over aromatic foliage. Fully hardy. Drought tolerant once established. Deadhead spent spikes promptly for a reliable second flush. RHS profile: https://www.rhs.org.uk/plants/359904/salvia-nemorosa-caramia/details",
       "image": "images/plants/salvia-caramia-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae81819468cad9e8e46e61"
+      "url": "https://app.notion.com/p/3bbb667506ae81819468cad9e8e46e61",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8180-bca0-e0ee6c8608f7",
       "name": "Salvia 'Hot Lips'",
       "slug": "salvia-hot-lips-3bab6675",
       "latin": "Salvia × jamensis 'Hot Lips'",
@@ -3680,9 +5048,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae818db2c5cb936f811982",
       "notes": "RHS AGM holder. Hardy H5 (to -15°C). Drought tolerant once established. Aromatic foliage. Evergreen if not cut back by frost. Flower colour changes through the season — red in midsummer, bicolour red/white in July–August, sometimes all-white in autumn as days shorten. Sheltered position preferred. May be susceptible to slugs, snails, rosemary beetle and leafhoppers. RHS profile: https://www.rhs.org.uk/plants/208839/salvia-hot-lips/details",
       "image": "images/plants/salvia-hot-lips-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8180bca0e0ee6c8608f7"
+      "url": "https://app.notion.com/p/3bab667506ae8180bca0e0ee6c8608f7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-8176-8637-e9303bfb1aaf",
       "name": "Salvia 'Magical Amazone'",
       "slug": "salvia-magical-amazone-3bdb6675",
       "latin": "Salvia nemorosa 'Magical Amazone'",
@@ -3705,9 +5079,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "",
       "image": "images/plants/salvia-magical-amazone-3bdb6675.jpg",
-      "url": "https://app.notion.com/p/3bdb667506ae81768637e9303bfb1aaf"
+      "url": "https://app.notion.com/p/3bdb667506ae81768637e9303bfb1aaf",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-818b-8011-f29a4a46d259",
       "name": "Salvia 'Magical Donau'",
       "slug": "salvia-magical-donau-3bdb6675",
       "latin": "Salvia nemorosa 'Magical Donau'",
@@ -3730,9 +5110,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/salvia-magical-donau-3bdb6675.webp",
-      "url": "https://app.notion.com/p/3bdb667506ae818b8011f29a4a46d259"
+      "url": "https://app.notion.com/p/3bdb667506ae818b8011f29a4a46d259",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-81a1-abac-f15c0e474488",
       "name": "Salvia 'Rockin' Fuchsia'",
       "slug": "salvia-rockin-fuchsia-3bbb6675",
       "latin": "Salvia 'BBSAL00301' (Rockin' Series)",
@@ -3755,9 +5141,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Semi-evergreen upright bushy perennial. Fuchsia-pink flowers with striking near-black calyx. Sterile — does not set seed so blooms continuously without deadheading. Excellent pollinator plant. Not fully hardy — take cuttings and overwinter under glass. Prune in spring after frost risk passes.",
       "image": "images/plants/salvia-rockin-fuchsia-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae81a1abacf15c0e474488"
+      "url": "https://app.notion.com/p/3bbb667506ae81a1abacf15c0e474488",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8142-a2ab-cfe5e4241b0e",
       "name": "Salvia 'Roman Red'",
       "slug": "salvia-roman-red-3bbb6675",
       "latin": "Salvia 'Balsalromed' (Roman Red)",
@@ -3780,9 +5172,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8170a753e5a7472390b4",
       "notes": "Vigorous upright bushy perennial with dark green foliage and rich red flowers. Not fully hardy — take cuttings and overwinter under glass. Prune in spring after frost risk passes. Dislikes standing water.",
       "image": "images/plants/salvia-roman-red-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae8142a2abcfe5e4241b0e"
+      "url": "https://app.notion.com/p/3bbb667506ae8142a2abcfe5e4241b0e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8195-b55b-c42555df9cc3",
       "name": "Salvia microphylla — purple",
       "slug": "salvia-microphylla-purple-3bbb6675",
       "latin": "Salvia microphylla (purple-flowered hybrid)",
@@ -3805,9 +5203,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Baby sage. Bushy evergreen sub-shrub with small aromatic leaves. Long flowering season. Drought tolerant once established. Needs sheltered position with full sun and good drainage to overwinter reliably in UK. H4 hardy. May be susceptible to powdery mildew, verticillium wilt and honey fungus (rarely).",
       "image": "images/plants/salvia-microphylla-purple-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae8195b55bc42555df9cc3"
+      "url": "https://app.notion.com/p/3bbb667506ae8195b55bc42555df9cc3",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-81ea-a65e-d76a89d950f1",
       "name": "Salvia microphylla — purple",
       "slug": "salvia-microphylla-purple-3bbb6675",
       "latin": "Salvia microphylla (purple-flowered hybrid)",
@@ -3830,9 +5234,108 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Baby sage. Bushy evergreen sub-shrub with small aromatic leaves. Long flowering season. Drought tolerant once established. Needs sheltered position with full sun and good drainage to overwinter reliably in UK. H4 hardy. May be susceptible to powdery mildew, verticillium wilt and honey fungus (rarely).",
       "image": "images/plants/salvia-microphylla-purple-3bbb6675.jpg",
-      "url": "https://app.notion.com/p/3bbb667506ae81eaa65ed76a89d950f1"
+      "url": "https://app.notion.com/p/3bbb667506ae81eaa65ed76a89d950f1",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-8179-b97b-c1d4c30eb53f",
+      "name": "Salvia nemorosa 'Caradonna'",
+      "slug": "salvia-nemorosa-caradonna-3c7b6675",
+      "latin": "Hardy Meadow Sage",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "June–September",
+      "colour": "",
+      "size": "50–70 cm × 30–45 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bumblebees, Honey bees, Long-tongue insects",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Unlike the tender salvias already in the garden, this is fully frost-hardy and will return reliably each year without protection. Dark near-black stems carry deep violet flower spikes — a more architectural, upright habit than the tender varieties. Cut back after first flush and it repeats well. Superb at the front of a border threading through Roses and Peonies.",
+      "image": "images/plants/salvia-nemorosa-caradonna-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8179b97bc1d4c30eb53f",
+      "to_buy": true,
+      "border_position": "Front · Middle",
+      "drought": "Good",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Hayloft: https://hayloft.co.uk/catalogsearch/result/?q=salvia+caradonna\nFarmer Gracy: https://www.farmergracy.co.uk/search?q=salvia+caradonna&type=product\nSarah Raven: https://www.sarahraven.com/search?q=salvia+caradonna"
+    },
+    {
+      "id": "3c7b6675-06ae-8154-ba9b-f143ba0d0beb",
+      "name": "Sanguisorba officinalis 'Tanna'",
+      "slug": "sanguisorba-officinalis-tanna-3c7b6675",
+      "latin": "Compact Burnet",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "June–September",
+      "colour": "",
+      "size": "30–45 cm × 30–40 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, Naturalistic",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Deep crimson-burgundy bobbin-like flower heads that nod gently on wiry stems — one of the most elegant and underused front-of-border perennials. 'Tanna' is a compact cultivar, unlike the species which can become large. The fine foliage and bobbing flowers feel light and naturalistic rather than formal. Outstanding for wildlife and adds unusual texture amongst broader-leaved companions.",
+      "image": "images/plants/sanguisorba-officinalis-tanna-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8154ba9bf143ba0d0beb",
+      "to_buy": true,
+      "border_position": "Front",
+      "drought": "Good",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=sanguisorba&type=product\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=sanguisorba\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=sanguisorba"
+    },
+    {
+      "id": "3c7b6675-06ae-8124-b790-df7abb587629",
+      "name": "Scabiosa 'Butterfly Blue'",
+      "slug": "scabiosa-butterfly-blue-3c7b6675",
+      "latin": "Pincushion Flower",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "June–September",
+      "colour": "",
+      "size": "30–45 cm × 30–40 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Butterflies, Bees, Front-of-border",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Periwinkle-blue pincushion flowers on long delicate stems, blooming from June right through September with deadheading. A small, neat plant — perfect for the front of borders and for weaving in and out of the feet of Roses and Peonies. Among the best plants available for attracting butterflies and a timeless feature of the English country garden. Compact and non-invasive.",
+      "image": "images/plants/scabiosa-butterfly-blue-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae8124b790df7abb587629",
+      "to_buy": true,
+      "border_position": "Front",
+      "drought": "Moderate",
+      "hardiness": "H6 Fully Hardy",
+      "suppliers": "Thompson & Morgan: https://www.thompson-morgan.com/search-results?q=scabiosa+butterfly+blue\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=scabiosa+butterfly+blue\nSarah Raven: https://www.sarahraven.com/search?q=scabiosa+butterfly+blue"
+    },
+    {
+      "id": "3b9b6675-06ae-81ba-9178-d45dc15684da",
       "name": "Scilla mischtschenkoana",
       "slug": "scilla-mischtschenkoana-3b9b6675",
       "latin": "Scilla mischtschenkoana",
@@ -3855,9 +5358,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/scilla-mischtschenkoana-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81ba9178d45dc15684da"
+      "url": "https://app.notion.com/p/3b9b667506ae81ba9178d45dc15684da",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b7-bdf5-fc8bdb9b9093",
       "name": "Sea Thrift",
       "slug": "sea-thrift-3b9b6675",
       "latin": "Armeria maritima",
@@ -3880,9 +5389,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/sea-thrift-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b7bdf5fc8bdb9b9093"
+      "url": "https://app.notion.com/p/3b9b667506ae81b7bdf5fc8bdb9b9093",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8160-9be9-f263c46234ab",
       "name": "Sicilian Honey Garlic",
       "slug": "sicilian-honey-garlic-3b9b6675",
       "latin": "Allium siculum",
@@ -3905,9 +5420,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/sicilian-honey-garlic-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81609be9f263c46234ab"
+      "url": "https://app.notion.com/p/3b9b667506ae81609be9f263c46234ab",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8159-859a-f9685f63b627",
       "name": "Small Scabious",
       "slug": "small-scabious-3b9b6675",
       "latin": "Scabiosa columbaria",
@@ -3930,9 +5451,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/small-scabious-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8159859af9685f63b627"
+      "url": "https://app.notion.com/p/3b9b667506ae8159859af9685f63b627",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81d1-83de-eb3f4f653bef",
       "name": "Smooth Hydrangea",
       "slug": "smooth-hydrangea-3b9b6675",
       "latin": "Hydrangea arborescens",
@@ -3955,9 +5482,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/smooth-hydrangea-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81d183deeb3f4f653bef"
+      "url": "https://app.notion.com/p/3b9b667506ae81d183deeb3f4f653bef",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81fc-935f-c11d8dcb5fea",
       "name": "Snake's Head Fritillary",
       "slug": "snake-s-head-fritillary-3b9b6675",
       "latin": "Fritillaria meleagris",
@@ -3980,9 +5513,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/snake-s-head-fritillary-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81fc935fc11d8dcb5fea"
+      "url": "https://app.notion.com/p/3b9b667506ae81fc935fc11d8dcb5fea",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-813b-8273-f8fe7ed3c1f7",
       "name": "Snowdrops",
       "slug": "snowdrops-3b9b6675",
       "latin": "Galanthus nivalis",
@@ -4005,9 +5544,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/snowdrops-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae813b8273f8fe7ed3c1f7"
+      "url": "https://app.notion.com/p/3b9b667506ae813b8273f8fe7ed3c1f7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8186-9c61-e8fbd05602ce",
       "name": "Spanish Bluebells",
       "slug": "spanish-bluebells-3b9b6675",
       "latin": "Hyacinthoides hispanica",
@@ -4030,9 +5575,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/spanish-bluebells-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81869c61e8fbd05602ce"
+      "url": "https://app.notion.com/p/3b9b667506ae81869c61e8fbd05602ce",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81d0-9ce9-e1307a349412",
       "name": "Spiraea douglasii",
       "slug": "spiraea-douglasii-3bab6675",
       "latin": "Spiraea douglasii",
@@ -4055,9 +5606,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Vigorous suckering shrub. Leaves oblong, grey-felted beneath. Very hardy H6 (to -20°C). Tolerates most soils and all aspects. Can form a dense thicket over time — monitor spread and remove suckers if needed. Generally pest and disease free. May be susceptible to honey fungus. Pruning Group 2 — prune immediately after flowering. Can be hard renovated if overgrown. Ordered from Gardening Express Apr 2022 (#601283336). RHS profile: https://www.rhs.org.uk/plants/22834/spiraea-douglasii/details",
       "image": "images/plants/spiraea-douglasii-3bab6675.webp",
-      "url": "https://app.notion.com/p/3bab667506ae81d09ce9e1307a349412"
+      "url": "https://app.notion.com/p/3bab667506ae81d09ce9e1307a349412",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81d7-9335-c25607b9b55d",
       "name": "Star Jasmine",
       "slug": "star-jasmine-3b9b6675",
       "latin": "Trachelospermum jasminoides",
@@ -4080,9 +5637,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/star-jasmine-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81d79335c25607b9b55d"
+      "url": "https://app.notion.com/p/3b9b667506ae81d79335c25607b9b55d",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-811b-b698-cf0b3ff1f721",
       "name": "Stella Cherry Tree (dwarf)",
       "slug": "stella-cherry-tree-dwarf-3b9b6675",
       "latin": "Prunus avium",
@@ -4105,9 +5668,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "Net cherries to protect from birds. Harvest Jun–Jul. Feed with potash-rich fertiliser in Mar.",
       "image": "images/plants/stella-cherry-tree-dwarf-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae811bb698cf0b3ff1f721"
+      "url": "https://app.notion.com/p/3b9b667506ae811bb698cf0b3ff1f721",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a2-a2ab-d16064eb6ba7",
       "name": "Sweet Scabious",
       "slug": "sweet-scabious-3b9b6675",
       "latin": "Scabiosa atropurpurea",
@@ -4130,9 +5699,46 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "",
       "image": "images/plants/sweet-scabious-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a2a2abd16064eb6ba7"
+      "url": "https://app.notion.com/p/3b9b667506ae81a2a2abd16064eb6ba7",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-812d-ba0d-c27bc0296d7e",
+      "name": "Thalictrum delavayi 'Hewitt's Double'",
+      "slug": "thalictrum-delavayi-hewitt-s-double-3c7b6675",
+      "latin": "Meadow Rue",
+      "type": "Perennial",
+      "sun": "Partial shade",
+      "watering": "",
+      "flowering": "July–September",
+      "colour": "",
+      "size": "120–150 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees, Hoverflies, See-through",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "A cloud of tiny double pompom flowers in soft mauve-lilac on tall, airy, almost black stems — one of the most ethereally beautiful perennials available. The delicate flower cloud and fine blue-grey foliage make it invaluable as a see-through plant at the mid-to-rear of a border. Pairs extraordinarily well with Roses. May need light staking but this is always worth it.",
+      "image": "images/plants/thalictrum-delavayi-hewitt-s-double-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae812dba0dc27bc0296d7e",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Moderate",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=thalictrum+delavayi&type=product\nSarah Raven: https://www.sarahraven.com/search?q=thalictrum+delavayi\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=thalictrum+delavayi"
+    },
+    {
+      "id": "3b9b6675-06ae-8143-88b5-c0debaa821bf",
       "name": "Tiger Lily",
       "slug": "tiger-lily-3b9b6675",
       "latin": "Lilium lancifolium",
@@ -4155,9 +5761,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/tiger-lily-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae814388b5c0debaa821bf"
+      "url": "https://app.notion.com/p/3b9b667506ae814388b5c0debaa821bf",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8195-bf99-dc38e2329f87",
       "name": "Tulip 'Annika'",
       "slug": "tulip-annika-3bab6675",
       "latin": "Tulipa 'Annika' (15)",
@@ -4180,9 +5792,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Miscellaneous Group (Division 15) species tulip. H6 hardy. Plant in autumn at 10–15cm depth. Harmful if eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/387393/tulipa-annika-(15)/details",
       "image": "images/plants/tulip-annika-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8195bf99dc38e2329f87"
+      "url": "https://app.notion.com/p/3bab667506ae8195bf99dc38e2329f87",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81e7-a7e7-f8c61e68ade9",
       "name": "Tulip 'Berry Sorbet'",
       "slug": "tulip-berry-sorbet-3bab6675",
       "latin": "Tulipa 'Berry Sorbet'",
@@ -4205,9 +5823,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Double Late tulip. Lush double blooms in creamy white with deep raspberry-pink streaks. Excellent for cutting and late spring interest. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-berry-sorbet/KB1654TM",
       "image": "images/plants/tulip-berry-sorbet-3bab6675.png",
-      "url": "https://app.notion.com/p/3bab667506ae81e7a7e7f8c61e68ade9"
+      "url": "https://app.notion.com/p/3bab667506ae81e7a7e7f8c61e68ade9",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8131-895e-f8cc09315975",
       "name": "Tulip 'Black Satin'",
       "slug": "tulip-black-satin-3bab6675",
       "latin": "Tulipa 'Black Satin'",
@@ -4230,9 +5854,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Triumph tulip. One of the darkest tulips available — near-black velvety purple. Excellent for cutting and high-contrast planting. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-black-satin/V46977TM",
       "image": "images/plants/tulip-black-satin-3bab6675.png",
-      "url": "https://app.notion.com/p/3bab667506ae8131895ef8cc09315975"
+      "url": "https://app.notion.com/p/3bab667506ae8131895ef8cc09315975",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81fe-a0f9-ea96a123afcc",
       "name": "Tulip 'Blue Diamond'",
       "slug": "tulip-blue-diamond-3bab6675",
       "latin": "Tulipa 'Blue Diamond'",
@@ -4255,9 +5885,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Double Late tulip. Rich violet-blue double blooms — one of the bluest tulips available. Excellent for cutting and late spring interest. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-blue-diamond/TKA7152TM",
       "image": "images/plants/tulip-blue-diamond-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81fea0f9ea96a123afcc"
+      "url": "https://app.notion.com/p/3bab667506ae81fea0f9ea96a123afcc",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-811a-a210-eb1b55035d34",
       "name": "Tulip 'Blueberry Ripple'",
       "slug": "tulip-blueberry-ripple-3bab6675",
       "latin": "Tulipa 'Blueberry Ripple'",
@@ -4280,9 +5916,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Fringed or parrot-style tulip. White blooms with distinctive blue-purple ripple and feathering. Striking and unusual. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-blueberry-ripple/P09211TM",
       "image": "images/plants/tulip-blueberry-ripple-3bab6675.png",
-      "url": "https://app.notion.com/p/3bab667506ae811aa210eb1b55035d34"
+      "url": "https://app.notion.com/p/3bab667506ae811aa210eb1b55035d34",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8129-8af8-d4857183535b",
       "name": "Tulip 'Coerulea Oculata Alba'",
       "slug": "tulip-coerulea-oculata-alba-3bab6675",
       "latin": "Tulipa humilis var. pulchella Albocaerulea Oculata Group (15)",
@@ -4305,9 +5947,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Dwarf species/botanical tulip. Distinctive white flowers with a striking purple-blue eye and black stamens. Very early flowering. Good for rock gardens, front of borders and containers. H6 hardy. Plant 10–15cm deep. Harmful if eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/82696/tulipa-humilis-var-pulchella-albocaerulea-oculata-group/details",
       "image": "images/plants/tulip-coerulea-oculata-alba-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81298af8d4857183535b"
+      "url": "https://app.notion.com/p/3bab667506ae81298af8d4857183535b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8129-8f0a-f3def0af0539",
       "name": "Tulip 'Copper Image'",
       "slug": "tulip-copper-image-3bab6675",
       "latin": "Tulipa 'Copper Image' (11)",
@@ -4330,9 +5978,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Double Early tulip (Division 11). Warm copper-rose tones, fully double blooms. Long-lasting flowers. Excellent for pots and borders. H6 hardy. Plant in autumn at 15cm depth, 10–15cm apart. Harmful if eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/343132/tulipa-copper-image-(11)/details",
       "image": "images/plants/tulip-copper-image-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81298f0af3def0af0539"
+      "url": "https://app.notion.com/p/3bab667506ae81298f0af3def0af0539",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-819f-a6aa-d5a3009edf9e",
       "name": "Tulip 'Fire Wings'",
       "slug": "tulip-fire-wings-3bab6675",
       "latin": "Tulipa 'Fire Wings'",
@@ -4355,9 +6009,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Parrot tulip. Bold red flowers with vivid orange-red flame markings and dramatically ruffled, fringed petals. Excellent cut flower. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-fire-wings/T64737TM",
       "image": "images/plants/tulip-fire-wings-3bab6675.webp",
-      "url": "https://app.notion.com/p/3bab667506ae819fa6aad5a3009edf9e"
+      "url": "https://app.notion.com/p/3bab667506ae819fa6aad5a3009edf9e",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81ce-9679-ffcf1ca834a2",
       "name": "Tulip 'Flaming Club'",
       "slug": "tulip-flaming-club-3bab6675",
       "latin": "Tulipa 'Flaming Club'",
@@ -4380,9 +6040,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Tall elegant tulip with deep purple-violet blooms. Excellent for cutting garden. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-flaming-club/T71559TM",
       "image": "images/plants/tulip-flaming-club-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81ce9679ffcf1ca834a2"
+      "url": "https://app.notion.com/p/3bab667506ae81ce9679ffcf1ca834a2",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-8110-893e-dcfd1a6f3e11",
       "name": "Tulip 'Graceland'",
       "slug": "tulip-graceland-3bab6675",
       "latin": "Tulipa 'Graceland'",
@@ -4405,9 +6071,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Single late tulip. Elegant white to creamy-yellow flowers on tall stems. Excellent for cutting and border use. H6 hardy. Plant in autumn at 15cm depth. Harmful if eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). No RHS plant profile found — not currently listed on the RHS database as a named cultivar.",
       "image": "images/plants/tulip-graceland-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae8110893edcfd1a6f3e11"
+      "url": "https://app.notion.com/p/3bab667506ae8110893edcfd1a6f3e11",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81b2-b7b4-e65d352f3e82",
       "name": "Tulip 'Olympic Flame'",
       "slug": "tulip-olympic-flame-3b9b6675",
       "latin": "Tulipa 'Olympic Flame'",
@@ -4430,9 +6102,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/tulip-olympic-flame-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81b2b7b4e65d352f3e82"
+      "url": "https://app.notion.com/p/3b9b667506ae81b2b7b4e65d352f3e82",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-813c-a6b7-ec708d3ff26b",
       "name": "Tulip 'Orange Queen'",
       "slug": "tulip-orange-queen-3bdb6675",
       "latin": "Tulipa 'Orange Queen'",
@@ -4455,9 +6133,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Darwin Hybrid tulip. Large orange-red blooms, weather resistant, good perennial qualities — more likely to return year on year than many tulips. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Ordered from T&M as part of Spring Apricot Shades Mix.",
       "image": "images/plants/tulip-orange-queen-3bdb6675.jpg",
-      "url": "https://app.notion.com/p/3bdb667506ae813ca6b7ec708d3ff26b"
+      "url": "https://app.notion.com/p/3bdb667506ae813ca6b7ec708d3ff26b",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81fe-8d81-ed2dffa4a3e6",
       "name": "Tulip 'Shirley'",
       "slug": "tulip-shirley-3bab6675",
       "latin": "Tulipa 'Shirley'",
@@ -4480,9 +6164,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "Triumph tulip. Classic white/ivory blooms with delicate purple feathering at the petal edges. Elegant and long-lasting. Excellent cut flower. H6 hardy. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten. Source: Thompson & Morgan https://www.thompson-morgan.com/p/tulip-shirley/V46976TM",
       "image": "images/plants/tulip-shirley-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81fe8d81ed2dffa4a3e6"
+      "url": "https://app.notion.com/p/3bab667506ae81fe8d81ed2dffa4a3e6",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81cc-a133-d81bd2b04561",
       "name": "Tulip 'Slawa'",
       "slug": "tulip-slawa-3bab6675",
       "latin": "Tulipa 'Slawa'PBR (3)",
@@ -4505,9 +6195,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Triumph tulip (Division 3). Large single cup-shaped flowers in rich dark red-purple with copper-rose edging. Long-lasting and wind-resistant. PBR protected variety. Excellent for borders and cutting. H6 hardy. Plant in autumn at 10–15cm depth. Harmful if eaten; wear gloves when handling. Ordered from Farmer Gracy Jul 2022 (FG857326). RHS profile: https://www.rhs.org.uk/plants/353382/tulipa-slawa-pbr-(3)/details",
       "image": "images/plants/tulip-slawa-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81cca133d81bd2b04561"
+      "url": "https://app.notion.com/p/3bab667506ae81cca133d81bd2b04561",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81dd-8159-efdb1b535a6f",
       "name": "Tulip 'Tête-à-Tête'",
       "slug": "tulip-t-te-t-te-3bab6675",
       "latin": "Tulipa humilis 'Tête-à-Tête'",
@@ -4530,9 +6226,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8191ad9ff164c9fa13c4",
       "notes": "RHS AGM holder. Species/botanical tulip. Multi-headed with double blooms. Very short stocky stems (10–12cm) — almost flowers at ground level. Perfect for front of border or pots. Fully hardy. Plant 2–3x bulb depth in autumn, pointed end up, spaced closely (up to 100 per m²). Skin and eye irritant; harmful if eaten. Source: https://www.farmergracy.co.uk/products/tulip-tete-a-tete-bulbs-uk",
       "image": "images/plants/tulip-t-te-t-te-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81dd8159efdb1b535a6f"
+      "url": "https://app.notion.com/p/3bab667506ae81dd8159efdb1b535a6f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bab6675-06ae-81fe-9bf0-ef1d638c0677",
       "name": "Tulip 'Yume no Murasaki'",
       "slug": "tulip-yume-no-murasaki-3bab6675",
       "latin": "Tulipa 'Yume no Murasaki'",
@@ -4555,9 +6257,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Lily-flowering tulip with elegant pointed, reflexed petals in a deep violet-purple. Excellent for cutting. Plant in autumn at 15–20cm depth, pointed end up. Space 10–15cm apart. Fully hardy. Good for borders and cutting garden. Ordered from Farmer Gracy Jul 2022 (FG857326).",
       "image": "images/plants/tulip-yume-no-murasaki-3bab6675.jpg",
-      "url": "https://app.notion.com/p/3bab667506ae81fe9bf0ef1d638c0677"
+      "url": "https://app.notion.com/p/3bab667506ae81fe9bf0ef1d638c0677",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8140-acab-d4dc30567825",
       "name": "Tulip Triumph 'Negrita'",
       "slug": "tulip-triumph-negrita-3b9b6675",
       "latin": "Tulipa Triumph 'Negrita'",
@@ -4580,9 +6288,15 @@
       "bed_url": "https://app.notion.com/p/3bab667506ae81fc8064f16e4a27aa01",
       "notes": "",
       "image": "images/plants/tulip-triumph-negrita-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8140acabd4dc30567825"
+      "url": "https://app.notion.com/p/3b9b667506ae8140acabd4dc30567825",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bdb6675-06ae-8133-8c1f-fedabf958ee5",
       "name": "Tulips (Purple/Mauve)",
       "slug": "tulips-purple-mauve-3bdb6675",
       "latin": "Tulipa spp. (mauve/purple mix)",
@@ -4605,9 +6319,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae816aac7ed22acaab5863",
       "notes": "Mix of mauve and light purple tulip varieties from T&M Purple Rain Mix. Plant 15cm deep in autumn. Irritant to skin and eyes; harmful if eaten.",
       "image": "",
-      "url": "https://app.notion.com/p/3bdb667506ae81338c1ffedabf958ee5"
+      "url": "https://app.notion.com/p/3bdb667506ae81338c1ffedabf958ee5",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81e7-b0d4-d2aea76c51fa",
       "name": "Tulips (mixed)",
       "slug": "tulips-mixed-3b9b6675",
       "latin": "Tulipa spp.",
@@ -4630,9 +6350,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "",
       "image": "images/plants/tulips-mixed-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81e7b0d4d2aea76c51fa"
+      "url": "https://app.notion.com/p/3b9b667506ae81e7b0d4d2aea76c51fa",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-817d-a163-fb05108db686",
       "name": "Tulips (mixed)",
       "slug": "tulips-mixed-3b9b6675",
       "latin": "Tulipa spp.",
@@ -4655,9 +6381,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "images/plants/tulips-mixed-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae817da163fb05108db686"
+      "url": "https://app.notion.com/p/3b9b667506ae817da163fb05108db686",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8121-adc5-ea0ed2206984",
       "name": "Unknown Alstroemeria — dark purple dwarf",
       "slug": "unknown-alstroemeria-dark-purple-dwarf-3bbb6675",
       "latin": "",
@@ -4680,9 +6412,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Suspected dwarf Alstroemeria. Needs identification — could be 'Princess Fabiana' or similar dark-flowered dwarf variety.",
       "image": "",
-      "url": "https://app.notion.com/p/3bbb667506ae8121adc5ea0ed2206984"
+      "url": "https://app.notion.com/p/3bbb667506ae8121adc5ea0ed2206984",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8166-8a7a-c76472cd20dc",
       "name": "Unknown Dianthus — purple",
       "slug": "unknown-dianthus-purple-3bbb6675",
       "latin": "",
@@ -4705,9 +6443,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Suspected Dianthus. Could be D. barbatus, D. deltoides, D. plumarius or named cultivar. Check flower form, scent and foliage.",
       "image": "",
-      "url": "https://app.notion.com/p/3bbb667506ae81668a7ac76472cd20dc"
+      "url": "https://app.notion.com/p/3bbb667506ae81668a7ac76472cd20dc",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8106-8a39-fae2baefdc23",
       "name": "Unknown Dianthus — white",
       "slug": "unknown-dianthus-white-3bbb6675",
       "latin": "",
@@ -4730,9 +6474,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Suspected Dianthus. Could be D. barbatus, D. deltoides, D. plumarius or named cultivar. Check flower form, scent and foliage.",
       "image": "",
-      "url": "https://app.notion.com/p/3bbb667506ae81068a39fae2baefdc23"
+      "url": "https://app.notion.com/p/3bbb667506ae81068a39fae2baefdc23",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3bbb6675-06ae-8185-abfb-c8576ecceb4c",
       "name": "Unknown Rhododendron",
       "slug": "unknown-rhododendron-3bbb6675",
       "latin": "Rhododendron spp.",
@@ -4755,9 +6505,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "Cultivar unknown — to identify when flowering in spring. Compact habit and leaf size suggest possibly a yakushimanum hybrid or similar compact variety. Feed with ericaceous fertiliser in April and June. Use rainwater where possible in hard water areas. Do not prune into old wood. Check soil pH — requires acidic conditions (pH 4.5–6.0). Appears healthy and well established.",
       "image": "",
-      "url": "https://app.notion.com/p/3bbb667506ae8185abfbc8576ecceb4c"
+      "url": "https://app.notion.com/p/3bbb667506ae8185abfbc8576ecceb4c",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81a6-b223-c66d3c2413d1",
       "name": "Unknown Tulips",
       "slug": "unknown-tulips-3b9b6675",
       "latin": "Tulipa spp.",
@@ -4780,9 +6536,77 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81e19899c46bcea5e2d9",
       "notes": "",
       "image": "images/plants/unknown-tulips-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81a6b223c66d3c2413d1"
+      "url": "https://app.notion.com/p/3b9b667506ae81a6b223c66d3c2413d1",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c7b6675-06ae-817b-a0db-e5e6310141ad",
+      "name": "Verbena bonariensis",
+      "slug": "verbena-bonariensis-3c7b6675",
+      "latin": "Tall Verbena",
+      "type": "Perennial",
+      "sun": "Full sun",
+      "watering": "",
+      "flowering": "July–November",
+      "colour": "",
+      "size": "120–180 cm × 30–45 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Butterflies (exceptional), Bees, Self-seeds",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Tall, airy wands of tiny bright purple flowers that float above everything else in the border — one of the great see-through plants for layering in front of shrubs. Half-hardy itself but self-seeds prolifically and freely in most UK gardens, so effectively permanent once established. Irreplaceable for butterflies. Plant in groups of 5 or more for the full effect.",
+      "image": "images/plants/verbena-bonariensis-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae817ba0dbe5e6310141ad",
+      "to_buy": true,
+      "border_position": "Middle · Rear",
+      "drought": "Good",
+      "hardiness": "H3 Half-hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=verbena+bonariensis&type=product\nThompson & Morgan: https://www.thompson-morgan.com/search-results?q=verbena+bonariensis\nHayloft: https://hayloft.co.uk/catalogsearch/result/?q=verbena+bonariensis"
+    },
+    {
+      "id": "3c7b6675-06ae-814b-be30-e96916c219f3",
+      "name": "Veronicastrum virginicum 'Fascination'",
+      "slug": "veronicastrum-virginicum-fascination-3c7b6675",
+      "latin": "Culver's Root",
+      "type": "Perennial",
+      "sun": "Sun/partial shade",
+      "watering": "",
+      "flowering": "July–September",
+      "colour": "",
+      "size": "150–180 cm × 45–60 cm",
+      "difficulty": "",
+      "pruning": "",
+      "pruning_how": "",
+      "soil": "",
+      "propagation": "",
+      "wildlife": "Bees (exceptional), Hoverflies, Architectural",
+      "id_confidence": "",
+      "rhs_link": null,
+      "frost": false,
+      "bed": "",
+      "bed_url": "",
+      "notes": "Tall, elegant candelabra of pale lilac spires rising above whorled dark foliage — one of the most architectural border plants available and superb for providing vertical structure at the rear of a bed. Exceptional for bees. The upright form reads beautifully against the rounded flowering heads of Hydrangea. Does not need staking despite its height.",
+      "image": "images/plants/veronicastrum-virginicum-fascination-3c7b6675.jpg",
+      "url": "https://app.notion.com/p/3c7b667506ae814bbe30e96916c219f3",
+      "to_buy": true,
+      "border_position": "Rear",
+      "drought": "Moderate",
+      "hardiness": "H5 Fully Hardy",
+      "suppliers": "Farmer Gracy: https://www.farmergracy.co.uk/search?q=veronicastrum&type=product\nSarah Raven: https://www.sarahraven.com/search?q=veronicastrum\nBeth Chatto: https://www.bethchatto.co.uk/search.php?q=veronicastrum"
+    },
+    {
+      "id": "3b9b6675-06ae-815a-bbbe-e46adc781934",
       "name": "Virginia Spiderwort",
       "slug": "virginia-spiderwort-3b9b6675",
       "latin": "Tradescantia virginiana",
@@ -4805,9 +6629,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "",
       "image": "images/plants/virginia-spiderwort-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae815abbbee46adc781934"
+      "url": "https://app.notion.com/p/3b9b667506ae815abbbee46adc781934",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-8169-bfcb-f28a21b40673",
       "name": "Walnut Tree",
       "slug": "walnut-tree-3b9b6675",
       "latin": "Juglans regia",
@@ -4830,9 +6660,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae817fa94ac1fc0fcee076",
       "notes": "Leaves can inhibit nearby plants (juglone effect) — avoid planting sensitive species underneath.",
       "image": "images/plants/walnut-tree-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae8169bfcbf28a21b40673"
+      "url": "https://app.notion.com/p/3b9b667506ae8169bfcbf28a21b40673",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-80b4-a1a3-fd833a2edf9f",
       "name": "White-flowered Rose Campion",
       "slug": "white-flowered-rose-campion-3b9b6675",
       "latin": "Silene coronaria ‘Alba’",
@@ -4855,9 +6691,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae811fa3dfd04c564cbd8e",
       "notes": "Short-lived perennial or biennial with grey, softly hairy foliage and 3cm white summer flowers. May be susceptible to slugs. Source: RHS https://www.rhs.org.uk/plants/518088/silene-coronaria-alba/details",
       "image": "images/plants/white-flowered-rose-campion-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae80b4a1a3fd833a2edf9f"
+      "url": "https://app.notion.com/p/3b9b667506ae80b4a1a3fd833a2edf9f",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3c5b6675-06ae-812f-9e04-e504fae25411",
       "name": "Winter Jasmine",
       "slug": "winter-jasmine-3c5b6675",
       "latin": "Jasminum nudiflorum",
@@ -4880,9 +6722,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81b6a68bcae7a7b5cacf",
       "notes": "",
       "image": "",
-      "url": "https://app.notion.com/p/3c5b667506ae812f9e04e504fae25411"
+      "url": "https://app.notion.com/p/3c5b667506ae812f9e04e504fae25411",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81e9-a3f7-faabb6eef5cf",
       "name": "Woodland Forget-me-not",
       "slug": "woodland-forget-me-not-3b9b6675",
       "latin": "Myosotis sylvatica",
@@ -4905,9 +6753,15 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae8179adacd32292d5da6d",
       "notes": "",
       "image": "images/plants/woodland-forget-me-not-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81e9a3f7faabb6eef5cf"
+      "url": "https://app.notion.com/p/3b9b667506ae81e9a3f7faabb6eef5cf",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     },
     {
+      "id": "3b9b6675-06ae-81e1-a3d0-e4846d109c92",
       "name": "Woodland Sage",
       "slug": "woodland-sage-3b9b6675",
       "latin": "Salvia nemorosa",
@@ -4930,7 +6784,12 @@
       "bed_url": "https://app.notion.com/p/3b9b667506ae81bea2ccc95d8050d8a3",
       "notes": "",
       "image": "images/plants/woodland-sage-3b9b6675.jpg",
-      "url": "https://app.notion.com/p/3b9b667506ae81e1a3d0e4846d109c92"
+      "url": "https://app.notion.com/p/3b9b667506ae81e1a3d0e4846d109c92",
+      "to_buy": false,
+      "border_position": "",
+      "drought": "",
+      "hardiness": "",
+      "suppliers": ""
     }
   ],
   "tasks": [
@@ -7331,6 +9190,194 @@
       "instructions": "Cut back to basal rosette after flowering has finished.",
       "plant_url": "https://app.notion.com/p/3b9b667506ae81b6889fcd37dba5c0cc",
       "url": "https://app.notion.com/p/3bab667506ae81a09052e5c4b7fc0053"
+    }
+  ],
+  "groupings": [
+    {
+      "name": "The Classic Country Border",
+      "conditions": "Sun to light shade · Good garden soil · May–October",
+      "context": "A timeless English border combination. Campanula and Thalictrum provide elegant height at the rear; Rudbeckia extends warm golden colour deep into autumn when everything else is winding down.",
+      "works_alongside": "Roses (any colour), Peonies — the violet-blue palette complements pink and red Roses without clashing",
+      "plants": [
+        {
+          "name": "Geranium 'Rozanne'",
+          "slug": "geranium-rozanne-3c7b6675"
+        },
+        {
+          "name": "Penstemon 'Garnet'",
+          "slug": "penstemon-garnet-3c7b6675"
+        },
+        {
+          "name": "Rudbeckia fulgida 'Goldsturm'",
+          "slug": "rudbeckia-fulgida-goldsturm-3c7b6675"
+        },
+        {
+          "name": "Campanula lactiflora 'Prichard's Variety'",
+          "slug": "campanula-lactiflora-prichard-s-variety-3c7b6675"
+        },
+        {
+          "name": "Thalictrum delavayi 'Hewitt's Double'",
+          "slug": "thalictrum-delavayi-hewitt-s-double-3c7b6675"
+        },
+        {
+          "name": "Lupinus polyphyllus",
+          "slug": "lupinus-polyphyllus-3c7b6675"
+        }
+      ],
+      "url": "https://app.notion.com/p/3c7b667506ae817694aeebd81937bd8f"
+    },
+    {
+      "name": "The Dry Sunny Border",
+      "conditions": "Full sun · Poor, well-drained soil · May–September",
+      "context": "Five plants that actively thrive on drought and neglect. All will improve as summers get hotter — the combination looks better, not worse, without irrigation.",
+      "works_alongside": "Hydrangea, Magnolia — the cool blue palette softens both without competing",
+      "plants": [
+        {
+          "name": "Nepeta 'Six Hills Giant'",
+          "slug": "nepeta-six-hills-giant-3c7b6675"
+        },
+        {
+          "name": "Origanum laevigatum 'Herrenhausen'",
+          "slug": "origanum-laevigatum-herrenhausen-3c7b6675"
+        },
+        {
+          "name": "Salvia nemorosa 'Caradonna'",
+          "slug": "salvia-nemorosa-caradonna-3c7b6675"
+        },
+        {
+          "name": "Eryngium × tripartitum",
+          "slug": "eryngium-tripartitum-3c7b6675"
+        },
+        {
+          "name": "Echinops ritro 'Veitch's Blue'",
+          "slug": "echinops-ritro-veitch-s-blue-3c7b6675"
+        },
+        {
+          "name": "Lavandula angustifolia",
+          "slug": "lavandula-angustifolia-3c7b6675"
+        }
+      ],
+      "url": "https://app.notion.com/p/3c7b667506ae8167a929cb9a097630ad"
+    },
+    {
+      "name": "The Late Summer Focus",
+      "conditions": "Full sun · Well-drained soil · July–October",
+      "context": "A combination where the season builds rather than peaks early — designed to carry the garden when spring shrubs and early perennials have finished, and fill the August–October gap.",
+      "works_alongside": "Hydrangea paniculata (whose white flowers turn pink in August) — the warm tones complement the fading Hydrangea perfectly",
+      "plants": [
+        {
+          "name": "Achillea 'Terracotta'",
+          "slug": "achillea-terracotta-3c7b6675"
+        },
+        {
+          "name": "Rudbeckia fulgida 'Goldsturm'",
+          "slug": "rudbeckia-fulgida-goldsturm-3c7b6675"
+        },
+        {
+          "name": "Helenium 'Sahin's Early Flowerer'",
+          "slug": "helenium-sahin-s-early-flowerer-3c7b6675"
+        },
+        {
+          "name": "Echinops ritro 'Veitch's Blue'",
+          "slug": "echinops-ritro-veitch-s-blue-3c7b6675"
+        },
+        {
+          "name": "Persicaria amplexicaulis 'Firetail'",
+          "slug": "persicaria-amplexicaulis-firetail-3c7b6675"
+        },
+        {
+          "name": "Anemone × hybrida",
+          "slug": "anemone-hybrida-3c7b6675"
+        }
+      ],
+      "url": "https://app.notion.com/p/3c7b667506ae81699ae3fcb27982ac3c"
+    },
+    {
+      "name": "The Peony Companions",
+      "conditions": "Sun to light shade · Any soil · May–October",
+      "context": "Designed to share a bed with the Peonies being redistributed around the garden. These four ensure continuity of interest from June through October after Peony season ends, without competing for water during dry months.",
+      "works_alongside": "Give plants 45–60 cm clearance from Peony crowns. Geranium 'Rozanne' is excellent for disguising dying Peony foliage in early summer",
+      "plants": [
+        {
+          "name": "Nepeta 'Six Hills Giant'",
+          "slug": "nepeta-six-hills-giant-3c7b6675"
+        },
+        {
+          "name": "Geranium 'Rozanne'",
+          "slug": "geranium-rozanne-3c7b6675"
+        },
+        {
+          "name": "Salvia nemorosa 'Caradonna'",
+          "slug": "salvia-nemorosa-caradonna-3c7b6675"
+        },
+        {
+          "name": "Knautia macedonica",
+          "slug": "knautia-macedonica-3c7b6675"
+        },
+        {
+          "name": "Lupinus polyphyllus",
+          "slug": "lupinus-polyphyllus-3c7b6675"
+        }
+      ],
+      "url": "https://app.notion.com/p/3c7b667506ae81c599a7fe9e2d30dedf"
+    },
+    {
+      "name": "The Pollinator Tapestry",
+      "conditions": "Sun · Free-draining soil preferred · June–October",
+      "context": "Outstanding for butterflies and bees from June right through October. Verbena and Veronicastrum act as airy see-through verticals; Sanguisorba and Scabiosa fill the front with quiet detail.",
+      "works_alongside": "Any large shrub — the airy verticals work well in front of Hydrangea, Rhododendron or Magnolia",
+      "plants": [
+        {
+          "name": "Sanguisorba officinalis 'Tanna'",
+          "slug": "sanguisorba-officinalis-tanna-3c7b6675"
+        },
+        {
+          "name": "Scabiosa 'Butterfly Blue'",
+          "slug": "scabiosa-butterfly-blue-3c7b6675"
+        },
+        {
+          "name": "Knautia macedonica",
+          "slug": "knautia-macedonica-3c7b6675"
+        },
+        {
+          "name": "Verbena bonariensis",
+          "slug": "verbena-bonariensis-3c7b6675"
+        },
+        {
+          "name": "Veronicastrum virginicum 'Fascination'",
+          "slug": "veronicastrum-virginicum-fascination-3c7b6675"
+        }
+      ],
+      "url": "https://app.notion.com/p/3c7b667506ae8193b7dce0b9339ea1b9"
+    },
+    {
+      "name": "The Warm Sunset",
+      "conditions": "Sun to part shade · Any reasonable soil · May–October",
+      "context": "A hot palette that builds through summer, opening with Geum in May and sustained all the way through Persicaria in October. Lychnis provides the unexpected magenta spark that lifts the whole combination.",
+      "works_alongside": "Roses (warm tones), Azalea — echoes their warm palette and extends the season well beyond it",
+      "plants": [
+        {
+          "name": "Geum 'Totally Tangerine'",
+          "slug": "geum-totally-tangerine-3c7b6675"
+        },
+        {
+          "name": "Lychnis coronaria",
+          "slug": "lychnis-coronaria-3c7b6675"
+        },
+        {
+          "name": "Achillea 'Terracotta'",
+          "slug": "achillea-terracotta-3c7b6675"
+        },
+        {
+          "name": "Helenium 'Sahin's Early Flowerer'",
+          "slug": "helenium-sahin-s-early-flowerer-3c7b6675"
+        },
+        {
+          "name": "Persicaria amplexicaulis 'Firetail'",
+          "slug": "persicaria-amplexicaulis-firetail-3c7b6675"
+        }
+      ],
+      "url": "https://app.notion.com/p/3c7b667506ae81e4be3bdfca7b9dc873"
     }
   ]
 }
