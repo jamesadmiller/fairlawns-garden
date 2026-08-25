@@ -174,23 +174,43 @@ IMAGE_FETCH_HEADERS = {
 }
 
 
+RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
+
+
+def existing_image_path(slug):
+    """Find a previously-downloaded image for this slug already on disk,
+    regardless of extension (used as a fallback when today's fetch fails)."""
+    if not os.path.isdir(IMAGES_DIR):
+        return None
+    for fname in os.listdir(IMAGES_DIR):
+        if os.path.splitext(fname)[0] == slug:
+            return f"images/plants/{fname}"
+    return None
+
+
 def download_plant_image(url, slug, max_retries=4):
     """Download a plant image (Notion's internal file URLs expire, so we
-    fetch and commit it to the repo). Returns the relative path on success,
-    or None on failure/no image."""
+    fetch and commit it to the repo). Returns the relative path on success.
+    On failure, falls back to a previously-downloaded copy for this slug if
+    one exists — a transient error (rate limiting, a 503 from Wikimedia)
+    shouldn't delete a perfectly good cached image, only a genuinely missing
+    source image should. Returns None only if there's no fallback either."""
     for attempt in range(max_retries + 1):
         try:
             resp = requests.get(url, timeout=30, headers=IMAGE_FETCH_HEADERS)
-            if resp.status_code == 429 and attempt < max_retries:
+            if resp.status_code in RETRYABLE_STATUSES and attempt < max_retries:
                 wait = float(resp.headers.get("Retry-After", 2 * (attempt + 1)))
-                print(f"  Rate limited fetching image for {slug}, retrying in {wait:.0f}s…", file=sys.stderr)
+                print(f"  {resp.status_code} fetching image for {slug}, retrying in {wait:.0f}s…", file=sys.stderr)
                 time.sleep(wait)
                 continue
             resp.raise_for_status()
             break
         except Exception as e:
             print(f"  WARNING: failed to download image for {slug}: {e}", file=sys.stderr)
-            return None
+            fallback = existing_image_path(slug)
+            if fallback:
+                print(f"  Keeping previously-downloaded image for {slug}", file=sys.stderr)
+            return fallback
 
     os.makedirs(IMAGES_DIR, exist_ok=True)
     ext = guess_extension(url, resp.headers.get("Content-Type", ""))
