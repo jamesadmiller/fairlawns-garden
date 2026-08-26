@@ -116,7 +116,7 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
 </nav>
 <div class="page-header">
   <h1>🌸 Plant Directory</h1>
-  <p>Browse all plants at Fairlawns — filter by bed, type, sunlight or watering needs</p>
+  <p>Browse all plants at Fairlawns — filter by bed, type, sunlight, watering or hardiness</p>
 </div>
 <div class="controls">
   <div class="search-wrap"><input id="search" type="search" placeholder="Search plants…" autocomplete="off"></div>
@@ -124,6 +124,7 @@ footer{padding:2rem 1.5rem;text-align:center;font-size:.78rem;color:var(--ink-so
   <select id="filter-type" class="filter-select"><option value="">All types</option></select>
   <select id="filter-sun" class="filter-select"><option value="">All sun levels</option></select>
   <select id="filter-water" class="filter-select"><option value="">All watering</option></select>
+  <select id="filter-hardiness" class="filter-select"><option value="">All hardiness</option></select>
   <select id="filter-flower" class="filter-select"><option value="">Any flowering month</option></select>
   <select id="filter-owned" class="filter-select">
     <option value="">Owned + to buy</option>
@@ -150,10 +151,11 @@ const bedSel = document.getElementById('filter-bed');
 const typeSel = document.getElementById('filter-type');
 const sunSel = document.getElementById('filter-sun');
 const waterSel = document.getElementById('filter-water');
+const hardinessSel = document.getElementById('filter-hardiness');
 const flowerSel = document.getElementById('filter-flower');
 const ownedSel = document.getElementById('filter-owned');
 
-// Populate bed/type/sun/watering filters directly from the data, so a
+// Populate bed/type/sun/watering/hardiness filters directly from the data, so a
 // new Notion select value shows up here without needing a code change.
 function populateFilter(sel, values){
   values.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;sel.appendChild(o)});
@@ -163,6 +165,7 @@ populateFilter(bedSel, allBeds);
 populateFilter(typeSel, [...new Set(plants.map(p=>p.type).filter(Boolean))].sort());
 populateFilter(sunSel, [...new Set(plants.map(p=>p.sun).filter(Boolean))].sort());
 populateFilter(waterSel, [...new Set(plants.map(p=>p.watering).filter(Boolean))].sort());
+populateFilter(hardinessSel, [...new Set(plants.map(p=>p.hardiness).filter(Boolean))].sort());
 
 // Populate flower month filter
 const flowerMonths = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -299,6 +302,7 @@ function render(){
   const type=typeSel.value;
   const sun=sunSel.value;
   const water=waterSel.value;
+  const hardiness=hardinessSel.value;
   const flower=flowerSel.value;
   const owned=ownedSel.value;
   const filtered=plants.filter(p=>{
@@ -307,6 +311,7 @@ function render(){
     if(type && p.type!==type) return false;
     if(sun && p.sun!==sun) return false;
     if(water && p.watering!==water) return false;
+    if(hardiness && p.hardiness!==hardiness) return false;
     if(flower && !flowerMonthMatch(p.flowering,flower)) return false;
     if(owned==='owned' && p.to_buy) return false;
     if(owned==='to-buy' && !p.to_buy) return false;
@@ -321,7 +326,7 @@ function render(){
   countEl.textContent=`Showing ${filtered.length} of ${plants.length} plants`;
 }
 
-[searchEl,bedSel,typeSel,sunSel,waterSel,flowerSel,ownedSel].forEach(el=>el.addEventListener('input',render));
+[searchEl,bedSel,typeSel,sunSel,waterSel,hardinessSel,flowerSel,ownedSel].forEach(el=>el.addEventListener('input',render));
 render();
 
 </script>
