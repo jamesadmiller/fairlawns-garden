@@ -149,7 +149,6 @@ function renderBed(bed){
   const notes150=bed.notes?bed.notes.slice(0,150)+(bed.notes.length>150?'…':''):'';
   const fullNotes=bed.notes||'';
   const dims=bed.dimensions&&bed.dimensions!=='—'?`${bed.dimensions}${bed.area?' · '+bed.area+'m²':''}`:'';
-  const zone=bed.zone?`<div class="detail-row"><span class="detail-label">Zone</span><span class="detail-val">${escHtml(bed.zone)}</span></div>`:'';
   const plantChips=bedPlants.map(p=>`<a class="plant-chip" href="plant.html?id=${encodeURIComponent(p.slug||'')}">${escHtml(p.name)}</a>`).join('');
   const plantsList=bedPlants.length?`<div class="bed-plants-list"><div class="bed-plants-heading">Plants in this bed (${bedPlants.length})</div>${plantChips}</div>`:'';
   const notionLink=bed.url?`<a class="notion-link-btn" href="${bed.url}" target="_blank" rel="noopener">View in Notion ↗</a>`:'';
@@ -172,7 +171,6 @@ function renderBed(bed){
       ${notionLink}
     </div>
     <div class="bed-detail">
-      ${zone}
       ${fullNotes&&fullNotes.length>150?`<div class="detail-row"><span class="detail-label">Notes</span><span class="detail-val">${escHtml(fullNotes)}</span></div>`:''}
       ${plantsList}
     </div>`;

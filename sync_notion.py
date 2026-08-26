@@ -247,7 +247,6 @@ def fetch_beds():
             "garden":     select_prop(p, "Garden"),
             "sun":        select_prop(p, "Sun") or select_prop(p, "Sunlight"),
             "aspect":     text_prop(p, "Aspect"),
-            "zone":       text_prop(p, "Zone"),
             "dimensions": text_prop(p, "Dimensions"),
             "area":       number_prop(p, "Area (m²)") or number_prop(p, "Area"),
             "notes":      text_prop(p, "Notes").replace('\r', ' ').replace('\n', ' '),
